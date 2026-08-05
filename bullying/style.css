@@ -402,7 +402,7 @@ select{
 
 #pagina_login{
     width:70%;
-    height:520px;
+    height:580px;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -413,7 +413,7 @@ select{
     border-radius:15px;
     gap:20px;
     position:fixed;
-    top:130px;
+    top:100px;
     left:170px;
 }
 
@@ -425,3 +425,17 @@ select{
     gap:50px 80px; 
     
 }
+
+#esqueci_senha{
+    font-family:patrick;
+    text-decoration:underline;
+    font-size:30px;
+    cursor:pointer;
+    transition:transform 300ms ease;
+    margin-top:10px;
+}
+
+#esqueci_senha:hover{
+    transform:scale(1.2);
+}
+
