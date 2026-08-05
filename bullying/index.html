@@ -11,13 +11,13 @@
     <body>
         <header>
             <div id="logo_auxiliar">
-                <img id="logo" src="assets/logo_2.png" alt="logo">
+                <img id="logo" src="assets/logo.png" alt="logo">
             </div>
-            <h1 id="nome">Lorem ipsum</h1>
+            <h1 id="nome">S.I.D.A</h1> <!--Sistema Integrado de Denuncias Anonimas-->
             <div id="botoes_auxiliar">
                 <h1>|</h1>
                 <div id="botoes">
-                    <button>Lorem ipsum</button>
+                    <button>Inicio</button>
                     <button>Lorem</button>
                     <button>Ipsum</button>
                 </div>
@@ -25,19 +25,19 @@
             </div>
 
             <div id="login_cadastro">
-                <button id="login" class="entrar">Entrar</button>
+                <button id="login" class="entrar" onclick="abrir_login()">Entrar</button>
                 <button id="cadastro" class="entrar" onclick="abrir_cadastro()">Criar&nbsp;conta</button>
             </div>
         </header>
 
         <main>
-            <section id="conteudo">
+            <!-- <section id="conteudo">
                 <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae et similique, at provident est nulla officia nesciunt deleniti voluptatum quis obcaecati amet nemo. Quidem sunt vitae quas itaque rerum.</h1>
-            </section>
+            </section> -->
         </main>
 
         <div id="pagina_cadastro" style="display: none;" class="animate__animated animate__zoomIn">
-            <h1>Cadastro</h1>
+            <h1 class="h1">Cadastro</h1>
             <form id="corpo_cadastro" method="post" action="...">
                 <div class="labels">
                     <label for="nome">Escreva seu nome completo</label>
@@ -82,14 +82,46 @@
                 </div>
 
                 <div id="botoes_cadastro">
-                    <button type="submit" id="fazer_cadastro">Fazer login</button>
+                    <button type="submit" id="fazer_cadastro">Criar conta</button>
                     <button id="cancelar_cadastro" onclick="fechar_cadastro()">Cancelar</button>
                 </div>
 
             </form>
         </div>
 
-        <!-- <div id="pagina_login"></div> -->
+        <div id="pagina_login" style="display: none;" class="animate__animated animate__zoomIn">
+            <h1 class="h1">Login</h1>
+            <form id="corpo_login" method="post" action="...">
+                <div class="labels">
+                    <label for="nome_login">Nome:</label>
+                    <div class="inputs">
+                        <i class="bi bi-person"></i>
+                        <input type="text" placeholder="Escreva seu nome completo" name="nome_login" required>
+                    </div>
+                </div>
+
+                <div class="labels">
+                    <label for="email">Escreva seu email</label>
+                    <span class="inputs">
+                        <i class="bi bi-envelope"></i>
+                        <input type="email" placeholder="Escreva seu email" name="email" required>
+                    </span>
+                </div>
+
+                <div class="labels">
+                    <label for="senha">Escreva sua senha:</label>
+                    <span class="inputs">
+                        <i class="bi bi-lock"></i>
+                        <input type="password" placeholder="escreva sua senha" name="senha" required>
+                    </span>
+                </div>
+
+                <div id="botoes_login">
+                    <button type="submit" id="fazer_login">Fazer login</button>
+                    <button id="cancelar_login" onclick="fechar_login()">Cancelar</button>
+                </div>
+            </form>
+        </div>
 
         <script src="script.js"></script>
     </body>

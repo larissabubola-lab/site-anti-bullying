@@ -10,3 +10,13 @@ function abrir_cadastro(){
 function fechar_cadastro(){
     cadastro_pagina.style.display = "none";
 }
+
+const login_pagina = document.getElementById("pagina_login");
+
+function abrir_login(){
+    login_pagina.style.display = "flex";
+}
+
+function fechar_login(){
+    login_pagina.style.display = "none";
+}

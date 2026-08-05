@@ -270,7 +270,7 @@ main{
     left:50px;
 }
 
-#pagina_cadastro h1{
+.h1{
     font-family:bebas;
     font-size:60px;
     text-shadow: 4px 4px 1px #6799ba;
@@ -355,9 +355,9 @@ select{
     cursor:pointer;
 }
 
-#botoes_cadastro{
+#botoes_cadastro, #botoes_login{
     width:100%;
-    height:fit-content;
+    height:100%;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -365,7 +365,7 @@ select{
     
 }
 
-#botoes_cadastro button{
+#botoes_cadastro button, #botoes_login button{
     font-family:nunito;
     font-size:30px;
     padding:5px;
@@ -377,13 +377,13 @@ select{
     transition:all 300ms ease;
 }
 
-#botoes_cadastro #fazer_cadastro{
+#botoes_cadastro #fazer_cadastro, #fazer_login{
     color:#6799ba;
     border:solid;
     
 }
 
-#botoes_cadastro #cancelar_cadastro{
+#botoes_cadastro #cancelar_cadastro, #cancelar_login{
     border:solid;
     color:#ff1212;
 }
@@ -398,4 +398,30 @@ select{
 
 #botoes_cadastro button:active{
     transform:scale(1);
+}
+
+#pagina_login{
+    width:70%;
+    height:520px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#008080;
+    border:solid;
+    color:white;
+    border-radius:15px;
+    gap:20px;
+    position:fixed;
+    top:130px;
+    left:170px;
+}
+
+#corpo_login{
+    width:fit-content;
+    height:fit-content;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px 80px; 
+    
 }
