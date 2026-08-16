@@ -27,7 +27,7 @@ const pagina_como_denunciar = document.getElementById("como_denunciar");
 const pagina_contatos = document.getElementById("contatos");
 
 function abrir_inicio(){
-    pagina_inicio.style.display = "flex";
+    pagina_inicio.style.display = "block";
     pagina_sobre_nos.style.display = "none";
     pagina_como_denunciar.style.display = "none";
     pagina_contatos.style.display = "none";
