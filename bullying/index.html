@@ -48,7 +48,7 @@
 
         </header>
 
-        <main>
+        <main id="main">
 
             <section id="inicio">
 
@@ -771,115 +771,7 @@
 
         </footer>
 
-        <script>
-
-            function fazerDenuncia() {
-
-                alert("Aqui será aberta a página para fazer uma denúncia.");
-
-            }
-
-            function abrir_login() {
-
-                alert("Aqui será aberta a tela de login.");
-
-            }
-
-            function abrir_cadastro() {
-
-                alert("Aqui será aberta a tela de criação de conta.");
-
-            }
-
-            let slideAtual = 0;
-
-            const slides = document.querySelectorAll(".slide");
-
-            const indicadores = document.querySelectorAll(".indicador");
-
-            let intervaloCarrossel;
-
-            function mostrarSlide(numero) {
-
-                slides.forEach(function(slide) {
-
-                    slide.classList.remove("ativo");
-
-                });
-
-                indicadores.forEach(function(indicador) {
-
-                    indicador.classList.remove("ativo");
-
-                });
-
-                slides[numero].classList.add("ativo");
-
-                indicadores[numero].classList.add("ativo");
-
-                slideAtual = numero;
-
-            }
-
-            function mudarSlide(direcao) {
-
-                let novoSlide = slideAtual + direcao;
-
-                if (novoSlide >= slides.length) {
-
-                    novoSlide = 0;
-
-                }
-
-                if (novoSlide < 0) {
-
-                    novoSlide = slides.length - 1;
-
-                }
-
-                mostrarSlide(novoSlide);
-
-                reiniciarCarrossel();
-
-            }
-
-            function irParaSlide(numero) {
-
-                mostrarSlide(numero);
-
-                reiniciarCarrossel();
-
-            }
-
-            function iniciarCarrossel() {
-
-                intervaloCarrossel = setInterval(function() {
-
-                    let novoSlide = slideAtual + 1;
-
-                    if (novoSlide >= slides.length) {
-
-                        novoSlide = 0;
-
-                    }
-
-                    mostrarSlide(novoSlide);
-
-                }, 5500);
-
-            }
-
-            function reiniciarCarrossel() {
-
-                clearInterval(intervaloCarrossel);
-
-                iniciarCarrossel();
-
-            }
-
-            iniciarCarrossel();
-
-        </script>
+        <script src="script.js"></script>
 
     </body>
 
