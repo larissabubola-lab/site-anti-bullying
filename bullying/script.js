@@ -141,3 +141,30 @@ function reiniciarCarrossel() {
 }
 
 iniciarCarrossel();
+
+const elementosAnimados = document.querySelectorAll(".animar-scroll");
+
+const observer = new IntersectionObserver(
+    function(entries) {
+
+        entries.forEach(function(entry) {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("apareceu");
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+elementosAnimados.forEach(function(elemento) {
+
+    observer.observe(elemento);
+
+});

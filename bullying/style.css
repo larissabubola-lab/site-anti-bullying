@@ -188,7 +188,7 @@ header {
 
 main {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 section {
@@ -949,8 +949,8 @@ section {
 }
 
 .sida_texto p::before {
-    content: "✦";
-    content: "★";
+    content: "âœ¦";
+    content: "â˜…";
     position: absolute;
     left: -40px;
     top: 0;
@@ -1558,4 +1558,17 @@ select {
 
 #esqueci_senha:hover {
     transform: scale(1.2);
+}
+
+.animar-scroll {
+    opacity: 0;
+    transform: translateY(60px);
+    transition:
+        opacity 800ms ease,
+        transform 800ms ease;
+}
+
+.animar-scroll.apareceu {
+    opacity: 1;
+    transform: translateY(0);
 }
