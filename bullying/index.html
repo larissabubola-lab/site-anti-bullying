@@ -1,147 +1,886 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
     <head>
-        <title>Lorem ipsum</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>S.I.D.A. | Sistema Integrado de Denúncias Anônimas</title>
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+
         <header>
+
             <div id="logo_auxiliar">
                 <img id="logo" src="assets/logo.png" alt="logo">
             </div>
-            <h1 id="nome">S.I.D.A</h1> <!--Sistema Integrado de Denuncias Anonimas-->
+
+            <h1 id="nome">S.I.D.A</h1>
+
             <div id="botoes_auxiliar">
+
                 <h1>|</h1>
+
                 <div id="botoes">
+
                     <button onclick="abrir_inicio()">Inicio</button>
                     <button onclick="abrir_sobre_nos()">Sobre nós</button>
                     <button onclick="abrir_como_denunciar()">Como denunciar</button>
                     <button onclick="abrir_contatos()">Contatos</button>
+
                 </div>
+
                 <h1>|</h1>
+
+                <div id="botao_denuncia">
+
+                    <i class="bi bi-shield-fill-check"></i>
+
+                    <div>Fazer denuncia</div>
+
+                </div>
+
             </div>
 
-            <div id="login_cadastro">
-                <button id="login" class="entrar" onclick="abrir_login()">Entrar</button>
-                <button id="cadastro" class="entrar" onclick="abrir_cadastro()">Criar&nbsp;conta</button>
-            </div>
         </header>
 
         <main>
+
             <section id="inicio">
-                <h1>Aqui vai ficar o inicio.</h1>
+
+                <div class="linha_lateral_inicio">
+                    <span>01</span>
+                    <div></div>
+                    <span>SUA VOZ IMPORTA</span>
+                    <div></div>
+                </div>
+
+                <div class="inicio_fundo_numero">
+                    01
+                </div>
+
+                <div class="container">
+
+                    <div class="inicio_conteudo">
+
+                        <div class="inicio_texto animate__animated animate__fadeInLeft">
+
+                            <div class="inicio_marcador">
+
+                                <span class="marcador_ponto"></span>
+
+                                <span>
+                                    SISTEMA INTEGRADO DE DENÚNCIAS ANÔNIMAS
+                                </span>
+
+                            </div>
+
+                            <h2>
+                                Você não precisa
+                                <br>
+                                enfrentar isso
+                                <span>sozinho.</span>
+                            </h2>
+
+                            <div class="inicio_linha"></div>
+
+                            <h1>
+                                Sua voz pode ajudar a
+                                <strong>interromper uma situação.</strong>
+                            </h1>
+
+                            <p>
+                                O S.I.D.A. é um espaço criado para que você possa
+                                relatar situações de bullying, assédio, violência,
+                                discriminação e outras formas de desrespeito com
+                                mais segurança, tranquilidade e privacidade.
+                            </p>
+
+                            <div class="aviso_anonimato">
+
+                                <div class="aviso_icone">
+                                    <i class="bi bi-shield-lock-fill"></i>
+                                </div>
+
+                                <div class="aviso_texto">
+
+                                    <strong>
+                                        SUA DENÚNCIA É ANÔNIMA
+                                    </strong>
+
+                                    <span>
+                                        Você não precisa se identificar para relatar
+                                        uma situação.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="acoes_inicio">
+
+                                <button
+                                    class="botao_principal_inicio"
+                                    onclick="fazerDenuncia()">
+
+                                    <span>
+                                        Fazer uma denúncia
+                                    </span>
+
+                                    <i class="bi bi-megaphone-fill"></i>
+
+                                </button>
+
+                                <button
+                                    class="botao_secundario_inicio"
+                                    onclick="abrir_login()">
+
+                                    <i class="bi bi-box-arrow-in-right"></i>
+
+                                    Entrar
+
+                                </button>
+
+                                <button
+                                    class="botao_secundario_inicio"
+                                    onclick="abrir_cadastro()">
+
+                                    <i class="bi bi-person-plus-fill"></i>
+
+                                    Criar conta
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="inicio_visual animate__animated animate__fadeInRight">
+
+                            <div class="visual_numero">
+
+                                <span>01</span>
+
+                                <div></div>
+
+                                <span>INFORMAÇÃO</span>
+
+                            </div>
+
+                            <div class="inicio_carrossel">
+
+                                <div class="carrossel_imagem">
+
+                                    <div class="slide ativo">
+
+                                        <img
+                                            src="https://images.pexels.com/photos/6936393/pexels-photo-6936393.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                                            alt="Estudantes e conscientização sobre bullying">
+
+                                        <div class="slide_sombra"></div>
+
+                                        <div class="slide_conteudo">
+
+                                            <span class="slide_categoria">
+                                                <i class="bi bi-people-fill"></i>
+                                                BULLYING
+                                            </span>
+
+                                            <h3>
+                                                Não é brincadeira
+                                                quando machuca.
+                                            </h3>
+
+                                            <p>
+                                                Humilhação, exclusão, ameaças e
+                                                agressões também podem ser denunciadas.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="slide">
+
+                                        <img
+                                            src="https://images.pexels.com/photos/4100657/pexels-photo-4100657.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                                            alt="Pessoa utilizando celular">
+
+                                        <div class="slide_sombra"></div>
+
+                                        <div class="slide_conteudo">
+
+                                            <span class="slide_categoria">
+                                                <i class="bi bi-phone-fill"></i>
+                                                CYBERBULLYING
+                                            </span>
+
+                                            <h3>
+                                                O que acontece online
+                                                também importa.
+                                            </h3>
+
+                                            <p>
+                                                A internet não transforma agressão
+                                                em brincadeira.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="slide">
+
+                                        <img
+                                            src="https://images.pexels.com/photos/7640808/pexels-photo-7640808.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                                            alt="Pessoa segurando mensagem de ajuda">
+
+                                        <div class="slide_sombra"></div>
+
+                                        <div class="slide_conteudo">
+
+                                            <span class="slide_categoria">
+                                                <i class="bi bi-chat-square-text-fill"></i>
+                                                ASSÉDIO
+                                            </span>
+
+                                            <h3>
+                                                Você não precisa suportar
+                                                isso em silêncio.
+                                            </h3>
+
+                                            <p>
+                                                Constrangimento, intimidação e abuso
+                                                também precisam ser ouvidos.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="slide">
+
+                                        <img
+                                            src="https://images.pexels.com/photos/7640730/pexels-photo-7640730.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                                            alt="Pessoa em situação de intimidação">
+
+                                        <div class="slide_sombra"></div>
+
+                                        <div class="slide_conteudo">
+
+                                            <span class="slide_categoria">
+                                                <i class="bi bi-person-x-fill"></i>
+                                                DISCRIMINAÇÃO
+                                            </span>
+
+                                            <h3>
+                                                Ser diferente nunca deveria
+                                                ser motivo de violência.
+                                            </h3>
+
+                                            <p>
+                                                Preconceito, exclusão e tratamento
+                                                injusto também podem ser relatados.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="slide">
+
+                                        <img
+                                            src="https://images.pexels.com/photos/7640497/pexels-photo-7640497.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                                            alt="Pessoa em situação de intimidação">
+
+                                        <div class="slide_sombra"></div>
+
+                                        <div class="slide_conteudo">
+
+                                            <span class="slide_categoria">
+                                                <i class="bi bi-megaphone-fill"></i>
+                                                SUA VOZ
+                                            </span>
+
+                                            <h3>
+                                                Falar pode ser o começo
+                                                da mudança.
+                                            </h3>
+
+                                            <p>
+                                                Você não precisa saber o nome da situação.
+                                                Apenas conte.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <button
+                                        class="carrossel_seta carrossel_anterior"
+                                        onclick="mudarSlide(-1)">
+
+                                        <i class="bi bi-arrow-left"></i>
+
+                                    </button>
+
+                                    <button
+                                        class="carrossel_seta carrossel_proximo"
+                                        onclick="mudarSlide(1)">
+
+                                        <i class="bi bi-arrow-right"></i>
+
+                                    </button>
+
+                                    <div class="carrossel_indicadores">
+
+                                        <button
+                                            class="indicador ativo"
+                                            onclick="irParaSlide(0)">
+                                        </button>
+
+                                        <button
+                                            class="indicador"
+                                            onclick="irParaSlide(1)">
+                                        </button>
+
+                                        <button
+                                            class="indicador"
+                                            onclick="irParaSlide(2)">
+                                        </button>
+
+                                        <button
+                                            class="indicador"
+                                            onclick="irParaSlide(3)">
+                                        </button>
+
+                                        <button
+                                            class="indicador"
+                                            onclick="irParaSlide(4)">
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="inicio_frase">
+
+                                    <i class="bi bi-arrow-return-right"></i>
+
+                                    <span>
+                                        Não sabe exatamente como classificar?
+                                        <b>Conte o que aconteceu.</b>
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </section>
 
-            <section id="sobre_nos" style="display: none;">
-                <h1>Aqui vai ficar a pagina sobre nós</h1>
+            <section id="o_que_e">
+
+                <div class="linha_lateral secao_linha_02">
+                    <span>02</span>
+                    <div></div>
+                    <span>SOBRE O S.I.D.A.</span>
+                    <div></div>
+                </div>
+
+                <div class="fundo_numero secao_numero_02">
+                    02
+                </div>
+
+                <div class="container">
+
+                    <div class="titulo_secao">
+
+                        <small>Antes de denunciar</small>
+
+                        <h2>O que é S.I.D.A.?</h2>
+
+                        <p>
+                            Entenda o significado do nome e a proposta do sistema.
+                        </p>
+
+                    </div>
+
+                    <div class="sida_conteudo">
+
+                        <div class="sida_texto">
+
+                            <p>
+                                <strong>S.I.D.A.</strong> significa
+                                <strong>Sistema Integrado de Denúncias Anônimas</strong>.
+                                O nome representa a ideia de reunir, em um único
+                                espaço, diferentes tipos de situações que precisam
+                                ser relatadas e acompanhadas.
+                            </p>
+
+                            <p>
+                                O objetivo é oferecer um ambiente simples para que
+                                uma pessoa possa contar o que aconteceu, registrar
+                                uma situação e buscar ajuda sem precisar transformar
+                                sua experiência em algo público.
+                            </p>
+
+                            <p>
+                                O sistema pode ser utilizado para situações como
+                                bullying, assédio moral, assédio sexual, ameaças,
+                                discriminação, violência e outros comportamentos
+                                que causem medo, constrangimento ou sofrimento.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </section>
 
-            <section id="sobre_nos" style="display: none;">
-                <h1>Aqui vai ficar a pagina sobre nós</h1>
+            <section id="entenda">
+
+                <div class="linha_lateral secao_linha_03">
+                    <span>03</span>
+                    <div></div>
+                    <span>O QUE PODE SER DENUNCIADO</span>
+                    <div></div>
+                </div>
+
+                <div class="fundo_numero secao_numero_03">
+                    03
+                </div>
+
+                <div class="container">
+
+                    <div class="titulo_secao">
+
+                        <small>Informação também é proteção</small>
+
+                        <h2>O que pode ser denunciado?</h2>
+
+                        <p>
+                            Nem sempre é fácil identificar quando uma situação
+                            ultrapassou os limites. Conhecer alguns exemplos pode
+                            ajudar.
+                        </p>
+
+                    </div>
+
+                    <div id="assuntos">
+
+                        <div class="assunto">
+
+                            <div class="icone_assunto">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>Bullying</h3>
+
+                                <p>
+                                    São comportamentos repetidos de agressão,
+                                    humilhação, intimidação ou exclusão direcionados
+                                    a uma pessoa. Pode acontecer por meio de apelidos
+                                    ofensivos, ameaças, brincadeiras que machucam,
+                                    espalhamento de boatos, exclusão de grupos ou
+                                    agressões físicas.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="assunto">
+
+                            <div class="icone_assunto">
+                                <i class="bi bi-phone-fill"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>Cyberbullying</h3>
+
+                                <p>
+                                    É quando situações de humilhação, perseguição,
+                                    ameaças ou exposição acontecem por meio da internet,
+                                    redes sociais, aplicativos de mensagens, jogos
+                                    online ou outras plataformas digitais.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="assunto">
+
+                            <div class="icone_assunto">
+                                <i class="bi bi-chat-square-text-fill"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>Assédio moral</h3>
+
+                                <p>
+                                    Pode envolver comportamentos repetitivos que
+                                    humilham, constrangem, intimidam ou desestabilizam
+                                    uma pessoa, especialmente em ambientes de trabalho,
+                                    estudo ou convivência.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="assunto">
+
+                            <div class="icone_assunto">
+                                <i class="bi bi-exclamation-diamond-fill"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>Assédio sexual</h3>
+
+                                <p>
+                                    Envolve comportamentos de natureza sexual
+                                    indesejados, como comentários, propostas,
+                                    mensagens, contatos ou outras atitudes que
+                                    causem constrangimento ou pressão.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="assunto">
+
+                            <div class="icone_assunto">
+                                <i class="bi bi-person-x-fill"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>Discriminação e intolerância</h3>
+
+                                <p>
+                                    Situações em que alguém é tratado de maneira
+                                    injusta, hostil ou humilhante por alguma
+                                    característica pessoal ou por pertencer a
+                                    determinado grupo.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="assunto">
+
+                            <div class="icone_assunto">
+                                <i class="bi bi-three-dots"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>Outras situações</h3>
+
+                                <p>
+                                    Caso a situação que você vivenciou não esteja
+                                    descrita aqui, isso não significa que ela não
+                                    possa ser relatada. Se algo está causando medo,
+                                    constrangimento, ameaça ou prejudicando sua
+                                    segurança, descreva o que aconteceu para que
+                                    a situação possa ser analisada.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </section>
 
-            <section id="como_denunciar" style="display: none;">
-                <h1>Aqui vai ficar a pagina como denunciar</h1>
+            <section id="sua_voz">
+
+                <div class="linha_lateral secao_linha_04">
+                    <span>04</span>
+                    <div></div>
+                    <span>SUA VOZ</span>
+                    <div></div>
+                </div>
+
+                <div class="fundo_numero secao_numero_04">
+                    04
+                </div>
+
+                <div class="container">
+
+                    <h2>Não tenha medo de falar.</h2>
+
+                    <p>
+                        Relatar uma situação pode ser um primeiro passo para que
+                        ela seja percebida e enfrentada. Você não precisa encontrar
+                        as palavras perfeitas e não precisa saber exatamente como
+                        classificar o que aconteceu.
+                    </p>
+
+                    <div class="frase_destaque">
+                        O importante é que você seja ouvido.
+                    </div>
+
+                </div>
+
             </section>
 
-            <section id="contatos" style="display: none;">
-                <h1>Aqui vai ficar a pagina de contatos</h1>
+            <section id="por_que_conta">
+
+                <div class="linha_lateral secao_linha_05">
+                    <span>05</span>
+                    <div></div>
+                    <span>PRIVACIDADE</span>
+                    <div></div>
+                </div>
+
+                <div class="fundo_numero secao_numero_05">
+                    05
+                </div>
+
+                <div class="conta_conteudo">
+
+                    <i class="bi bi-question-circle-fill"></i>
+
+                    <h2>
+                        Se é anônimo, por que preciso criar uma conta?
+                    </h2>
+
+                    <p>
+                        Essa é uma dúvida importante, e queremos explicar
+                        exatamente por que o sistema possui essa etapa.
+                    </p>
+
+                    <div class="placeholder_conta">
+
+                        [ PLACEHOLDER ]
+
+                        <br><br>
+
+                        Aqui ficará a explicação sobre o motivo da criação
+                        da conta, como ela funciona e de que maneira a
+                        privacidade do usuário é preservada.
+
+                        <br><br>
+
+                        [ Este texto será substituído posteriormente. ]
+
+                    </div>
+
+                </div>
+
             </section>
+
+            <section id="final_inicio">
+
+                <div class="linha_lateral secao_linha_06">
+                    <span>06</span>
+                    <div></div>
+                    <span>FAÇA SUA DENÚNCIA</span>
+                    <div></div>
+                </div>
+
+                <div class="fundo_numero secao_numero_06">
+                    06
+                </div>
+
+                <div class="container">
+
+                    <h2>
+                        Aconteceu com você ou com alguém próximo?
+                    </h2>
+
+                    <p>
+                        Você pode registrar uma denúncia e contar o que aconteceu.
+                    </p>
+
+                    <div id="auxiliar_botao_denuncia">
+
+                        <button
+                            class="botao botao_denuncia"
+                            onclick="fazerDenuncia()">
+
+                            <i class="bi bi-megaphone-fill"></i>
+
+                            Quero fazer uma denúncia
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
         </main>
 
-        <div id="pagina_cadastro" style="display: none;" class="animate__animated animate__zoomIn">
-            <h1 class="h1">Cadastro</h1>
-            <form id="corpo_cadastro" method="post" action="...">
-                <div class="labels">
-                    <label for="nome">Escreva seu nome completo</label>
-                    <span class="inputs">
-                        <i class="bi bi-person"></i>
-                        <input type="text" placeholder="Escreva seu nome completo" name="nome" required>
-                    </span>    
+        <footer>
+
+            <div class="footer_conteudo">
+
+                <div class="footer_logo">
+
+                    <img src="assets/logo.png" alt="Logo S.I.D.A.">
+
+                    <h3>S.I.D.A.</h3>
+
                 </div>
 
-                <div class="labels">
-                    <label for="email">Escreva seu email</label>
-                    <span class="inputs">
-                        <i class="bi bi-envelope"></i>
-                        <input type="email" placeholder="Escreva seu email" name="email" required>
-                    </span>
+                <div class="footer_info">
+
+                    <p>
+                        Sistema Integrado de Denúncias Anônimas
+                    </p>
+
+                    <p>
+                        Um espaço para informar, relatar e buscar ajuda.
+                    </p>
+
                 </div>
 
-                <div class="labels">
-                    <label for="senha">Escreva sua senha:</label>
-                    <span class="inputs">
-                        <i class="bi bi-lock"></i>
-                        <input type="password" placeholder="escreva sua senha" name="senha" required>
-                    </span>
-                </div>
+            </div>
 
-                <div class="labels">
-                    <label for="data">Escreva seu aniversário:</label>
-                    <span class="inputs">
-                        <!-- <i class="bi bi-calendar"></i> -->
-                        <input type="date" placeholder="Selecione sua data nascimento" name="data">
-                    </span>
-                </div>
+            <div class="footer_linha"></div>
 
-                <div class="labels">
-                    <label for="genero">Selecione o seu genero:</label>
-                    <select>
-                        <option>Prefiro não informar</option>
-                        <option>Feminino</option>
-                        <option>Masculino</option>
-                        <option>Outro</option>
-                    </select>
-                </div>
+            <p class="copyright">
+                © 2026 S.I.D.A. — Sistema Integrado de Denúncias Anônimas
+            </p>
 
-                <div id="botoes_cadastro">
-                    <button type="submit" id="fazer_cadastro">Criar conta</button>
-                    <button id="cancelar_cadastro" onclick="fechar_cadastro()">Cancelar</button>
-                </div>
+        </footer>
 
-            </form>
-        </div>
+        <script>
 
-        <div id="pagina_login" style="display: none;" class="animate__animated animate__zoomIn">
-            <h1 class="h1">Login</h1>
-            <form id="corpo_login" method="post" action="...">
-                <div class="labels">
-                    <label for="nome_login">Nome:</label>
-                    <div class="inputs">
-                        <i class="bi bi-person"></i>
-                        <input type="text" placeholder="Escreva seu nome completo" name="nome_login" required>
-                    </div>
-                </div>
+            function fazerDenuncia() {
 
-                <div class="labels">
-                    <label for="email">Escreva seu email</label>
-                    <span class="inputs">
-                        <i class="bi bi-envelope"></i>
-                        <input type="email" placeholder="Escreva seu email" name="email" required>
-                    </span>
-                </div>
+                alert("Aqui será aberta a página para fazer uma denúncia.");
 
-                <div class="labels">
-                    <label for="senha">Escreva sua senha:</label>
-                    <span class="inputs">
-                        <i class="bi bi-lock"></i>
-                        <input type="password" placeholder="escreva sua senha" name="senha" required>
-                    </span>
-                </div>
+            }
 
-                <div id="botoes_login">
-                    <button type="submit" id="fazer_login">Fazer login</button>
-                    <button id="cancelar_login" onclick="fechar_login()">Cancelar</button>
-                </div>
-            </form>
+            function abrir_login() {
 
-            <h3 id="esqueci_senha">Esqueci minha senha</h3>
-        </div>
+                alert("Aqui será aberta a tela de login.");
 
-        <script src="script.js"></script>
+            }
+
+            function abrir_cadastro() {
+
+                alert("Aqui será aberta a tela de criação de conta.");
+
+            }
+
+            let slideAtual = 0;
+
+            const slides = document.querySelectorAll(".slide");
+
+            const indicadores = document.querySelectorAll(".indicador");
+
+            let intervaloCarrossel;
+
+            function mostrarSlide(numero) {
+
+                slides.forEach(function(slide) {
+
+                    slide.classList.remove("ativo");
+
+                });
+
+                indicadores.forEach(function(indicador) {
+
+                    indicador.classList.remove("ativo");
+
+                });
+
+                slides[numero].classList.add("ativo");
+
+                indicadores[numero].classList.add("ativo");
+
+                slideAtual = numero;
+
+            }
+
+            function mudarSlide(direcao) {
+
+                let novoSlide = slideAtual + direcao;
+
+                if (novoSlide >= slides.length) {
+
+                    novoSlide = 0;
+
+                }
+
+                if (novoSlide < 0) {
+
+                    novoSlide = slides.length - 1;
+
+                }
+
+                mostrarSlide(novoSlide);
+
+                reiniciarCarrossel();
+
+            }
+
+            function irParaSlide(numero) {
+
+                mostrarSlide(numero);
+
+                reiniciarCarrossel();
+
+            }
+
+            function iniciarCarrossel() {
+
+                intervaloCarrossel = setInterval(function() {
+
+                    let novoSlide = slideAtual + 1;
+
+                    if (novoSlide >= slides.length) {
+
+                        novoSlide = 0;
+
+                    }
+
+                    mostrarSlide(novoSlide);
+
+                }, 5500);
+
+            }
+
+            function reiniciarCarrossel() {
+
+                clearInterval(intervaloCarrossel);
+
+                iniciarCarrossel();
+
+            }
+
+            iniciarCarrossel();
+
+        </script>
+
     </body>
+
 </html>
