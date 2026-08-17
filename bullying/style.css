@@ -949,8 +949,8 @@ section {
 }
 
 .sida_texto p::before {
-    content: "âœ¦";
-    content: "â˜…";
+    /* content: "âœ¦"; */
+    content: "★";
     position: absolute;
     left: -40px;
     top: 0;
@@ -1572,3 +1572,93 @@ select {
     opacity: 1;
     transform: translateY(0);
 }
+
+#sobre_nos{
+    margin-top:120px !important;
+    width:100%;
+    height:100%;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+#caixa_rolagem{
+    width:300px;
+    height:fit-content;
+    display:flex;
+    flex-direction:column;
+    border:double;
+    padding:10px;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-size:20px;
+    gap:10px;
+    font-family:bebas;
+    box-shadow:5px 5px 5px black
+}
+
+#auxiliar_sobre_nos{
+    width:100%;
+    height:fit-content;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    text-align:center;
+    margin-top:20px;
+}
+
+.container_sobre{
+    width:80%;
+    height:fit-content;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.container_sobre h1{
+    font-family:comfortaa; 
+}
+
+.container_sobre p{
+    font-family:nunito;
+    font-size:18px;
+    font-weight:bold;
+}
+
+#quem_somos h1{
+    color:#008080;
+    text-shadow:3px 3px 1px #008080;
+    text-decoration:underline;
+    
+}
+
+#por_que{
+    background:#008080;
+    width:100%;
+}
+
+#por_que h1{ 
+    /* font-family:comfortaa;  */
+    /* text-shadow:3px 3px 1px black; */
+    color:white;
+    text-shadow:3px 3px 1px white;
+}
+
+#por_que p{
+    color:white;
+    width:80%;
+}
+
+#como_funciona h1{
+    /* font-family:comfortaa;  */
+    color:#008080;
+    text-shadow:3px 3px 1px #008080;
+    text-decoration:underline;
+}
+
