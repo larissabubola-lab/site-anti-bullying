@@ -31,6 +31,7 @@ function abrir_inicio(){
     pagina_sobre_nos.style.display = "none";
     pagina_como_denunciar.style.display = "none";
     pagina_contatos.style.display = "none";
+    window.scrollTo(0,0);
 }
 
 function abrir_sobre_nos(){
@@ -38,6 +39,7 @@ function abrir_sobre_nos(){
     pagina_sobre_nos.style.display = "flex";
     pagina_como_denunciar.style.display = "none";
     pagina_contatos.style.display = "none";
+    window.scrollTo(0,0);
 }
 
 function abrir_como_denunciar(){
@@ -45,6 +47,7 @@ function abrir_como_denunciar(){
     pagina_sobre_nos.style.display = "none";
     pagina_como_denunciar.style.display = "flex";
     pagina_contatos.style.display = "none";
+    window.scrollTo(0,0);
 }
 
 function abrir_contatos(){
@@ -52,6 +55,7 @@ function abrir_contatos(){
     pagina_sobre_nos.style.display = "none";
     pagina_como_denunciar.style.display = "none";
     pagina_contatos.style.display = "flex";
+    window.scrollTo(0,0);
 }
 
 let slideAtual = 0;
