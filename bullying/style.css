@@ -655,11 +655,7 @@ section {
 .slide_sombra {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(0, 55, 55, 0.85),
-        rgba(0, 55, 55, 0.10) 70%
-    );
+    background: linear-gradient( to top, rgba(0, 55, 55, 0.85), rgba(0, 55, 55, 0.10) 70%);
 }
 
 .slide_conteudo {
@@ -951,8 +947,7 @@ section {
 }
 
 .sida_texto p::before {
-    /* content: "ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã¢â‚¬Å“Ãƒâ€šÃ‚Â¦"; */
-    content: "â˜…";
+    content: "★";
     position: absolute;
     left: -40px;
     top: 0;
