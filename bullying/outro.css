@@ -209,7 +209,7 @@ section {
 
 #inicio {
     width: 100%;
-    height: 633px;
+    height: 600px;
     min-height: calc(100vh - 100px);
     position: relative;
     display: flex;
@@ -218,18 +218,22 @@ section {
     z-index: 2;
     background: radial-gradient(circle at 85% 25%, rgba(103, 153, 186, 0.18), transparent 30%), linear-gradient(135deg, #f1f1f1 0%, #f8ffff 55%, #e7f5f5 100%);
     box-shadow: 0 10px 5px aliceblue;
-
+    background: linear-gradient(155deg, #102b2b 0%, #123434 45%, #0c2323 100%);
+    
 }
 
 #inicio::before {
     content: "";
     position: absolute;
-    width: 470px;
+    /* width: 470px;
     height: 470px;
-    right: -230px;
-    top: -190px;
-    border-radius: 50%;
-    border: 2px dashed rgba(103, 153, 186, 0.18);
+    right: -230px; */
+    /* top: -190px; */
+    /* border-radius: 50%; */
+    background-image:linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px) !important;
+    background-size: 46px 46px;
+     /* position: absolute; */
+    inset: 0;
 }
 
 #inicio::after {
@@ -240,6 +244,7 @@ section {
     right: -310px;
     bottom: -330px;
     border-radius: 50%;
+    border: 2px dashed rgba(103, 153, 186, 0.18);
     background: rgba(0, 128, 128, 0.04);
 }
 
@@ -249,7 +254,8 @@ section {
     bottom: -110px;
     font-family: "ruslan";
     font-size: 330px;
-    color: rgba(0, 128, 128, 0.025);
+    /* color: rgba(0, 128, 128, 0.025); */
+    color: rgba(0,191,255, 0.025);
     user-select: none;
 }
 
@@ -273,7 +279,9 @@ section {
     font-size: 11px;
     letter-spacing: 1px;
     color: #6799ba;
-    text-shadow: 1px 1px 1px #4a7998;
+    /* color:#7fd8c8; */
+    text-shadow: 1px 1px 1px #6799ba;
+
 }
 
 .linha_lateral_inicio div {
@@ -304,7 +312,9 @@ section {
     font-size: 11px;
     letter-spacing: 1px;
     color: #6799ba;
-    text-shadow: 1px 1px 1px #4a7998;
+    /* text-shadow: 1px 1px 1px #4a7998; */
+    text-shadow: 1px 1px 1px #008080;
+    /* text-decoration:underline; */
     white-space: nowrap;
 }
 
@@ -389,13 +399,16 @@ section {
     font-weight: normal;
     line-height: 1.08;
     letter-spacing: -1px;
-    color: #333;
+    color: white;
     margin-bottom: 15px;
 }
 
 .inicio_texto h2 span {
-    color: #008080;
+    /* color: #008080; */
+    color:#129393;
+    /* color:#7fd8c8; */
     text-shadow: 3px 3px 1px #075252;
+    /* text-shadow:3px 3px 1px #537972;; */
     position: relative;
 }
 
@@ -415,6 +428,7 @@ section {
     width: 65px;
     height: 4px;
     background: #008080;
+    /* background:#7fd8c8; */
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -426,14 +440,17 @@ section {
     font-weight: normal;
     line-height: 1.5;
     margin-top: 10px;
-    color: #505050;
+    color: white;
     margin-bottom: 12px;
 }
 
 .inicio_texto h1 strong {
-    color: #008080;
+    /* color: #008080; */
+    color:#129393;
+    /* color:#7fd8c8; */
     font-weight: bold;
     text-decoration: underline;
+    /* text-shadow:3px 3px 1px #008080; */
 }
 
 .inicio_texto > p {
@@ -443,7 +460,7 @@ section {
     font-size: 16px;
     margin-top: 10px;
     line-height: 1.55;
-    color: #505050;
+    color: white;
 }
 
 .inicio_texto > p b {
@@ -451,6 +468,7 @@ section {
 }
 
 .aviso_anonimato {
+   
     width: fit-content;
     min-width: 380px;
     margin-top: 20px;
@@ -461,7 +479,8 @@ section {
     background: white;
     border-left: 5px solid #008080;
     border-radius: 8px;
-    box-shadow: 0 7px 20px rgba(0, 128, 128, 0.10);
+    /* box-shadow: 0 7px 20px rgba(0, 128, 128, 0.10); */
+    box-shadow:5px 5px 10px black;
 }
 
 .aviso_icone {
@@ -567,14 +586,21 @@ section {
     font-family: patrick;
     font-size: 15px;
     color: #6799ba;
+    color:#ffffff;
 }
 
 .inicio_frase i {
-    color: #008080;
+    /* color: #008080; */
+    color:#7fd8c8;
+    color:#008080;
 }
 
 .inicio_frase b {
     color: #008080;
+    color:#7fd8c8;
+    color:#129393;
+    text-decoration:underline;
+    cursor:pointer;
 }
 
 .inicio_visual {
@@ -613,6 +639,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    
 }
 
 .carrossel_imagem {
@@ -622,6 +649,7 @@ section {
     overflow: hidden;
     border-radius: 18px;
     background: #d9eeee;
+    
     box-shadow: 0 15px 30px rgba(0, 128, 128, 0.16);
 }
 
@@ -631,6 +659,7 @@ section {
     opacity: 0;
     visibility: hidden;
     transition: opacity 500ms ease;
+    
 }
 
 .slide.ativo {
@@ -655,11 +684,8 @@ section {
 .slide_sombra {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(0, 55, 55, 0.85),
-        rgba(0, 55, 55, 0.10) 70%
-    );
+    background: linear-gradient(to top, rgba(0, 55, 55, 0.85), rgba(0, 55, 55, 0.10) 70%);
+    
 }
 
 .slide_conteudo {
@@ -1341,7 +1367,7 @@ footer {
 }
 
 #sobre_nos {
-    margin-top: 50px !important;
+    margin-top: 100px !important;
     width: 100%;
     height: auto;
     display: none;
@@ -1393,25 +1419,6 @@ footer {
     pointer-events: none;
 }
 
-.sobre_numero_01 {
-    color: rgba(0, 128, 128, 0.04);
-}
-
-.sobre_numero_02 {
-    color: rgba(255, 255, 255, 0.08);
-}
-
-.sobre_numero_03 {
-    color: rgba(0, 128, 128, 0.045);
-}
-
-.sobre_numero_04 {
-    color: rgba(0, 128, 128, 0.05);
-}
-
-.sobre_numero_05 {
-    color: rgba(0, 128, 128, 0.045);
-}
 
 #sobre {
     width: 100%;
@@ -1419,29 +1426,31 @@ footer {
     position: relative;
     overflow: hidden;
     
-    background: radial-gradient(circle at 15% 20%, rgba(0, 128, 128, 0.07), transparent 30%), linear-gradient(135deg, #ffffff 0%, #f8ffff 55%, #eef7f7 100%);
+    background: linear-gradient(155deg, #102b2b 0%, #123434 45%, #0c2323 100%);
 }
 
 #sobre::before {
     content: "";
     position: absolute;
-    width: 480px;
-    height: 480px;
-    left: -260px;
-    top: -220px;
-    border-radius: 50%;
-    border: 2px dashed rgba(0, 128, 128, 0.10);
+    inset: 0;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 46px 46px;
+    pointer-events: none;
+    
 }
 
-#sobre::after {
-    content: "";
+.aspas {
     position: absolute;
-    width: 380px;
-    height: 380px;
-    right: -220px;
-    bottom: -240px;
-    border-radius: 50%;
-    background: rgba(0, 128, 128, 0.045);
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: georgia, serif;
+    font-size: 460px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.045);
+    user-select: none;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .sobre_manifesto {
@@ -1461,44 +1470,42 @@ footer {
     font-family: "comfortaa";
     font-size: 11px;
     letter-spacing: 3px;
-    color: #6799ba;
+    color: #7fd8c8;
 }
 
 .sobre_tag span {
     width: 34px;
     height: 1px;
-    background: rgba(103, 153, 186, 0.5);
+    background: rgba(127, 216, 200, 0.5);
 }
 
-.sobre_manifesto_titulo {
-    font-family: "comfortaa";
-    font-weight: 700;
-    font-size: 46px;
-    line-height: 1.3;
-    letter-spacing: 0.5px;
-    color: #1c3b3b;
+.sobre_titulo {
+    font-family: "bebas";
+    font-weight: normal;
+    font-size: 74px;
+    line-height: 1.05;
+    letter-spacing: 1px;
+    color: #f3f8f7;
     margin-bottom: 22px;
+    
+    text-decoration:underline wavy;
+    
 }
 
-.sobre_manifesto_titulo em {
+.sobre_titulo em {
     font-style: normal;
-    color: #008080;
-    border-bottom: 4px solid rgba(0, 128, 128, 0.3);
-    padding-bottom: 3px;
+    color: #3fd6b8;
+    text-decoration:underline wavy;
+    /* text-decoration-color:#3fd6b8; */
 }
 
 .sobre_assinatura {
     font-family: "handlee";
-    font-size: 22px;
-    /* color: #6799ba; */
-    color:white;
-    transform: rotate(-2deg) skewX(-15deg);
+    font-size: 24px;
+    color: #b9d8d0;
+    transform: rotate(-2deg);
     margin-bottom: 34px;
-    text-decoration:underline;
-    font-weight:bold;
-    /* text-shadow:1px 1px 1px #1b4c6c; */
-    background:#008080;
-    /* font-style:italic; */
+    text-decoration:underline dashed;
 }
 
 .sobre_texto_corpo {
@@ -1508,8 +1515,7 @@ footer {
     font-family: nunito;
     font-size: 16px;
     line-height: 1.8;
-    color: #555;
-    
+    color: #a9c4bf;
 }
 
 .sobre_rodape {
@@ -1519,7 +1525,7 @@ footer {
     gap: 22px;
     flex-wrap: wrap;
     padding-top: 30px;
-    border-top: 1px solid #d8e7e7;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .sobre_item {
@@ -1529,11 +1535,11 @@ footer {
     font-family: "comfortaa";
     font-size: 13px;
     letter-spacing: 0.5px;
-    color: #008080;
+    color: #dff2ed;
 }
 
 .sobre_item i {
-    color: #008080;
+    color: #3fd6b8;
     font-size: 16px;
 }
 
@@ -1541,7 +1547,21 @@ footer {
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background: rgba(0, 128, 128, 0.25);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 760px) {
+    .sobre_hero_titulo {
+        font-size: 48px;
+    }
+
+    .sobre_hero_rodape {
+        gap: 14px;
+    }
+
+    .sobre_hero_divisor {
+        display: none;
+    }
 }
 
 
@@ -1551,7 +1571,8 @@ footer {
     position: relative;
     overflow: hidden;
     background:radial-gradient(circle at 85% 20%, rgba(255, 255, 255, 0.10), transparent 30%), linear-gradient(135deg, #008080 0%, #006d6d 65%, #005f5f 100%);
-    box-shadow: 0 -14px 30px -18px rgba(0, 0, 0, 0.35) inset;
+    border:double;
+    box-shadow:-30px -30px 20px black;
     color: white;
     text-align: center;
 }
@@ -1611,15 +1632,13 @@ footer {
     padding: 90px 0;
     position: relative;
     overflow: hidden;
-    /* box-shadow:0px 30px 40px black inset; */
+    box-shadow:0px 30px 40px black inset;
     background: radial-gradient(circle at 12% 20%, rgba(0, 128, 128, 0.05), transparent 28%), linear-gradient(135deg, #ffffff 0%, #ffffff 55%, #f2fafa 100%);
 }
 
 .sobre_titulo {
     text-align: center;
     margin-bottom: 55px;
-    position: relative;
-    z-index: 2;
 }
 
 .sobre_titulo small {
@@ -1653,7 +1672,6 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     gap: 0;
     position: relative;
-    z-index: 2;
 }
 
 .sobre_linha_tempo::before {
@@ -1714,7 +1732,6 @@ footer {
 #sobre_valores {
     width: 100%;
     padding: 55px 0;
-    position: relative;
     background: #eef7f7;
     border-top: 1px solid #d8e7e7;
     border-bottom: 1px solid #d8e7e7;
@@ -1724,13 +1741,11 @@ footer {
 .sobre_valores_titulo {
     text-align: center;
     margin-bottom: 25px;
-    position: relative;
-    z-index: 2;
 }
 
 .sobre_valores_titulo span {
     font-family: "patrick";
-    font-size: 20px;
+    font-size: 14px;
     letter-spacing: 2px;
     color: #6799ba;
     text-decoration:underline dashed;
@@ -1738,10 +1753,7 @@ footer {
 
 .sobre_carrossel_valores {
     width: 100%;
-    position: relative;
-    z-index: 2;
     overflow: hidden;
-    margin-top:50px;
     -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
     mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
 }
@@ -1785,8 +1797,6 @@ footer {
 #sobre_final {
     width: 100%;
     padding: 70px 0;
-    position: relative;
-    overflow: hidden;
     background: radial-gradient(circle at 85% 25%, rgba(0, 128, 128, 0.06), transparent 28%), linear-gradient(135deg, #e4f4f4 0%, #f1f1f1 65%, #e7f5f5 100%);
 }
 
@@ -1797,16 +1807,6 @@ footer {
     gap: 30px;
     padding-top: 30px;
     border-top: 2px solid #c7dddd;
-    position: relative;
-    z-index: 2;
-}
-
-.sobre_final_texto{
-    width:100%;
-    height:fit-content;
-    display:flex;
-    flex-direction:column;
-    gap:20px;
 }
 
 .sobre_final_texto h2 {
@@ -1820,9 +1820,7 @@ footer {
 
 .sobre_final_texto p {
     font-family: "nunito";
-    font-size: 18px;
-    width:800px;
-    text-align:center;
+    font-size: 15px;
     color: #555;
 }
 
@@ -1849,6 +1847,7 @@ footer {
     transform: translateY(-3px);
 }
 
+/* ===================== COMO DENUNCIAR ===================== */
 
 #como_denunciar {
     margin-top: 100px !important;
@@ -1948,32 +1947,18 @@ footer {
 }
 
 .denuncia_titulo {
-    font-family: "comfortaa";
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.35;
-    letter-spacing: 0.5px;
-    color: #1c3b3b;
+    font-family: "bebas";
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 1.15;
+    color: #333;
     margin-bottom: 20px;
 }
 
 .denuncia_titulo em {
     font-style: normal;
     color: #008080;
-    position: relative;
-    padding: 0 4px;
-}
-
-.denuncia_titulo em::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 3px;
-    height: 9px;
-    background: rgba(0, 128, 128, 0.15);
-    border-radius: 4px;
-    z-index: -1;
+    text-decoration: underline wavy;
 }
 
 .denuncia_subtitulo {
@@ -1984,34 +1969,50 @@ footer {
     margin-bottom: 30px;
 }
 
-.denuncia_privacidade {
+.denuncia_aviso {
     width: fit-content;
     max-width: 100%;
     margin: 0 auto;
-    padding-top: 20px;
+    padding: 12px 18px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
     text-align: left;
-    border-top: 1px dashed rgba(0, 128, 128, 0.35);
+    background: white;
+    border-left: 5px solid #008080;
+    border-radius: 8px;
+    box-shadow: 0 7px 20px rgba(0, 128, 128, 0.10);
 }
 
-.denuncia_privacidade i {
+.denuncia_aviso_icone {
     flex-shrink: 0;
-    font-size: 22px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #d9eeee;
     color: #008080;
+    font-size: 18px;
 }
 
-.denuncia_privacidade span {
-    font-family: "nunito";
-    font-size: 14px;
-    line-height: 1.6;
-    color: #555;
+.denuncia_aviso_texto {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
-.denuncia_privacidade strong {
+.denuncia_aviso_texto strong {
     font-family: "comfortaa";
+    font-size: 13px;
     color: #008080;
+}
+
+.denuncia_aviso_texto span {
+    font-family: "nunito";
+    font-size: 13px;
+    color: #666;
 }
 
 #denuncia_etapas {
@@ -2085,7 +2086,7 @@ footer {
 
 .denuncia_etapa_legenda {
     font-family: "nunito";
-    font-size: 30px;
+    font-size: 12px;
     letter-spacing: 0.5px;
     color: #6799ba;
     text-align: center;
@@ -2154,54 +2155,38 @@ footer {
 }
 
 .denuncia_dicas_grade {
-    display: flex;
-    /* grid-template-columns: repeat(4, 1fr); */
-    /* gap: 0; */
-    background:#008080;
-    padding-top:10px !important;
-    padding-bottom:10px !important;
-    border-radius:10px;
-    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .denuncia_dica {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
     text-align: center;
-    padding: 10px 28px;
-    position: relative;
+    padding: 30px 18px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 128, 128, 0.08);
     transition: 300ms ease;
 }
 
-.denuncia_dica:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 8px;
-    bottom: 8px;
-    width: 1px;
-    background: #cbe0e0;
+.denuncia_dica:hover {
+    transform: translateY(-6px);
 }
 
 .denuncia_dica i {
-    font-size: 26px;
-    /* color: #008080; */
-    color:white;
-    transition: 300ms ease;
-}
-
-.denuncia_dica:hover i {
-    transform: translateY(-4px);
+    font-size: 30px;
+    color: #008080;
 }
 
 .denuncia_dica span {
     font-family: "nunito";
     font-size: 14px;
     line-height: 1.6;
-    /* color: #444; */
-    color:white;
+    color: #444;
 }
 
 #denuncia_final {
@@ -2255,4 +2240,33 @@ footer {
 .denuncia_botao:hover {
     background: #006d6d;
     transform: translateY(-3px);
+}
+
+@media (max-width: 900px) {
+    .denuncia_etapa {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .denuncia_etapa.inverter .denuncia_etapa_imagem,
+    .denuncia_etapa.inverter .denuncia_etapa_texto {
+        order: unset;
+    }
+
+    .denuncia_etapa_texto p {
+        max-width: 100%;
+    }
+
+    .denuncia_dicas_grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .denuncia_final_conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .denuncia_titulo {
+        font-size: 40px;
+    }
 }
