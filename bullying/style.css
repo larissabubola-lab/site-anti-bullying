@@ -120,10 +120,12 @@ header {
     background: transparent;
     border: none;
     color: white;
-    font-family: patrick;
+    /* font-family: patrick; */
+    font-family: bebas;
     cursor: pointer;
     transition: all 500ms ease;
     position: relative;
+    white-space:nowrap;
 }
 
 #botoes button:hover {
@@ -243,16 +245,6 @@ section {
     background: rgba(0, 128, 128, 0.04);
 }
 
-.inicio_fundo_numero {
-    position: absolute;
-    right: 39%;
-    bottom: -110px;
-    font-family: "ruslan";
-    font-size: 330px;
-    color: rgba(0, 128, 128, 0.025);
-    user-select: none;
-}
-
 .linha_lateral_inicio {
     position: absolute;
     left: 20px;
@@ -313,37 +305,6 @@ section {
     flex: 1;
     margin: 12px 0;
     background: #c7dddd;
-}
-
-.fundo_numero {
-    position: absolute;
-    right: 8%;
-    bottom: -125px;
-    font-family: "ruslan";
-    font-size: 330px;
-    user-select: none;
-    z-index: 0;
-    pointer-events: none;
-}
-
-.secao_numero_02 {
-    color: rgba(0, 128, 128, 0.045);
-}
-
-.secao_numero_03 {
-    color: rgba(0, 128, 128, 0.055);
-}
-
-.secao_numero_04 {
-    color: rgba(255, 255, 255, 0.08);
-}
-
-.secao_numero_05 {
-    color: rgba(0, 128, 128, 0.045);
-}
-
-.secao_numero_06 {
-    color: rgba(0, 128, 128, 0.05);
 }
 
 #inicio .container {
@@ -579,31 +540,6 @@ section {
 
 .inicio_visual {
     position: relative;
-}
-
-.visual_numero {
-    position: absolute;
-    right: 0;
-    top: -30px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-family: "patrick";
-    font-size: 11px;
-    letter-spacing: 1px;
-    color: #6799ba;
-}
-
-.visual_numero span:first-child {
-    font-family: "comfortaa";
-    color: #008080;
-    font-weight: bold;
-}
-
-.visual_numero div {
-    width: 30px;
-    height: 2px;
-    background: #c7dddd;
 }
 
 .inicio_carrossel {
@@ -1318,8 +1254,6 @@ footer {
     color: #c7e7e7;
 }
 
-
-
 .animar-scroll {
     opacity: 0;
     transform: translateY(60px);
@@ -1370,38 +1304,6 @@ footer {
     flex: 1;
     margin: 12px 0;
     background: #c7dddd;
-}
-
-.sobre_fundo_numero {
-    position: absolute;
-    right: 4%;
-    top: 40px;
-    font-family: "ruslan";
-    font-size: 220px;
-    color: rgba(0, 128, 128, 0.035);
-    user-select: none;
-    z-index: 0;
-    pointer-events: none;
-}
-
-.sobre_numero_01 {
-    color: rgba(0, 128, 128, 0.04);
-}
-
-.sobre_numero_02 {
-    color: rgba(255, 255, 255, 0.08);
-}
-
-.sobre_numero_03 {
-    color: rgba(0, 128, 128, 0.045);
-}
-
-.sobre_numero_04 {
-    color: rgba(0, 128, 128, 0.05);
-}
-
-.sobre_numero_05 {
-    color: rgba(0, 128, 128, 0.045);
 }
 
 #sobre {
@@ -2302,8 +2204,8 @@ footer {
 #contatos_topo::before{
     content:"";
     position:absolute;
-   background-image:linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px) !important;
-   background-size: 46px 46px;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px) !important;
+    background-size: 46px 46px;
     inset:0;
 }
 

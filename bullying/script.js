@@ -172,3 +172,8 @@ elementosAnimados.forEach(function(elemento) {
     observer.observe(elemento);
 
 });
+
+function denuncia(){
+    // window.location.href = "denuncia.html";
+    window.open("denuncia.html", "_blank");
+}
