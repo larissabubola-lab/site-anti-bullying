@@ -2,96 +2,333 @@
 <html lang="pt-br">
     <head>
         <title>Formulário de denúncia do S.I.D.A.</title>
-        <meta charset="UTF=8">
+        <meta charset="UTF-8">
         <link rel="formulario.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="form_denuncia.css">
-
     </head>
 
     <main>
-        <form method="post" action="...">
-            <div class="lugares">
-                <label for="escola">Nome da escola:</label>
-                <div class="inputs">
-                    <i class="fa-solid fa-school"></i>
-                    <input type="text" placeholder="Escreva o nome de sua escola(opcional)" required>
+
+        <form method="post">
+
+            <div class="perguntas">
+                <h3>Quem está sendo afetado por essa situação?</h3>
+
+                <div class="radios">
+                    <input type="radio" name="radio">
+                    <label for="radio">Eu</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Outra pessoa</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Eu e outra pessoa</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Prefiro não responder</label>
                 </div>
             </div>
 
-            <div class="lugares">
-                <label for="lugar">Onde ocorreu?</label>
-                <select>
-                    <option value="dentro">Dentro da escola</option>
-                    <option value="fora da escola">Fora da escola</option>
-                    <option value="na internet">Na internet</option>
-                    <option value="no trajeto da escola">No trajeto da escola</option>
-                    <option value="nas proximidades da escola">Nas proximidades da escola</option>
-                </select>
-            </div>
+            <div class="perguntas">
+                <h3>Que tipo de situação você quer denunciar?</h3>
+                <p>*Você pode selecionar mais de um</p>
 
-            <div class="lugares">
-                <label>Tipo de violencia</label>
-                <select>
-                    <option value="fisica">Fisica</option>
-                    <option value="psicologica">Psicologica</option>
-                    <option value="verbal">Verbal</option>
-                    <option value="cyberbullying">Cyberbullying</option>
-                    <option value="discriminação">Discriminação</option>
-                </select>
-            </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="bullying">
+                    <label for="bullying">Bullying</label>
 
-            <div class="lugares">
-                <label>Alguem foi machucado fisicamente ou corre o risco de ser agredido a qualquer momento?</label>
-                <select>
-                    <option value="nao">Não</option>
-                    <option value="sim">Sim</option>
-                </select>
-            </div>
+                    <input type="checkbox" name="cyberbullying">
+                    <label for="bullying">Cyberbullying</label>
 
-             <div class="lugares">
-                <label>A situação envolve o uso de armas, facas, drogas ou ameaça de morte?</label>
-                <select>
-                    <option value="nao">Não</option>
-                    <option value="sim">Sim</option>
-                </select>
-            </div>
+                    <input type="checkbox" name="assedio">
+                    <label for="assedio">Assédio</label>
 
-            <div class="lugares">
-                <label>A situação acontece de forma grave e frequente sem ajuda em casa, ou envolve abuso/exploração de um menor de idade?</label>
-                <select>
-                    <option value="nao">Não</option>
-                    <option value="sim">Sim</option>
-                </select>
-            </div>
+                    <input type="checkbox" name="discriminacao">
+                    <label for="discriminacao">Discriminação</label>
 
-            <div class="lugares">
-                <label>A situação acontece de forma grave e frequente sem ajuda em casa, ou envolve abuso/exploração de um menor de idade?</label>
-                <select>
-                    <option>Não</option>
-                    <option>Sim</option>
-                </select>
-            </div>
+                    <input type="checkbox" name="violencia">
+                    <label for="violencia">Violência física</label>
 
-            <div class="lugares">
-                <label for="escola">Sala da(s) vitima(s):</label>
-                <div class="inputs">
-                    <i class="fa-solid fa-chalkboard"></i>
-                    <input type="text" placeholder="Escreva a sala(opcional)" required>
+                    <input type="checkbox" name="outro">
+                    <label for="outro">Outro</label>
                 </div>
             </div>
 
-            <div class="lugares">
-                <label for="escola">Sala do(s) agressor(es):</label>
-                <div class="inputs">
-                    <i class="fa-solid fa-chalkboard"></i>
-                    <input type="text" placeholder="Escreva a sala(opcional)" required>
+
+            <div class="perguntas">
+                <h3>O que aconteceu?</h3>
+
+                <textarea placeholder="Conte o que aconteceu da forma que você se sentir mais confortável."></textarea>
+            </div>
+
+            <div class="perguntas">
+                <h3>Você está em perigo ou se sente ameaçado(a) neste momento?</h3>
+
+                <div class="radios">
+                    <input type="radio" name="radio">
+                    <label for="radio">Sim</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Não</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Não sei</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Prefiro não responder</label>
                 </div>
             </div>
-            
+
+
+            <div class="perguntas">
+                <h3>Onde aconteceu/acontece?</h3>
+                <p>*Você pode selecionar mais de um</p>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="sala">
+                    <label for="sala">Sala de aula</label>
+
+                    <input type="checkbox" name="patio">
+                    <label for="patio">Pátio</label>
+
+                    <input type="checkbox" name="corredores">
+                    <label for="corredores">Corredores</label>
+
+                    <input type="checkbox" name="quadra">
+                    <label for="quadra">Quadra</label>
+
+                    <input type="checkbox" name="fora_escola">
+                    <label for="fora_escola">Fora da escola</label>
+
+                    <input type="checkbox" name="transporte">
+                    <label for="transporte">No transporte escolar</label>
+
+                    <input type="checkbox" name="internet">
+                    <label for="internet">Na internet ou redes sociais</label>
+
+                    <input type="checkbox" name="outro_local">
+                    <label for="outro_local">Outro</label>
+                </div>
+            </div>
+
+            <div class="perguntas">
+                <h3>Quando isso aconteceu?</h3>
+
+                <div class="radios">
+                    <input type="radio" name="radio">
+                    <label for="radio">Hoje</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Nos últimos dias</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Nas últimas semanas</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Há mais tempo</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Não sei informar</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Prefiro não responder</label>
+                </div>
+            </div>
+
+            <div class="perguntas">
+                <h3>Com que frequência isso acontece?</h3>
+
+                <div class="radios">
+                    <input type="radio" name="radio">
+                    <label for="radio">Foi uma única vez</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Aconteceu algumas vezes</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Acontece frequentemente</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Acontece quase todos os dias</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Não sei informar</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Prefiro não responder</label>
+                </div>
+            </div>
+
+            <div class="perguntas">
+                <h3>Isso continua acontecendo?</h3>
+
+                <div class="radios">
+                    <input type="radio" name="radio">
+                    <label for="radio">Sim</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Não</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Não sei</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Prefiro não responder</label>
+                </div>
+            </div>
+
+            <div class="perguntas">
+                <h3>Quem praticou a ação?</h3>
+                <p>*Você pode selecionar mais de um</p>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="aluno">
+                    <label for="aluno">Um aluno</label>
+
+                    <input type="checkbox" name="alunos">
+                    <label for="alunos">Mais de um aluno</label>
+
+                    <input type="checkbox" name="professor">
+                    <label for="professor">Professor(a)</label>
+
+                    <input type="checkbox" name="funcionario">
+                    <label for="funcionario">Funcionário(a) da escola</label>
+
+                    <input type="checkbox" name="fora_escola">
+                    <label for="fora_escola">Alguém de fora da escola</label>
+
+                    <input type="checkbox" name="nao_sei">
+                    <label for="nao_sei">Não sei</label>
+
+                    <input type="checkbox" name="outro">
+                    <label for="outro">Outro</label>
+                </div>
+            </div>
+
+            <div class="perguntas">
+                <h3>Se quiser, descreva alguma característica que possa ajudar a identificar a pessoa.</h3>
+
+                <textarea placeholder="Pode informar turma, apelido, função, aparência, etc. Não é necessário informar o nome completo da pessoa."></textarea>
+            </div>
+
+            <div class="perguntas">
+                <h3>Alguém presenciou ou sabe o que aconteceu?</h3>
+
+                <div class="radios">
+                    <input type="radio" name="radio">
+                    <label for="radio">Sim</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Não</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Não sei</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Prefiro não responder</label>
+                </div>
+            </div>
+
+
+            <div class="perguntas">
+                <h3>Se quiser, informe quem pode ter presenciado ou saber sobre o ocorrido.</h3>
+
+                <textarea placeholder="Pode informar nome, apelido, turma ou outra informação que ajude a identificar a pessoa."></textarea>
+            </div>
+
+            <div class="perguntas">
+                <h3>A situação já foi relatada para algum responsável?</h3>
+
+                <div class="radios">
+                    <input type="radio" name="radio">
+                    <label for="radio">Não, pois estava com medo de contar.</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Não, essa é a primeira vez que estou contando.</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Sim, para um familiar.</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Sim, para a equipe da escola.</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Tentei contar, mas não fui ouvido ou levado a sério.</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Não sei.</label>
+
+                    <input type="radio" name="radio">
+                    <label for="radio">Prefiro não responder</label>
+                </div>
+                
+            </div>
+
+            <div class="perguntas">
+                <h3>O que aconteceu depois que o relato foi feito?</h3>
+
+                <div class="radio" name="radio">A escola tentou ajudar.</div>
+                <div class="radio" name="radio">Alguma medida foi tomada, mas a situação continuou.</div>
+                <div class="radio" name="radio">Ninguém fez nada.</div>
+                <div class="radio" name="radio">Disseram que não podiam fazer nada.</div>
+                <div class="radio" name="radio">A situação piorou.</div>
+                <div class="radio" name="radio">Não sei.</div>
+                <div class="radio" name="radio">Prefiro não responder.</div>
+            </div>
+
+            <div class="perguntas">
+                <h3>Você se sente seguro(a) na escola neste momento?</h3>
+
+                <div class="radio" name="radio">Sim</div>
+                <div class="radio" name="radio">Não</div>
+                <div class="radio" name="radio">Não sei</div>
+                <div class="radio" name="radio">Prefiro não responder</div>
+            </div>
+
+            <div class="perguntas">
+                <h3>Essa situação afetou você ou outra pessoa de alguma forma?</h3>
+                <p>*Você pode selecionar mais de um</p>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="medo">
+                    <label for="medo">Medo ou insegurança</label>
+
+                    <input type="checkbox" name="tristeza">
+                    <label for="tristeza">Tristeza ou sofrimento</label>
+
+                    <input type="checkbox" name="estudos">
+                    <label for="estudos">Dificuldade para estudar</label>
+
+                    <input type="checkbox" name="escola">
+                    <label for="escola">Vontade de não ir à escola</label>
+
+                    <input type="checkbox" name="sono">
+                    <label for="sono">Problemas para dormir</label>
+
+                    <input type="checkbox" name="ferimentos">
+                    <label for="ferimentos">Ferimentos ou dor física</label>
+
+                    <input type="checkbox" name="outro_impacto">
+                    <label for="outro_impacto">Outro</label>
+
+                    <input type="checkbox" name="prefiro">
+                    <label for="prefiro">Prefiro não responder</label>
+                </div>
+            </div>
+
+
+            <div class="perguntas">
+                <h3>Existe alguma informação importante que você gostaria de adicionar?</h3>
+
+                <textarea placeholder="Escreva aqui algo que julgar importante e que não foi mencionado nas perguntas anteriores."></textarea>
+            </div>
+
+
         </form>
+
     </main>
 
 </html>
