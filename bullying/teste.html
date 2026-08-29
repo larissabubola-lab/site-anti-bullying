@@ -1,925 +1,1718 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fazer denúncia | S.I.D.A.</title>
 
-        <section id="como_denunciar" style="display: none;">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="form_denuncia.css">
+    </head>
 
-            <div class="denuncia_linha_lateral">
-                <span>PASSO A PASSO</span>
-                <div></div>
-                <span>S.I.D.A.</span>
-            </div>
+    <body>
 
-            <div class="denuncia_fundo_numero">?</div>
+        <div class="fd_progresso">
+            <div class="fd_progresso_barra" id="barraProgresso"></div>
+        </div>
 
-            <div id="denuncia_intro" class="animate__animated animate__fadeIn">
+        <main>
 
-                <div class="container denuncia_intro_conteudo">
+            <div class="fd_hero animate__animated animate__fadeIn">
+                <div class="container_fd">
 
-                    <div class="denuncia_tag">
-                        <span></span>
-                        COMO DENUNCIAR
-                        <span></span>
+                    <div class="fd_hero_topo">
+                        <a class="fd_voltar" href="index.html">
+                            <i class="bi bi-arrow-left"></i>
+                            Voltar ao início
+                        </a>
+
+                        <span class="fd_badge_anonimo">
+                            <i class="bi bi-incognito"></i>
+                            Espaço 100% anônimo
+                        </span>
                     </div>
 
-                    <h2 class="denuncia_titulo">
-                        Fazer uma denúncia é mais
-                        <em>simples</em>
-                        do que parece.
-                    </h2>
+                    <div class="fd_hero_marcador">
+                        <span class="fd_ponto"></span>
+                        FORMULÁRIO DE DENÚNCIA
+                    </div>
 
-                    <p class="denuncia_subtitulo">
-                        Preparamos um passo a passo para mostrar o que acontece
-                        quando você faz uma denúncia pelo S.I.D.A. — desde o
-                        primeiro clique até o encaminhamento do seu relato.
+                    <h1 class="fd_hero_titulo">
+                        Conte pra gente o que <span>aconteceu.</span>
+                    </h1>
+
+                    <p class="fd_hero_subtitulo">
+                        Vá no seu ritmo. Nenhuma pergunta é obrigatória e você pode
+                        parar quando quiser — responda só o que se sentir confortável
+                        em compartilhar.
                     </p>
 
-                    <div class="denuncia_privacidade">
+                    <div class="fd_hero_avisos">
 
-                        <i class="bi bi-shield-lock-fill"></i>
+                        <div class="fd_aviso">
+                            <div class="fd_aviso_icone">
+                                <i class="bi bi-incognito"></i>
+                            </div>
+                            <div class="fd_aviso_texto">
+                                <strong>100% anônimo</strong>
+                                <span>Você não precisa se identificar em nenhum momento.</span>
+                            </div>
+                        </div>
 
-                        <span>
-                            <strong>Você está em um espaço seguro:</strong>
-                            não é obrigatório informar seu nome ou dados pessoais
-                            para fazer uma denúncia.
+                        <div class="fd_aviso">
+                            <div class="fd_aviso_icone">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="fd_aviso_texto">
+                                <strong>Sem julgamentos</strong>
+                                <span>Não existe resposta certa ou errada aqui.</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <form class="fd_form" method="post" id="formDenuncia">
+                <div class="container_fd">
+
+                    <!-- 01 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">01</span>
+                        <h3>Qual o nome da escola onde aconteceu essa ocorrência?</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Se não souber o nome completo, não tem problema — escreva do
+                            jeitinho que você souber. 😊
+                        </p>
+
+                        <div class="campo_com_icone">
+                            <i class="bi bi-building"></i>
+                            <input class="campo_texto" type="text" id="escola" name="escola"
+                                placeholder="Escreva o nome da escola onde isso aconteceu.">
+                        </div>
+                    </div>
+
+                    <!-- 02 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">02</span>
+                        <h3>Quem está sendo afetado por essa situação?</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Pode ser sobre você ou sobre alguém que você quer ajudar.
+                        </p>
+
+                        <div class="respostas">
+                            <div class="inputs">
+                                <input type="radio" id="afetado-eu" name="afetado">
+                                <label for="afetado-eu">Eu</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="afetado-outra" name="afetado">
+                                <label for="afetado-outra">Outra pessoa</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="afetado-eu-outra" name="afetado">
+                                <label for="afetado-eu-outra">Eu e outra pessoa</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="afetado-prefiro" name="afetado">
+                                <label for="afetado-prefiro">Prefiro não responder</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 03 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">03</span>
+                        <h3>Que tipo de situação você quer denunciar?</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Não precisa ter certeza de tudo — marque o que mais parece
+                            com o que você viu ou sentiu.
+                        </p>
+                        <span class="fd_nota">
+                            <i class="bi bi-check2-square"></i>
+                            Você pode selecionar mais de uma opção
                         </span>
 
+                        <div class="respostas">
+                            <div class="inputs">
+                                <input type="checkbox" id="tipo-bullying" name="tipos">
+                                <label for="tipo-bullying">Bullying</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="tipo-cyberbullying" name="tipos">
+                                <label for="tipo-cyberbullying">Cyberbullying</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="tipo-assedio" name="tipos">
+                                <label for="tipo-assedio">Assédio</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="tipo-discriminacao" name="tipos">
+                                <label for="tipo-discriminacao">Discriminação</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="tipo-violencia" name="tipos">
+                                <label for="tipo-violencia">Violência física</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="tipo-outro" name="tipos">
+                                <label for="tipo-outro">Outro</label>
+                            </div>
+                        </div>
                     </div>
 
-                </div>
-
-            </div>
-
-            <div id="denuncia_etapas" class="animar-scroll">
-
-                <div class="container">
-
-                    <div class="denuncia_etapa">
-
-                        <div class="denuncia_etapa_imagem">
-                            <span class="denuncia_etapa_tag">Etapa 1 de 4</span>
-                            <span class="denuncia_etapa_legenda">Aqui vai ficar uma foto do lugar de denúncia!</span>
-                        </div>
-
-                        <div class="denuncia_etapa_texto">
-                            <div class="denuncia_etapa_numero">01</div>
-                            <h3>Clique em "Fazer denúncia"</h3>
-                            <p>
-                                Esse botão fica sempre visível no topo do site.
-                                Clique nele para abrir o formulário de denúncia,
-                                independentemente da página em que você estiver.
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="denuncia_etapa inverter">
-
-                        <div class="denuncia_etapa_imagem">
-                            <span class="denuncia_etapa_tag">Etapa 2 de 4</span>
-                            <span class="denuncia_etapa_legenda">idem</span>
-                        </div>
-
-                        <div class="denuncia_etapa_texto">
-                            <div class="denuncia_etapa_numero">02</div>
-                            <h3>Conte o que aconteceu</h3>
-                            <p>
-                                Preencha os campos com as informações que você
-                                se sentir confortável em compartilhar: o que
-                                aconteceu, quando e onde. Você decide quanto
-                                quer contar e não precisa se identificar.
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="denuncia_etapa">
-
-                        <div class="denuncia_etapa_imagem">
-                            <span class="denuncia_etapa_tag">Etapa 3 de 4</span>
-                            <span class="denuncia_etapa_legenda">idem</span>
-                        </div>
-
-                        <div class="denuncia_etapa_texto">
-                            <div class="denuncia_etapa_numero">03</div>
-                            <h3>Revise e envie</h3>
-                            <p>
-                                Confira se as informações estão corretas e envie
-                                sua denúncia. Depois disso, ela será registrada
-                                de forma sigilosa dentro do sistema.
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="denuncia_etapa inverter">
-
-                        <div class="denuncia_etapa_imagem">
-                            <span class="denuncia_etapa_tag">Etapa 4 de 4</span>
-                            <span class="denuncia_etapa_legenda">idem</span>
-                        </div>
-
-                        <div class="denuncia_etapa_texto">
-                            <div class="denuncia_etapa_numero">04</div>
-                            <h3>A equipe responsável acompanha</h3>
-                            <p>
-                                Sua denúncia é encaminhada para os responsáveis
-                                competentes, que irão analisar o caso com cuidado
-                                e buscar as medidas necessárias para ajudar.
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div id="denuncia_dicas" class="animar-scroll">
-
-                <div class="container">
-
-                    <div class="denuncia_dicas_titulo">
-                        <h2>Algumas informações podem ajudar</h2>
-                        <p>
-                            Nada disso é obrigatório. Mas, se você souber essas
-                            informações, elas podem ajudar a equipe a entender
-                            melhor o que aconteceu.
+                    <!-- 04 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">04</span>
+                        <h3>O que aconteceu?</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Não existe jeito certo ou errado de contar. Escreva com suas
+                            palavras, no seu tempo.
                         </p>
+
+                        <textarea id="relato" name="relato"
+                            placeholder="Conte o que aconteceu da forma que você se sentir mais confortável."></textarea>
                     </div>
 
-                    <div class="denuncia_dicas_grade">
+                    <!-- 05 - urgente -->
+                    <div class="fd_card fd_card_urgente">
+                        <span class="fd_numero">05</span>
+                        <h3>Você está em perigo ou se sente ameaçado(a) neste momento?</h3>
 
-                        <div class="denuncia_dica">
-                            <i class="bi bi-calendar-event"></i>
-                            <span>Data e horário aproximados de quando aconteceu</span>
+                        <div class="fd_alerta">
+                            <i class="bi bi-exclamation-triangle-fill"></i>
+                            <span>
+                                Se você estiver correndo perigo agora, não espere: peça
+                                ajuda imediatamente a um adulto de confiança ou ligue para
+                                um dos números abaixo.
+                            </span>
                         </div>
 
-                        <div class="denuncia_dica">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <span>Local onde a situação aconteceu</span>
+                        <div class="fd_contatos_emergencia">
+                            <span class="fd_contato_chip"><b>190</b> Polícia</span>
+                            <span class="fd_contato_chip"><b>188</b> CVV</span>
+                            <span class="fd_contato_chip"><b>100</b> Direitos Humanos</span>
                         </div>
 
-                        <div class="denuncia_dica">
-                            <i class="bi bi-people-fill"></i>
-                            <span>Pessoas envolvidas, se você souber quem são</span>
-                        </div>
+                        <div class="respostas">
+                            <div class="inputs">
+                                <input type="radio" id="perigo-sim" name="perigo">
+                                <label for="perigo-sim">Sim</label>
+                            </div>
 
-                        <div class="denuncia_dica">
-                            <i class="bi bi-camera-fill"></i>
-                            <span>Prints, mensagens ou outras evidências, se tiver</span>
-                        </div>
+                            <div class="inputs">
+                                <input type="radio" id="perigo-nao" name="perigo">
+                                <label for="perigo-nao">Não</label>
+                            </div>
 
+                            <div class="inputs">
+                                <input type="radio" id="perigo-nao-sei" name="perigo">
+                                <label for="perigo-nao-sei">Não sei</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="perigo-prefiro" name="perigo">
+                                <label for="perigo-prefiro">Prefiro não responder</label>
+                            </div>
+                        </div>
                     </div>
 
-                </div>
+                    <!-- 06 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">06</span>
+                        <h3>Onde isso aconteceu/acontece?</h3>
+                        <span class="fd_nota">
+                            <i class="bi bi-check2-square"></i>
+                            Você pode selecionar mais de uma opção
+                        </span>
 
-            </div>
+                        <div class="respostas">
+                            <div class="inputs">
+                                <input type="checkbox" id="local-dentro" name="local">
+                                <label for="local-dentro">Dentro da escola</label>
+                            </div>
 
-            <div id="denuncia_final" class="animar-scroll">
+                            <div class="inputs">
+                                <input type="checkbox" id="local-fora" name="local">
+                                <label for="local-fora">Fora da escola</label>
+                            </div>
 
-                <div class="container denuncia_final_conteudo">
+                            <div class="inputs">
+                                <input type="checkbox" id="local-transporte" name="local">
+                                <label for="local-transporte">No transporte escolar</label>
+                            </div>
 
-                    <div class="denuncia_final_texto">
-                        <h2>Quer começar?</h2>
-                        <p>Leva poucos minutos, e você pode parar quando quiser.</p>
+                            <div class="inputs">
+                                <input type="checkbox" id="local-internet" name="local">
+                                <label for="local-internet">Na internet ou redes sociais</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="local-outro" name="local">
+                                <label for="local-outro">Outro</label>
+                            </div>
+                        </div>
                     </div>
 
-                    <button class="denuncia_botao"  onclick="denuncia()">
-                        Quero fazer minha denúncia
-                        <i class="bi bi-arrow-right"></i>
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section id="contatos" style="display: none;">
-
-            <div id="contatos_topo" class="animate__animated animate__fadeIn">
-
-                <div class="contatos_linha_lateral">
-                    <span>01</span>
-                    <div></div>
-                    <span>REDE DE APOIO</span>
-                    <div></div>
-                </div>
-
-                <div class="contatos_fundo_numero">
-                    <i class="bi bi-telephone-fill"></i>
-                </div>
-
-                <div class="container contatos_topo_conteudo">
-
-                    <div class="contatos_tag">
-                        <span></span>
-                        VOCÊ NÃO PRECISA PASSAR POR ISSO SOZINHO
-                        <span></span>
-                    </div>
-
-                    <h2 class="contatos_titulo">Outros canais que podem ajudar você.
-                    </h2>
-
-                    <p class="contatos_subtitulo">
-                        Além do S.I.D.A., existem serviços públicos gratuitos
-                        e sigilosos que podem ajudar em diferentes situações.
-                        Alguns oferecem orientação e acolhimento, enquanto outros
-                        atendem casos mais graves. Se precisar, procure ajuda:
-                        você não precisa enfrentar tudo sozinho.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div id="contatos_numeros" class="animar-scroll">
-
-                <div class="container">
-
-                    <div class="contatos_numeros_cabecalho">
-                        <small>Guarde estes contatos</small>
-                        <h3>Telefones importantes</h3>
-                        <p>
-                            Serviços públicos gratuitos que podem ajudar em
-                            diferentes situações. Ligue quando precisar.
+                    <!-- 07 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">07</span>
+                        <h3>Quando isso aconteceu?</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Não precisa ser uma data exata — um período aproximado já
+                            ajuda bastante.
                         </p>
+
+                        <div class="respostas">
+                            <div class="inputs">
+                                <input type="radio" id="quando-hoje" name="quando">
+                                <label for="quando-hoje">Hoje</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="quando-dias" name="quando">
+                                <label for="quando-dias">Nos últimos dias</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="quando-semanas" name="quando">
+                                <label for="quando-semanas">Nas últimas semanas</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="quando-mais-tempo" name="quando">
+                                <label for="quando-mais-tempo">Há mais tempo</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="quando-nao-sei" name="quando">
+                                <label for="quando-nao-sei">Não sei informar</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="quando-prefiro" name="quando">
+                                <label for="quando-prefiro">Prefiro não responder</label>
+                            </div>
+                        </div>
                     </div>
 
-                    <div id="contatos_lista">
+                    <!-- 08 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">08</span>
+                        <h3>Com que frequência isso acontece?</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Isso ajuda a entender o quanto essa situação está afetando o
+                            seu dia a dia.
+                        </p>
 
-                        <div class="contato_numero">
-
-                            <div class="contato_numero_digito">100</div>
-
-                            <div>
-                                <h4>Direitos Humanos</h4>
-                                <p>
-                                    Disque Direitos Humanos. Recebe relatos de
-                                    racismo, homofobia e violência contra
-                                    crianças, idosos e pessoas com deficiência.
-                                </p>
+                        <div class="respostas">
+                            <div class="inputs">
+                                <input type="radio" id="freq-unica" name="frequencia">
+                                <label for="freq-unica">Foi uma única vez</label>
                             </div>
 
-                        </div>
-
-                        <div class="contato_numero">
-
-                            <div class="contato_numero_digito">180</div>
-
-                            <div>
-                                <h4>Central da Mulher</h4>
-                                <p>
-                                    Atendimento para mulheres que estão passando
-                                    por violência doméstica, assédio ou
-                                    discriminação, com orientação sigilosa.
-                                </p>
+                            <div class="inputs">
+                                <input type="radio" id="freq-algumas" name="frequencia">
+                                <label for="freq-algumas">Aconteceu algumas vezes</label>
                             </div>
 
-                        </div>
-
-                        <div class="contato_numero">
-
-                            <div class="contato_numero_digito">181</div>
-
-                            <div>
-                                <h4>Disque Denúncia</h4>
-                                <p>
-                                    Canal para contar sobre possíveis crimes
-                                    de forma anônima, sem precisar dizer
-                                    quem você é durante a ligação.
-                                </p>
+                            <div class="inputs">
+                                <input type="radio" id="freq-frequente" name="frequencia">
+                                <label for="freq-frequente">Acontece frequentemente</label>
                             </div>
 
-                        </div>
-
-                        <div class="contato_numero">
-
-                            <div class="contato_numero_digito">188</div>
-
-                            <div>
-                                <h4>CVV</h4>
-                                <p>
-                                    Centro de Valorização da Vida. Oferece apoio
-                                    emocional e escuta gratuita, 24 horas por dia,
-                                    para quem precisa conversar e ser ouvido.
-                                </p>
+                            <div class="inputs">
+                                <input type="radio" id="freq-diaria" name="frequencia">
+                                <label for="freq-diaria">Acontece quase todos os dias</label>
                             </div>
 
+                            <div class="inputs">
+                                <input type="radio" id="freq-nao-sei" name="frequencia">
+                                <label for="freq-nao-sei">Não sei informar</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="freq-prefiro" name="frequencia">
+                                <label for="freq-prefiro">Prefiro não responder</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 09 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">09</span>
+                        <h3>Isso continua acontecendo?</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Se não tiver certeza, tudo bem — responda do jeito que fizer
+                            mais sentido agora.
+                        </p>
+
+                        <div class="respostas">
+                            <div class="inputs">
+                                <input type="radio" id="continua-sim" name="continua">
+                                <label for="continua-sim">Sim</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="continua-nao" name="continua">
+                                <label for="continua-nao">Não</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="continua-nao-sei" name="continua">
+                                <label for="continua-nao-sei">Não sei</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="continua-prefiro" name="continua">
+                                <label for="continua-prefiro">Prefiro não responder</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">10</span>
+                        <h3>Quem praticou a ação?</h3>
+                        <span class="fd_nota">
+                            <i class="bi bi-check2-square"></i>
+                            Você pode selecionar mais de uma opção
+                        </span>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Não é preciso saber o nome completo, só o que você conseguir
+                            identificar.
+                        </p>
+
+                        <div class="respostas">
+                            <div class="inputs">
+                                <input type="checkbox" id="praticou-aluno" name="praticou">
+                                <label for="praticou-aluno">Um aluno</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="praticou-alunos" name="praticou">
+                                <label for="praticou-alunos">Mais de um aluno</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="praticou-professor" name="praticou">
+                                <label for="praticou-professor">Professor(a)</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="praticou-funcionario" name="praticou">
+                                <label for="praticou-funcionario">Funcionário(a) da escola</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="praticou-fora" name="praticou">
+                                <label for="praticou-fora">Alguém de fora da escola</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="praticou-outro" name="praticou">
+                                <label for="praticou-outro">Outro</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 11 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">11</span>
+                        <h3>Se quiser, descreva alguma característica que possa ajudar a identificar a pessoa.</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Isso é só para ajudar a entender a situação — não é
+                            obrigatório.
+                        </p>
+
+                        <textarea id="caracteristica" name="caracteristica"
+                            placeholder="Pode informar turma, apelido, função, aparência, etc. Não é necessário informar o nome completo da pessoa."></textarea>
+                    </div>
+
+                    <!-- 12 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">12</span>
+                        <h3>Alguém presenciou ou sabe o que aconteceu?</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Se não souber, não se preocupe — essa informação é só um
+                            apoio a mais pra gente entender a situação.
+                        </p>
+
+                        <div class="respostas">
+                            <div class="inputs">
+                                <input type="radio" id="test-sim" name="testemunha">
+                                <label for="test-sim">Sim</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="test-nao" name="testemunha">
+                                <label for="test-nao">Não</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="test-nao-sei" name="testemunha">
+                                <label for="test-nao-sei">Não sei</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="test-prefiro" name="testemunha">
+                                <label for="test-prefiro">Prefiro não responder</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 13 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">13</span>
+                        <h3>Se quiser, informe quem pode ter presenciado ou saber sobre o ocorrido.</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Só compartilhe se você se sentir confortável com isso.
+                        </p>
+
+                        <textarea id="testemunha_quem" name="testemunha_quem"
+                            placeholder="Pode informar nome, apelido, turma ou outra informação que ajude a identificar a pessoa."></textarea>
+                    </div>
+
+                    <!-- 14 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">14</span>
+                        <h3>A situação já foi relatada para algum responsável?</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Não existe resposta errada aqui — queremos só entender o que
+                            já foi tentado.
+                        </p>
+
+                        <div class="respostas">
+                            <div class="inputs">
+                                <input type="radio" id="relatado-medo" name="relatado">
+                                <label for="relatado-medo">Não, estava com medo de contar</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="relatado-primeira" name="relatado">
+                                <label for="relatado-primeira">Não, essa é a primeira vez que estou contando</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="relatado-familiar" name="relatado">
+                                <label for="relatado-familiar">Sim, para um familiar</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="relatado-escola" name="relatado">
+                                <label for="relatado-escola">Sim, para a equipe da escola</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="relatado-nao-ouvido" name="relatado">
+                                <label for="relatado-nao-ouvido">Tentei contar, mas não fui ouvido(a) ou levado(a) a sério</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="relatado-prefiro" name="relatado">
+                                <label for="relatado-prefiro">Prefiro não responder</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 15 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">15</span>
+                        <h3>O que aconteceu depois que o relato foi feito?</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Contar como foi depois nos ajuda a entender se você recebeu
+                            o apoio que precisava.
+                        </p>
+
+                        <div class="respostas">
+                            <div class="inputs">
+                                <input type="radio" id="depois-ajudou" name="depois">
+                                <label for="depois-ajudou">A escola tentou ajudar</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="depois-continuou" name="depois">
+                                <label for="depois-continuou">Alguma medida foi tomada, mas a situação continuou</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="depois-nada" name="depois">
+                                <label for="depois-nada">Ninguém fez nada</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="depois-nao-podiam" name="depois">
+                                <label for="depois-nao-podiam">Disseram que não podiam fazer nada</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="depois-piorou" name="depois">
+                                <label for="depois-piorou">A situação piorou</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="depois-prefiro" name="depois">
+                                <label for="depois-prefiro">Prefiro não responder</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 16 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">16</span>
+                        <h3>Você se sente seguro(a) na escola neste momento?</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Sua segurança é o mais importante para nós.
+                        </p>
+
+                        <div class="respostas">
+                            <div class="inputs">
+                                <input type="radio" id="seguro-sim" name="seguro">
+                                <label for="seguro-sim">Sim</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="seguro-nao" name="seguro">
+                                <label for="seguro-nao">Não</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="seguro-nao-sei" name="seguro">
+                                <label for="seguro-nao-sei">Não sei</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="radio" id="seguro-prefiro" name="seguro">
+                                <label for="seguro-prefiro">Prefiro não responder</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 17 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">17</span>
+                        <h3>Como essa situação afetou você ou outra pessoa de alguma forma?</h3>
+                        <span class="fd_nota">
+                            <i class="bi bi-check2-square"></i>
+                            Você pode selecionar mais de uma opção
+                        </span>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Você não está sozinho(a) nisso — nomear o que sente já é um
+                            passo importante.
+                        </p>
+
+                        <div class="respostas">
+                            <div class="inputs">
+                                <input type="checkbox" id="impacto-medo" name="impacto">
+                                <label for="impacto-medo">Medo ou insegurança</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="impacto-tristeza" name="impacto">
+                                <label for="impacto-tristeza">Tristeza ou sofrimento</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="impacto-estudos" name="impacto">
+                                <label for="impacto-estudos">Dificuldade para estudar</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="impacto-escola" name="impacto">
+                                <label for="impacto-escola">Vontade de não ir à escola</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="impacto-sono" name="impacto">
+                                <label for="impacto-sono">Problemas para dormir</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="impacto-ferimentos" name="impacto">
+                                <label for="impacto-ferimentos">Ferimentos ou dor física</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="impacto-outro" name="impacto">
+                                <label for="impacto-outro">Outro</label>
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="impacto-prefiro" name="impacto">
+                                <label for="impacto-prefiro">Prefiro não responder</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 18 -->
+                    <div class="fd_card">
+                        <span class="fd_numero">18</span>
+                        <h3>Existe alguma informação importante que você gostaria de adicionar?</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Fique à vontade, esse espaço é só para o que você achar
+                            importante.
+                        </p>
+
+                        <textarea id="info_extra" name="info_extra"
+                            placeholder="Escreva aqui algo que julgar importante e que não foi mencionado nas perguntas anteriores."></textarea>
+                    </div>
+
+                    <!-- 19 - provas -->
+                    <div class="fd_card">
+                        <span class="fd_numero">19</span>
+                        <h3>Quer anexar alguma prova?</h3>
+                        <p class="fd_apoio">
+                            <i class="bi bi-stars"></i>
+                            Isso é totalmente opcional, mas prints, fotos ou áudios podem
+                            ajudar a equipe a entender melhor o que aconteceu.
+                        </p>
+                        <span class="fd_nota">
+                            <i class="bi bi-shield-lock-fill"></i>
+                            Não é obrigatório
+                        </span>
+
+                        <div class="fd_dropzone" id="dropzoneProvas">
+                            <i class="bi bi-cloud-arrow-up-fill"></i>
+                            <strong>Arraste arquivos aqui ou clique para escolher</strong>
+                            <span>Fotos, prints, áudios ou documentos (opcional)</span>
+                            <input type="file" id="provas" name="provas" multiple hidden>
                         </div>
 
+                        <div class="fd_lista_arquivos" id="listaProvas"></div>
+                    </div>
+
+                    <!-- envio -->
+                    <div class="fd_envio">
+                        <div class="fd_envio_aviso">
+                            <i class="bi bi-shield-lock-fill"></i>
+                            <span>Ao enviar, sua denúncia é registrada de forma sigilosa e sem identificação.</span>
+                        </div>
+
+                        <button type="submit" class="fd_botao_enviar">
+                            <span>Enviar minha denúncia</span>
+                            <i class="bi bi-send-fill"></i>
+                        </button>
+                    </div>
+
+                    <div class="fd_rodape">
+                        <p>Mudou de ideia? <a href="index.html">Voltar para o início do S.I.D.A.</a></p>
                     </div>
 
                 </div>
+            </form>
 
-            </div>
+        </main>
 
-        </section>
+        <script>
+            // barra de progresso conforme o scroll da página
+            const barraProgresso = document.getElementById('barraProgresso');
 
+            function atualizarProgresso() {
+                const alturaTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const rolado = alturaTotal > 0 ? (window.scrollY / alturaTotal) * 100 : 0;
+                barraProgresso.style.width = rolado + '%';
+            }
 
+            window.addEventListener('scroll', atualizarProgresso);
+            window.addEventListener('resize', atualizarProgresso);
+            atualizarProgresso();
 
+            // área de provas (drag and drop + seleção manual)
+            const dropzone = document.getElementById('dropzoneProvas');
+            const inputProvas = document.getElementById('provas');
+            const listaProvas = document.getElementById('listaProvas');
+            let arquivosSelecionados = [];
 
-#como_denunciar {
-    margin-top: 100px !important;
-    width: 100%;
-    height: auto;
-    display: none;
-    flex-direction: column;
-    position: relative;
+            function iconePorTipo(arquivo) {
+                if (arquivo.type.startsWith('image/')) return 'bi-file-earmark-image-fill';
+                if (arquivo.type.startsWith('audio/')) return 'bi-file-earmark-music-fill';
+                if (arquivo.type.startsWith('video/')) return 'bi-file-earmark-play-fill';
+                return 'bi-file-earmark-text-fill';
+            }
+
+            function renderizarLista() {
+                listaProvas.innerHTML = '';
+
+                arquivosSelecionados.forEach((arquivo, indice) => {
+                    const chip = document.createElement('div');
+                    chip.className = 'fd_arquivo_chip';
+
+                    chip.innerHTML = `
+                        <i class="bi ${iconePorTipo(arquivo)} fd_icone_arquivo"></i>
+                        <span>${arquivo.name}</span>
+                        <button type="button" class="fd_arquivo_remover" aria-label="Remover arquivo">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    `;
+
+                    chip.querySelector('.fd_arquivo_remover').addEventListener('click', () => {
+                        arquivosSelecionados.splice(indice, 1);
+                        renderizarLista();
+                    });
+
+                    listaProvas.appendChild(chip);
+                });
+            }
+
+            function adicionarArquivos(novaLista) {
+                Array.from(novaLista).forEach(arquivo => arquivosSelecionados.push(arquivo));
+                renderizarLista();
+            }
+
+            dropzone.addEventListener('click', () => inputProvas.click());
+
+            inputProvas.addEventListener('change', (evento) => {
+                adicionarArquivos(evento.target.files);
+            });
+
+            ['dragenter', 'dragover'].forEach(evento => {
+                dropzone.addEventListener(evento, (e) => {
+                    e.preventDefault();
+                    dropzone.classList.add('fd_dropzone_ativa');
+                });
+            });
+
+            ['dragleave', 'drop'].forEach(evento => {
+                dropzone.addEventListener(evento, (e) => {
+                    e.preventDefault();
+                    dropzone.classList.remove('fd_dropzone_ativa');
+                });
+            });
+
+            dropzone.addEventListener('drop', (e) => {
+                if (e.dataTransfer.files.length) {
+                    adicionarArquivos(e.dataTransfer.files);
+                }
+            });
+        </script>
+
+    </body>
+
+</html>
+
+/* ============================================================
+   S.I.D.A — Formulário de denúncia
+   Conceito: "diário sigiloso" — cada pergunta é uma página de
+   caderno, com fita washi, carimbos e respostas "circuladas à
+   mão", pensado para ser acolhedor pra crianças e adolescentes.
+   ============================================================ */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("assets/Roboto_Slab/static/RobotoSlab-Regular.ttf");
+    font-display: swap;
 }
 
-.denuncia_linha_lateral {
-    position: absolute;
-    left: 20px;
-    top: 60px;
-    bottom: 35px;
-    width: 20px;
+@font-face {
+    font-family: "bebas";
+    src: url("assets/Bebas_Neue/BebasNeue-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "comfortaa";
+    src: url("assets/Comfortaa/static/Comfortaa-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "handlee";
+    src: url("assets/Handlee/Handlee-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "nunito";
+    src: url("assets/Nunito/static/Nunito-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "patrick";
+    src: url("assets/Patrick_Hand/PatrickHand-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ruslan";
+    src: url("assets/Ruslan_Display/RuslanDisplay-Regular.ttf");
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* paleta — mesmos tons de azul e branco do site principal */
+    --teal: #008080;
+    --teal-escuro: #006d6d;
+    --teal-suave: #d9eeee;
+    --azul: #6799ba;
+    --azul-suave: #eaf3f8;
+    --papel: #ffffff;
+    --papel-linha: #dce9ee;
+    --tinta: #22383c;
+    --tinta-suave: #55686d;
+    --alerta: #e6483a;
+    --alerta-suave: #fbeceb;
+    --branco: #ffffff;
+
+    /* tipografia */
+    --fonte-poster: "bebas", "Roboto", sans-serif;
+    --fonte-titulo: "comfortaa", "Roboto", sans-serif;
+    --fonte-mao: "patrick", "handlee", cursive;
+    --fonte-corpo: "nunito", "Roboto", sans-serif;
+
+    --borda-torta: 255px 15px 225px 15px/15px 225px 15px 255px;
+    --sombra-carimbo: 3px 4px 0 var(--tinta);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 85% 15%, rgba(103, 153, 186, 0.16), transparent 30%),
+        linear-gradient(135deg, #f1f1f1 0%, #f8ffff 55%, #e7f5f5 100%);
+    position: relative;
+    font-family: var(--fonte-corpo);
+    color: var(--tinta);
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    background-image:
+        linear-gradient(rgba(0, 128, 128, 0.035) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(0, 128, 128, 0.035) 2px, transparent 2px);
+    background-size: 46px 46px;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+::selection {
+    background: var(--teal-suave);
+    color: var(--teal-escuro);
+}
+
+/* ---------- barra de progresso ---------- */
+
+.fd_progresso {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: rgba(0, 0, 0, 0.18);
+    z-index: 2000;
+}
+
+.fd_progresso_barra {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--azul), var(--teal));
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0 0 12px rgba(0, 128, 128, 0.45);
+    transition: width 0.15s ease-out;
+}
+
+/* ---------- utilidade ---------- */
+
+.container_fd {
+    width: min(720px, 92%);
+    margin: 0 auto;
+}
+
+/* ---------- hero ---------- */
+
+main {
+    position: relative;
+    z-index: 1;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.fd_hero {
+    width: 100%;
+    padding: 40px 0 26px;
+}
+
+.fd_hero_topo {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 5;
-    pointer-events: none;
-}
-
-.denuncia_linha_lateral span {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-family: nunito;
-    font-size: 11px;
-    letter-spacing: 1px;
-    color: #6799ba;
-    text-shadow: 1px 1px 1px #4a7998;
-    white-space: nowrap;
-}
-
-.denuncia_linha_lateral div {
-    width: 2px;
-    flex: 1;
-    margin: 12px 0;
-    background: #c7dddd;
-}
-
-.denuncia_fundo_numero {
-    position: absolute;
-    right: 4%;
-    top: 40px;
-    font-family: "ruslan";
-    font-size: 260px;
-    color: rgba(0, 128, 128, 0.04);
-    user-select: none;
-    z-index: 0;
-    pointer-events: none;
-}
-
-#denuncia_intro {
-    width: 100%;
-    padding: 80px 0 60px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    background: radial-gradient(circle at 85% 15%, rgba(0, 128, 128, 0.07), transparent 30%), linear-gradient(135deg, #f1f1f1 0%, #f8ffff 55%, #e7f5f5 100%);
-}
-
-#denuncia_intro::before {
-    content: "";
-    position: absolute;
-    width: 420px;
-    height: 420px;
-    left: -240px;
-    top: -220px;
-    border-radius: 50%;
-    border: 2px dashed rgba(0, 128, 128, 0.12);
-}
-
-.denuncia_intro_conteudo {
-    position: relative;
-    z-index: 2;
-    max-width: 780px;
-}
-
-.denuncia_tag {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 14px;
-    margin-bottom: 22px;
-    font-family: "comfortaa";
-    font-size: 11px;
-    letter-spacing: 3px;
-    color: #6799ba;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
 }
 
-.denuncia_tag span {
-    width: 34px;
-    height: 1px;
-    background: rgba(103, 153, 186, 0.5);
-}
-
-.denuncia_titulo {
-    font-family: "comfortaa";
+.fd_voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--fonte-corpo);
     font-weight: 700;
-    font-size: 42px;
-    line-height: 1.35;
-    letter-spacing: 0.5px;
-    color: #1c3b3b;
-    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--teal);
+    text-decoration: none;
+    padding: 6px 4px;
+    border-bottom: 2px solid transparent;
+    transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.denuncia_titulo em {
-    font-style: normal;
-    color: #008080;
-    position: relative;
-    padding: 0 4px;
-    text-decoration:underline;
+.fd_voltar:hover {
+    border-color: var(--teal);
+    transform: translateX(-3px);
 }
 
-.denuncia_titulo em::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 3px;
+.fd_badge_anonimo {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--fonte-corpo);
+    font-weight: 700;
+    font-size: 12.5px;
+    color: var(--teal-escuro);
+    background: var(--branco);
+    border: 1.5px solid var(--teal-suave);
+    border-radius: 999px;
+    padding: 7px 14px;
+    box-shadow: 0 5px 14px rgba(0, 128, 128, 0.10);
+}
+
+.fd_hero_marcador {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--fonte-corpo);
+    font-weight: 800;
+    font-size: 12.5px;
+    letter-spacing: 2px;
+    color: var(--azul);
+    margin-bottom: 14px;
+}
+
+.fd_ponto {
+    width: 9px;
     height: 9px;
-    
-    border-radius: 4px;
-    z-index: -1;
+    border-radius: 50%;
+    background: var(--teal);
+    box-shadow: 0 0 0 4px rgba(0, 128, 128, 0.15);
+    animation: pulsar 1.8s ease-in-out infinite;
 }
 
-.denuncia_subtitulo {
-    font-family: "nunito";
-    font-size: 17px;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 30px;
+.fd_hero_titulo {
+    font-family: var(--fonte-titulo);
+    color: #2f3d3d;
+    font-size: clamp(28px, 5vw, 42px);
+    line-height: 1.3;
+    max-width: 15ch;
 }
 
-.denuncia_privacidade {
-    width: fit-content;
-    max-width: 100%;
-    margin: 0 auto;
-    padding-top: 20px;
+.fd_hero_titulo span {
+    color: var(--teal);
+    text-shadow: 3px 3px 0 var(--teal-suave);
+}
+
+.fd_hero_subtitulo {
+    font-family: var(--fonte-mao);
+    color: var(--tinta-suave);
+    font-size: 19px;
+    max-width: 46ch;
+    margin-top: 16px;
+    line-height: 1.5;
+}
+
+.fd_hero_avisos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 26px;
+}
+
+.fd_aviso {
     display: flex;
     align-items: center;
     gap: 12px;
-    text-align: left;
-    border-top: 1px dashed rgba(0, 128, 128, 0.35);
+    background: var(--branco);
+    border-left: 4px solid var(--teal);
+    border-radius: 10px;
+    padding: 12px 16px;
+    max-width: 280px;
+    box-shadow: 0 7px 18px rgba(0, 128, 128, 0.08);
 }
 
-.denuncia_privacidade i {
+.fd_aviso_icone {
     flex-shrink: 0;
-    font-size: 22px;
-    color: #008080;
-}
-
-.denuncia_privacidade span {
-    font-family: "nunito";
-    font-size: 14px;
-    line-height: 1.6;
-    color: #555;
-}
-
-.denuncia_privacidade strong {
-    font-family: "comfortaa";
-    color: #008080;
-}
-
-#denuncia_etapas {
-    width: 100%;
-    padding: 90px 0;
-    position: relative;
-    overflow: hidden;
-    background: #ffffff;
-}
-
-.denuncia_etapa {
-    display: grid;
-    grid-template-columns: 0.85fr 1.15fr;
-    gap: 60px;
-    align-items: center;
-    padding: 45px 0;
-    border-bottom: 1px dashed #c7dddd;
-}
-
-.denuncia_etapa:last-child {
-    border-bottom: none;
-}
-
-.denuncia_etapa.inverter .denuncia_etapa_imagem {
-    order: 2;
-}
-
-.denuncia_etapa.inverter .denuncia_etapa_texto {
-    order: 1;
-}
-
-.denuncia_etapa_imagem {
-    position: relative;
-    height: 230px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    border-radius: 18px;
-    border: 2px dashed #a9d4d4;
-    background: radial-gradient(circle at 30% 20%, rgba(0, 128, 128, 0.07), transparent 55%), linear-gradient(135deg, #f4fbfb 0%, #e7f5f5 100%);
-    box-shadow: 0 12px 25px rgba(0, 128, 128, 0.08);
-}
-
-.denuncia_etapa_tag {
-    position: absolute;
-    top: 14px;
-    left: 14px;
-    padding: 5px 10px;
-    border-radius: 7px;
-    background: #008080;
-    color: white;
-    font-family: "patrick";
-    font-size: 12px;
-    letter-spacing: 0.5px;
-}
-
-.denuncia_etapa_icone_grande {
-    width: 78px;
-    height: 78px;
+    width: 34px;
+    height: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: linear-gradient(135deg, #008080 0%, #006d6d 100%);
-    color: white;
-    font-size: 32px;
-    box-shadow: 0 8px 18px rgba(0, 128, 128, 0.20);
+    background: var(--teal-suave);
+    color: var(--teal);
+    font-size: 16px;
 }
 
-.denuncia_etapa_legenda {
-    font-family: "nunito";
-    font-size: 30px;
-    letter-spacing: 0.5px;
-    color: #6799ba;
-    text-align: center;
-    padding: 0 20px;
+.fd_aviso strong {
+    display: block;
+    font-family: var(--fonte-titulo);
+    font-size: 12.5px;
+    letter-spacing: 0.4px;
+    color: var(--teal);
+    margin-bottom: 3px;
 }
 
-.denuncia_etapa_numero {
+.fd_aviso span {
+    font-family: var(--fonte-corpo);
+    font-size: 13.5px;
+    color: var(--tinta-suave);
+    line-height: 1.4;
+}
+
+/* ---------- formulário / cartões ---------- */
+
+.fd_form {
+    width: 100%;
+}
+
+.fd_card {
+    position: relative;
+    background: var(--papel);
+    background-image: repeating-linear-gradient(var(--papel) 0 37px, var(--papel-linha) 37px 39px);
+    background-position: 0 78px;
+    padding: 30px 26px 26px;
+    margin: 0 auto 34px;
+    border-radius: 4px 16px 4px 16px;
+    box-shadow: var(--sombra-carimbo), 0 14px 26px rgba(0, 0, 0, 0.22);
+    border: 2px solid var(--tinta);
+}
+
+.fd_card:nth-of-type(even) {
+    border-radius: 16px 4px 16px 4px;
+}
+
+.fd_card::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 34px;
+    width: 74px;
+    height: 26px;
+    background: rgba(103, 153, 186, 0.85);
+    border: 1px solid rgba(34, 56, 60, 0.25);
+    transform: rotate(-4deg);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.fd_card:nth-of-type(3n)::before {
+    left: auto;
+    right: 34px;
+    background: rgba(0, 128, 128, 0.75);
+    transform: rotate(4deg);
+}
+
+.fd_numero {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
-    margin-bottom: 14px;
-    border-radius: 50%;
-    background: white;
-    border: 2px solid #008080;
-    color: #008080;
-    font-family: "comfortaa";
-    font-size: 14px;
-}
-
-.denuncia_etapa_texto h3 {
-    font-family: "patrick";
-    font-size: 28px;
-    color: #008080;
+    width: 46px;
+    height: 46px;
     margin-bottom: 10px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--teal) 0%, var(--teal-escuro) 100%);
+    border: 2px dashed var(--branco);
+    outline: 2px solid var(--tinta);
+    color: var(--branco);
+    font-family: var(--fonte-poster);
+    font-size: 22px;
+    letter-spacing: 1px;
+    transform: rotate(-3deg);
 }
 
-.denuncia_etapa_texto p {
-    font-family: "nunito";
-    font-size: 16px;
-    line-height: 1.75;
-    color: #505050;
-    max-width: 480px;
+.fd_card h3 {
+    font-family: var(--fonte-titulo);
+    color: var(--teal-escuro);
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    font-size: 21px;
+    margin-bottom: 12px;
 }
 
-#denuncia_dicas {
-    width: 100%;
-    padding: 85px 0;
-    position: relative;
-    overflow: hidden;
-    background: #eef7f7;
-    border-top: 1px solid #d8e7e7;
-    border-bottom: 1px solid #d8e7e7;
-}
-
-.denuncia_dicas_titulo {
-    text-align: center;
-    max-width: 640px;
-    margin: 0 auto 45px;
-}
-
-.denuncia_dicas_titulo h2 {
-    font-family: "comfortaa";
-    font-size: 32px;
-    color: #008080;
-    text-shadow: 3px 3px 1px #b8d3e3;
+.fd_card p.fd_apoio {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-family: var(--fonte-mao);
+    font-style: normal;
+    text-decoration: none;
+    color: var(--tinta-suave);
+    background: var(--azul-suave);
+    border-left: 3px solid var(--azul);
+    border-radius: 0 10px 10px 0;
+    padding: 8px 12px;
+    font-size: 16.5px;
+    line-height: 1.45;
     margin-bottom: 14px;
 }
 
-.denuncia_dicas_titulo p {
-    font-family: "nunito";
-    font-size: 15px;
-    line-height: 1.7;
-    color: #555;
+.fd_card p.fd_apoio i {
+    color: var(--teal);
+    margin-top: 3px;
+    flex-shrink: 0;
 }
 
-.denuncia_dicas_grade {
+.fd_nota {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--fonte-corpo);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    color: var(--teal-escuro);
+    background: rgba(0, 128, 128, 0.10);
+    border: 1.5px dashed var(--teal);
+    border-radius: 999px;
+    padding: 5px 11px;
+    margin-bottom: 14px;
+}
+
+label {
+    color: var(--tinta);
+    font-family: var(--fonte-corpo);
+}
+
+/* ---------- campos de texto ---------- */
+
+.campo_com_icone {
+    position: relative;
     display: flex;
-    
-    
-    background:#008080;
-    padding-top:10px !important;
-    padding-bottom:10px !important;
-    border-radius:10px;
-    
+    align-items: center;
 }
 
-.denuncia_dica {
+.campo_com_icone i {
+    position: absolute;
+    left: 14px;
+    color: var(--teal);
+    font-size: 17px;
+    pointer-events: none;
+}
+
+input[type="text"],
+.campo_texto {
+    width: 100%;
+    font-family: var(--fonte-corpo);
+    font-size: 15.5px;
+    color: var(--tinta);
+    background: var(--branco);
+    border: 2.5px solid var(--tinta);
+    border-radius: 12px;
+    padding: 13px 16px 13px 42px;
+    cursor: text;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+input[type="text"]::placeholder,
+.campo_texto::placeholder {
+    font-family: var(--fonte-mao);
+    color: #9aa39f;
+    font-size: 15px;
+}
+
+input[type="text"]:focus,
+.campo_texto:focus {
+    outline: none;
+    border-color: var(--teal);
+    box-shadow: 3px 3px 0 var(--teal);
+    transform: translate(-2px, -2px);
+}
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+    font-family: var(--fonte-corpo);
+    font-size: 15.5px;
+    color: var(--tinta);
+    background: var(--branco);
+    background-image: repeating-linear-gradient(var(--branco) 0 30px, var(--papel-linha) 30px 32px);
+    border: 2.5px solid var(--tinta);
+    border-radius: 12px;
+    padding: 14px 16px;
+    line-height: 30px;
+    resize: vertical;
+    cursor: text;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+textarea::placeholder {
+    font-family: var(--fonte-mao);
+    color: #9aa39f;
+    line-height: 1.4;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--teal);
+    box-shadow: 3px 3px 0 var(--teal);
+    transform: translate(-2px, -2px);
+}
+
+/* ---------- respostas: radio & checkbox ---------- */
+
+.respostas {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    text-align: center;
-    padding: 10px 28px;
+    gap: 10px;
+}
+
+.inputs {
     position: relative;
-    transition: 300ms ease;
-}
-
-.denuncia_dica:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 8px;
-    bottom: 8px;
-    width: 1px;
-    background: #cbe0e0;
-}
-
-.denuncia_dica i {
-    font-size: 26px;
-    
-    color:white;
-    transition: 300ms ease;
-}
-
-.denuncia_dica:hover i {
-    transform: translateY(-4px);
-}
-
-.denuncia_dica span {
-    font-family: "nunito";
-    font-size: 14px;
-    line-height: 1.6;
-    
-    color:white;
-}
-
-#denuncia_final {
-    width: 100%;
-    padding: 70px 0 90px;
-    background: radial-gradient(circle at 85% 25%, rgba(0, 128, 128, 0.06), transparent 28%), linear-gradient(135deg, #e4f4f4 0%, #f1f1f1 65%, #e7f5f5 100%);
-}
-
-.denuncia_final_conteudo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    padding-top: 35px;
-    border-top: 2px solid #c7dddd;
-}
-
-.denuncia_final_texto h2 {
-    font-family: "comfortaa";
-    color: #008080;
-    font-size: 28px;
-    margin-bottom: 8px;
-    text-shadow: 3px 3px 1px #008080;
-    text-decoration: underline;
-}
-
-.denuncia_final_texto p {
-    font-family: "nunito";
-    font-size: 15px;
-    color: #555;
-}
-
-.denuncia_botao {
-    flex-shrink: 0;
-    height: 49px;
-    padding: 0 22px;
     display: flex;
     align-items: center;
     gap: 12px;
-    border: none;
-    border-radius: 12px;
-    background: #008080;
-    color: white;
-    font-family: "comfortaa";
-    font-size: 14px;
+    padding: 12px 16px;
+    background: var(--branco);
+    border: 2px solid var(--tinta);
+    border-radius: var(--borda-torta);
     cursor: pointer;
-    box-shadow: 0 5px 12px rgba(0, 128, 128, 0.25);
-    transition: 300ms ease;
+    transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
 }
 
-.denuncia_botao:hover {
-    background: #006d6d;
-    transform: translateY(-3px);
+.inputs:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 2px 3px 0 var(--tinta);
 }
 
-
-#contatos {
-    margin-top: 50px !important;
-    width: 100%;
-    height: auto;
-    display: none;
-    flex-direction: column;
-    position: relative;
-    background: #ffffff;
+.inputs:has(input:checked) {
+    background: var(--azul-suave);
+    border-color: var(--teal);
+    box-shadow: 3px 3px 0 var(--teal);
 }
 
-.contatos_linha_lateral {
-    position: absolute;
-    left: 20px;
-    top: 60px;
-    bottom: 35px;
-    width: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 5;
-    pointer-events: none;
-}
-
-.contatos_linha_lateral span {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-family: nunito;
-    font-size: 11px;
-    letter-spacing: 1px;
-    color: rgba(234, 246, 246, 0.6);
-    white-space: nowrap;
-}
-
-.contatos_linha_lateral div {
-    width: 2px;
+.inputs label {
     flex: 1;
-    margin: 12px 0;
-    background: rgba(234, 246, 246, 0.18);
+    font-size: 15.5px;
+    cursor: pointer;
+    line-height: 1.35;
 }
 
-#contatos_topo {
-    width: 100%;
-    padding: 140px 0 80px;
+input[type="radio"],
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background: var(--branco);
+    border: 2.5px solid var(--tinta);
+    cursor: pointer;
     position: relative;
-    overflow: hidden;
-    background: linear-gradient(155deg, #102b2b 0%, #123434 45%, #0c2323 100%);
+    transition: transform 0.12s ease;
 }
 
-#contatos_topo::before{
-    content:"";
-    position:absolute;
-    background-image:linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px) !important;
-    background-size: 46px 46px;
-    inset:0;
+input[type="radio"] {
+    border-radius: 50%;
 }
 
-.contatos_fundo_numero {
+input[type="checkbox"] {
+    border-radius: 6px 8px 5px 9px;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    border-color: var(--teal-escuro);
+    background: var(--teal);
+}
+
+input[type="radio"]:checked::after {
+    content: "";
     position: absolute;
-    right: 6%;
-    top: 40px;
-    font-size: 260px;
-    color: rgba(234, 246, 246, 0.035);
-    user-select: none;
-    z-index: 0;
-    pointer-events: none;
+    inset: 5px;
+    border-radius: 50%;
+    background: var(--branco);
+    animation: aparecer 0.18s ease-out;
 }
 
-.contatos_topo_conteudo {
-    position: relative;
-    z-index: 2;
-    max-width: 780px;
-    margin: 0 auto;
-    text-align: center;
+input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid var(--branco);
+    border-width: 0 3px 3px 0;
+    transform: rotate(40deg);
+    animation: aparecer 0.18s ease-out;
 }
 
-.contatos_tag {
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    transform: scale(1.08);
+}
+
+input[type="radio"]:focus-visible,
+input[type="checkbox"]:focus-visible,
+input[type="text"]:focus-visible,
+textarea:focus-visible,
+a:focus-visible,
+button:focus-visible {
+    outline: 3px dashed var(--teal);
+    outline-offset: 3px;
+}
+
+/* ---------- cartão urgente ---------- */
+
+.fd_card_urgente {
+    border-color: var(--alerta);
+    background-image:
+        repeating-linear-gradient(135deg, var(--alerta) 0 14px, #ffffff 14px 28px);
+    background-size: 100% 8px;
+    background-repeat: no-repeat;
+    padding-top: 38px;
+}
+
+.fd_card_urgente h3 {
+    color: var(--alerta);
+}
+
+.fd_alerta {
     display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(230, 72, 58, 0.1);
+    border: 2px dashed var(--alerta);
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+}
+
+.fd_alerta i {
+    color: var(--alerta);
+    font-size: 22px;
+    margin-top: 1px;
+    animation: pulsar 1.4s ease-in-out infinite;
+}
+
+.fd_alerta span {
+    font-family: var(--fonte-corpo);
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: var(--tinta);
+}
+
+.fd_contatos_emergencia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.fd_contato_chip {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    gap: 14px;
-    margin-bottom: 26px;
-    font-family: "comfortaa";
-    font-size: 11px;
-    letter-spacing: 3px;
+    gap: 6px;
+    font-family: var(--fonte-corpo);
+    font-size: 13.5px;
+    color: var(--branco);
+    background: var(--tinta);
+    border-radius: 8px;
+    padding: 7px 12px;
+    transform: rotate(-1.5deg);
+}
+
+.fd_contato_chip:nth-child(even) {
+    transform: rotate(1.5deg);
+}
+
+.fd_contato_chip b {
+    font-family: var(--fonte-poster);
+    font-size: 17px;
+    letter-spacing: 1px;
     color: #7fd9d9;
 }
 
-.contatos_tag span {
-    width: 34px;
-    height: 1px;
-    background: rgba(127, 217, 217, 0.5);
-}
+/* ---------- envio de provas ---------- */
 
-.contatos_titulo {
-    font-family: "comfortaa";
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.35;
-    color: #eaf6f6;
-    margin-bottom: 22px;
-}
-
-
-.contatos_subtitulo {
-    font-family: "nunito";
-    font-size: 17px;
-    line-height: 1.8;
-    color: rgba(234, 246, 246, 0.75);
-}
-
-#contatos_numeros {
-    width: 100%;
-    padding: 80px 0 90px;
-    position: relative;
-}
-
-.contatos_numeros_cabecalho {
-    margin-bottom: 45px;
-}
-
-.contatos_numeros_cabecalho small {
-    font-family: "patrick";
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    color: #6799ba;
-    font-weight:bold;
-    display:none;
-    
-}
-
-.contatos_numeros_cabecalho h3 {
-    margin-top: 6px;
-    font-family: "comfortaa";
-    font-size: 30px;
-    color: #008080;
-    text-decoration:underline;
-    text-shadow: 2px 2px 1px #074f4f;
-}
-
-.contatos_numeros_cabecalho p {
-    max-width: 560px;
-    margin-top: 16px;
-    font-family: "nunito";
-    font-size: 15px;
-    line-height: 1.7;
-    color: #555;
-}
-
-#contatos_lista {
-    width: 100%;
+.fd_dropzone {
     display: flex;
     flex-direction: column;
-}
-
-.contato_numero {
-    padding: 26px 0;
-    border-bottom: 1px solid #c7dddd;
-    display: grid;
-    grid-template-columns: 74px 1fr;
-    gap: 26px;
-    align-items: center;
-}
-
-.contato_numero:last-child {
-    border-bottom: none;
-}
-
-.contato_numero_digito {
-    width: 66px;
-    height: 66px;
-    display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #008080 0%, #006d6d 100%);
-    color: white;
-    font-family: "ruslan";
-    font-size: 17px;
-    box-shadow: 0 7px 15px rgba(0, 128, 128, 0.15);
+    text-align: center;
+    gap: 6px;
+    padding: 32px 20px;
+    background: repeating-linear-gradient(135deg, rgba(0, 128, 128, 0.05) 0 10px, transparent 10px 20px), var(--branco);
+    border: 3px dashed var(--teal);
+    border-radius: 18px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, transform 0.15s ease, background 0.2s ease;
 }
 
-.contato_numero h4 {
-    font-family: "patrick";
-    font-size: 24px;
-    color: #008080;
-    margin-bottom: 6px;
+.fd_dropzone i {
+    font-size: 30px;
+    color: var(--teal);
+    margin-bottom: 4px;
+    transition: transform 0.2s ease;
 }
 
-.contato_numero p {
-    font-family: "nunito";
+.fd_dropzone:hover {
+    transform: translateY(-2px);
+    border-color: var(--azul);
+}
+
+.fd_dropzone:hover i {
+    transform: translateY(-4px);
+    color: var(--azul);
+}
+
+.fd_dropzone strong {
+    font-family: var(--fonte-titulo);
+    font-size: 15.5px;
+    color: var(--teal-escuro);
+}
+
+.fd_dropzone span {
+    font-family: var(--fonte-mao);
+    font-size: 14.5px;
+    color: var(--tinta-suave);
+}
+
+.fd_dropzone_ativa {
+    border-color: var(--teal-escuro);
+    background-color: var(--azul-suave);
+    transform: scale(1.01);
+}
+
+.fd_lista_arquivos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.fd_arquivo_chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--azul-suave);
+    border: 2px solid var(--tinta);
+    border-radius: 10px;
+    padding: 7px 8px 7px 12px;
+    font-family: var(--fonte-corpo);
+    font-size: 13.5px;
+    color: var(--tinta);
+    max-width: 220px;
+    animation: aparecer 0.18s ease-out;
+}
+
+.fd_arquivo_chip span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fd_icone_arquivo {
+    color: var(--teal);
     font-size: 15px;
-    line-height: 1.7;
-    color: #505050;
+    flex-shrink: 0;
 }
 
+.fd_arquivo_remover {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 50%;
+    background: var(--tinta);
+    color: var(--branco);
+    font-size: 10px;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.fd_arquivo_remover:hover {
+    background: var(--alerta);
+    transform: rotate(90deg);
+}
+
+/* ---------- envio final ---------- */
+
+.fd_envio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-top: 12px;
+    padding: 26px;
+    background: var(--teal-escuro);
+    border-radius: 20px;
+    border: 2px solid var(--tinta);
+}
+
+.fd_envio_aviso {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.fd_envio_aviso i {
+    color: #7fd9d9;
+    font-size: 18px;
+}
+
+.fd_envio_aviso span {
+    font-family: var(--fonte-mao);
+    color: var(--branco);
+    font-size: 15.5px;
+    line-height: 1.4;
+}
+
+.fd_botao_enviar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--fonte-titulo);
+    font-size: 17px;
+    color: var(--teal-escuro);
+    background: var(--branco);
+    border: 2.5px solid var(--branco);
+    border-radius: 999px;
+    padding: 15px 30px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 #003f3f;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.fd_botao_enviar:hover {
+    transform: translate(-2px, -2px) rotate(-1deg);
+    box-shadow: 6px 6px 0 #003f3f;
+}
+
+.fd_botao_enviar:active {
+    transform: translate(1px, 1px);
+    box-shadow: 2px 2px 0 #003f3f;
+}
+
+.fd_botao_enviar i {
+    transition: transform 0.2s ease;
+}
+
+.fd_botao_enviar:hover i {
+    transform: translate(3px, -3px);
+}
+
+/* ---------- rodapé ---------- */
+
+.fd_rodape {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.fd_rodape p {
+    font-family: var(--fonte-mao);
+    color: var(--tinta-suave);
+    font-size: 15px;
+}
+
+.fd_rodape a {
+    color: var(--teal);
+    font-weight: 700;
+    text-decoration: underline dashed;
+    text-underline-offset: 3px;
+}
+
+/* ---------- animações ---------- */
+
+@keyframes pulsar {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.25); opacity: 0.6; }
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.4); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* ---------- responsivo ---------- */
+
+@media (max-width: 640px) {
+    .fd_hero_topo {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .fd_hero_titulo {
+        max-width: 100%;
+    }
+
+    .fd_card {
+        padding: 26px 18px 20px;
+    }
+
+    .fd_botao_enviar {
+        width: 100%;
+        justify-content: center;
+    }
+}
