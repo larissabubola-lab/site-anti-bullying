@@ -133,6 +133,7 @@ main {
     text-decoration:underline;
     padding-top:10px;
     padding-bottom:10px;
+    box-shadow:5px 5px 5px #075252 inset, 5px 5px 5px black;
 }
 
 .formulario_subtitulo {
@@ -229,8 +230,8 @@ input {
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
     /* display: flex;
-    flex-direction: column; */
-    /* flex-wrap: wrap; */
+    flex-direction: column;
+    flex-wrap: wrap; */
     gap: 10px;
     margin-top: 14px;
 }

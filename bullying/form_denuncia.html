@@ -19,12 +19,11 @@
             <h2 class="formulario_titulo">Conte pra gente o que aconteceu.</h2>
 
             <p class="formulario_subtitulo">
-                Responda com calma, no seu tempo. Você pode pular qualquer
-                pergunta que não quiser responder.
+                Responda com calma, no seu tempo. Você pode escolher não informar certas informações, se não se sentir confortável. <br>
             </p>
         </div>
 
-        <form method="post">
+        <form method="post"  autocomplete="off">
 
             <div class="perguntas">
                 <h3>Qual o nome da escola onde aconteceu essa ocorrencia?</h3>
@@ -32,7 +31,7 @@
 
                 <div class="campo_texto">
                     <i class="fa-solid fa-school"></i>
-                    <input type="text" placeholder="escreva o nome da escola onde isso aconteceu.">
+                    <input type="text" placeholder="escreva o nome da escola onde isso aconteceu." required>
                 </div>
             </div>
 
@@ -41,7 +40,7 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_afetado">
+                        <input type="radio" name="pergunta_afetado" required>
                         <label>Eu</label>
                     </div>
 
@@ -114,7 +113,7 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_perigo">
+                        <input type="radio" name="pergunta_perigo" required>
                         <label>Sim</label>
                     </div>
 
@@ -172,7 +171,7 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_quando">
+                        <input type="radio" name="pergunta_quando" required>
                         <label>Hoje</label>
                     </div>
 
@@ -208,43 +207,43 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_frequencia">
+                        <input type="radio" name="pergunta_frequencia" class="nao_aparecer" required>
                         <label>Foi uma única vez</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_frequencia">
+                        <input type="radio" name="pergunta_frequencia" class="aparecer">
                         <label>Aconteceu algumas vezes</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_frequencia">
+                        <input type="radio" name="pergunta_frequencia" class="aparecer">
                         <label>Acontece frequentemente</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_frequencia">
+                        <input type="radio" name="pergunta_frequencia" class="nao_aparecer">
                         <label>Acontece todos os dias/quase todos os dias</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_frequencia">
+                        <input type="radio" name="pergunta_frequencia" class="aparecer">
                         <label>Não sei informar</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_frequencia">
+                        <input type="radio" name="pergunta_frequencia" class="aparecer">
                         <label>Prefiro não responder</label>
                     </div>
                 </div>
             </div>
 
-            <div class="perguntas">
+            <div class="perguntas" id="pergunta_continua" style="display:none">
                 <h3>Isso continua acontecendo?</h3>
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_continua">
+                        <input type="radio" name="pergunta_continua" required>
                         <label>Sim</label>
                     </div>
 
@@ -317,7 +316,7 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_presenciou">
+                        <input type="radio" name="pergunta_presenciou" required>
                         <label>Sim</label>
                     </div>
 
@@ -353,43 +352,43 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_relatada">
+                        <input type="radio" name="pergunta_relatada" required class="nao_contou">
                         <label>Não, pois estava com medo de contar.</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_relatada">
+                        <input type="radio" name="pergunta_relatada" class="nao_contou">
                         <label>Não, essa é a primeira vez que estou contando.</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_relatada">
+                        <input type="radio" name="pergunta_relatada" class="contou">
                         <label>Sim, para um familiar.</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_relatada">
+                        <input type="radio" name="pergunta_relatada" class="contou">
                         <label>Sim, para a equipe da escola.</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_relatada">
+                        <input type="radio" name="pergunta_relatada" class="nao_contou">
                         <label>Tentei contar, mas não fui ouvido ou levado a sério.</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_relatada">
+                        <input type="radio" name="pergunta_relatada" class="nao_contou">
                         <label>Prefiro não responder</label>
                     </div>
                 </div>
             </div>
 
-            <div class="perguntas">
+            <div class="perguntas" id="relato_feito" style="display:none">
                 <h3>O que aconteceu depois que o relato foi feito?</h3>
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_depois">
+                        <input type="radio" name="pergunta_depois" required>
                         <label>A escola tentou ajudar.</label>
                     </div>
 
@@ -425,7 +424,7 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_seguro">
+                        <input type="radio" name="pergunta_seguro" required>
                         <label>Sim</label>
                     </div>
 
@@ -451,6 +450,10 @@
                 <p>*Você pode selecionar mais de um</p>
 
                 <div class="respostas">
+                    <!-- <div class="inputs">
+                        <input type="checkbox" name="nenhum" id="nenhum">
+                        <label for="nenhum">Não afetou dessa maneira</label>
+                    </div> -->
                     <div class="inputs">
                         <input type="checkbox" name="medo" id="medo">
                         <label for="medo">Medo ou insegurança</label>
@@ -522,6 +525,8 @@
         </form>
 
     </main>
+
+    <script src="form_denuncia.js"></script>
 
     </body>
 
