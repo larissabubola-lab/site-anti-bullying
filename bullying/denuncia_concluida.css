@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("assets/Roboto_Slab/static/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+    font-family: "bebas";
+    src: url("assets/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+    font-family: "comfortaa";
+    src: url("assets/Comfortaa/static/Comfortaa-Regular.ttf");
+}
+
+@font-face {
+    font-family: "handlee";
+    src: url("assets/Handlee/Handlee-Regular.ttf");
+}
+
+@font-face {
+    font-family: "nunito";
+    src: url("assets/Nunito/static/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "patrick";
+    src: url("assets/Patrick_Hand/PatrickHand-Regular.ttf");
+}
+
+@font-face {
+    font-family: "ruslan";
+    src: url("assets/Ruslan_Display/RuslanDisplay-Regular.ttf");
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: radial-gradient(circle at 88% 8%, rgba(255, 255, 255, 0.06), transparent 30%), #008080;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05) 2px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 2px, transparent 2px) !important;
+    background-size: 46px 46px;
+    inset: 0;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    left: -270px;
+    top: -220px;
+    border-radius: 50%;
+    border: 2px dashed rgba(255, 255, 255, 0.12);
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#denuncia_concluida {
+    width: 600px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px  #102b2b inset, 5px 5px 5px  #102b2b;
+    padding: 45px 50px 40px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.denuncia_concluida_titulo {
+    font-family: ruslan;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 1.2;
+    color: #008080;
+    margin-bottom: 16px;
+    text-decoration:underline;
+    text-shadow:2px 2px 1px #102b2b;
+}
+
+.denuncia_concluida_texto {
+    font-family: nunito;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    font-style: normal;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+#infos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.acesso_denuncia {
+    width: 100%;
+    margin-top: 26px;
+    padding: 24px;
+    background: #f5fafa;
+    border-radius: 15px;
+}
+
+.acesso_denuncia_aviso {
+    font-family: nunito;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #b23a1f;
+    margin-bottom: 18px;
+}
+
+.acesso_denuncia_dados {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.acesso_denuncia_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 18px 14px;
+    background: #008080;
+    border-radius: 12px;
+}
+
+.acesso_denuncia_label {
+    font-family: comfortaa;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.acesso_denuncia_valor {
+    font-family: "Roboto", monospace;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 8px 10px;
+    width: 100%;
+    word-break: break-all;
+    user-select: all;
+    cursor: text;
+}
+
+a{
+    color:white;
+    font-family:comfortaa;
+    cursor:pointer;
+    z-index:100;
+    font-size:20px;
+    transition:500ms ease;
+}
+
+a:hover{
+    transform:scale(1.1);
+}
+
+a:visited{
+    color:#afafaf;
+}

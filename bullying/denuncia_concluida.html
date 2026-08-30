@@ -4,41 +4,41 @@
         <title>Denúncia Concluída | S.I.D.A.</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="denuncia_concluida.css">
+
 
     </head>
 
     <body>
         <section id="denuncia_concluida">
-            <div class="container denuncia_concluida_conteudo">
 
-                <h1 class="denuncia_concluida_titulo">Denúncia concluída!</h1>
+            <h1 class="denuncia_concluida_titulo">Denúncia concluída!</h1>
 
+            <div id="infos">
                 <p class="denuncia_concluida_texto">
                     Agradecemos por compartilhar sua experiência. Sua denúncia foi recebida com sucesso e será tratada com a devida atenção e confidencialidade.
                 </p>
-
-                <div id="acesso_denuncia" class="acesso_denuncia" style="display:none">
+                <div id="acesso_denuncia" class="acesso_denuncia" style="display: none;">
                     <p class="acesso_denuncia_aviso">
-                        Anote o código e a senha abaixo em um lugar seguro. Eles são a única forma de acessar sua denúncia depois — não será possível recuperá-los se você os perder.
+                        Anote o código e a senha abaixo em um lugar seguro. Eles são a única forma de acessar sua denúncia depois. Não será possível recuperá-los se você os perder.
                     </p>
-
                     <div class="acesso_denuncia_dados">
                         <div class="acesso_denuncia_item">
-                            <span class="acesso_denuncia_label">Código de acesso</span>
-                            <span class="acesso_denuncia_valor" id="valor_codigo_acesso"></span>
+                            <span class="acesso_denuncia_label">Código de acesso:</span>
+                            <span class="acesso_denuncia_valor" id="valor_codigo_acesso">frwoNGIçrw</span>
                         </div>
-
                         <div class="acesso_denuncia_item">
-                            <span class="acesso_denuncia_label">Senha de acesso</span>
-                            <span class="acesso_denuncia_valor" id="valor_senha_acesso"></span>
+                            <span class="acesso_denuncia_label">Senha de acesso:</span>
+                            <span class="acesso_denuncia_valor" id="valor_senha_acesso">baeit</span>
                         </div>
                     </div>
                 </div>
-
-                <a href="index.html" class="botao_voltar">Voltar para a página inicial</a>
-
             </div>
+
         </section>
+
+        <a href="index.html">← Voltar para a página inicial</a>
 
         <script>
             const codigoAcesso = sessionStorage.getItem("codigoAcesso");
