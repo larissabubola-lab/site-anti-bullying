@@ -79,7 +79,7 @@
                     guardou, e a gente te mostra como o seu caso está.</p>
             </div>
 
-            <form class="status_form" id="form_status">
+            <form class="status_form" id="form_status" autocomplete="off">
 
                 <div class="campo">
                     <i class="bi bi-braces-asterisk"></i>
@@ -88,10 +88,10 @@
 
                 <div class="campo">
                     <i class="bi bi-lock"></i>
-                    <input type="password" id="senha" placeholder="Senha da denúncia" required>
+                    <input type="text" id="senha" placeholder="Senha da denúncia" required>
                 </div>
 
-                <button type="submit" class="botao_consultar">Ver como está minha denúncia</button>
+                <button type="submit" class="botao_consultar" id="botao">Ver como está minha denúncia</button>
 
             </form>
 
@@ -100,11 +100,7 @@
         </div>
     </section>
 
-    <script>
-        function fazer_denuncia(){
-            window.location.href = "form_denuncia.html";
-        }
-    </script>
+    <script src="denuncia.js"></script>
 
 </body>
 

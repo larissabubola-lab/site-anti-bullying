@@ -31,7 +31,8 @@
 
                 <div class="campo_texto">
                     <i class="fa-solid fa-school"></i>
-                    <input type="text" placeholder="escreva o nome da escola onde isso aconteceu." required>
+                    <input type="text" placeholder="escreva o nome da escola onde isso aconteceu." list="escolas" id="nome_escola" name="nome-escola" required>
+                    <datalist id="escolas"></datalist>  
                 </div>
             </div>
 
@@ -40,22 +41,22 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_afetado" required>
+                        <input type="radio" name="pergunta_afetado" value="EU" required>
                         <label>Eu</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_afetado">
+                        <input type="radio" name="pergunta_afetado" value="OUTRA_PESSOA">
                         <label>Outra pessoa</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_afetado">
+                        <input type="radio" name="pergunta_afetado" value="EU_E_OUTRA_PESSOA">
                         <label>Eu e outra pessoa</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_afetado">
+                        <input type="radio" name="pergunta_afetado" value="PREFIRO_NAO_DIZER">
                         <label>Prefiro não responder</label>
                     </div>
                 </div>
@@ -67,32 +68,32 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="checkbox" name="bullying" id="bullying">
+                        <input type="checkbox" name="bullying" id="bullying" value="BULLYING" data-grupo="tipo_de_situacao">
                         <label for="bullying">Bullying</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="cyberbullying" id="cyberbullying">
+                        <input type="checkbox" name="cyberbullying" id="cyberbullying" value="CYBERBULLYING" data-grupo="tipo_de_situacao">
                         <label for="cyberbullying">Cyberbullying</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="assedio" id="assedio">
+                        <input type="checkbox" name="assedio" id="assedio" value="ASSEDIO" data-grupo="tipo_de_situacao">
                         <label for="assedio">Assédio</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="discriminacao" id="discriminacao">
+                        <input type="checkbox" name="discriminacao" id="discriminacao" value="DESCRIMINACAO" data-grupo="tipo_de_situacao">
                         <label for="discriminacao">Discriminação</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="violencia" id="violencia">
+                        <input type="checkbox" name="violencia" id="violencia" value="VIOLENCIA_FISICA" data-grupo="tipo_de_situacao">
                         <label for="violencia">Violência física</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="outro" id="outro_situacao">
+                        <input type="checkbox" name="outro_situacao" id="outro_situacao" value="OUTRO" data-grupo="tipo_de_situacao">
                         <label for="outro_situacao">Outro</label>
                     </div>
                 </div>
@@ -104,7 +105,7 @@
 
                 <div class="campo_texto campo_texto_area">
                     <i class="bi bi-chat-left-text"></i>
-                    <textarea placeholder="Conte o que aconteceu da forma que você se sentir mais confortável."></textarea>
+                    <textarea placeholder="Conte o que aconteceu da forma que você se sentir mais confortável." name="o_que_aconteceu" id="o_que_aconteceu" required></textarea>
                 </div>
             </div>
 
@@ -113,22 +114,22 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_perigo" required>
+                        <input type="radio" name="pergunta_perigo" value="true" required>
                         <label>Sim</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_perigo">
+                        <input type="radio" name="pergunta_perigo" value="">
                         <label>Não</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_perigo">
+                        <input type="radio" name="pergunta_perigo" value="">
                         <label>Não sei</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_perigo">
+                        <input type="radio" name="pergunta_perigo" value="">
                         <label>Prefiro não responder</label>
                     </div>
                 </div>
@@ -140,27 +141,32 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="checkbox" name="sala" id="sala">
-                        <label for="sala">Dentro da escola</label>
+                        <input type="checkbox" name="dentro_escola" id="dentro_escola" value="DENTRO_DA_ESCOLA" data-grupo="local_da_ocorrencia">
+                        <label for="dentro_escola">Dentro da escola</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="fora_escola" id="fora_escola">
+                        <input type="checkbox" name="fora_escola" id="fora_escola" value="FORA_DA_ESCOLA" data-grupo="local_da_ocorrencia">
                         <label for="fora_escola">Fora da escola</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="transporte" id="transporte">
-                        <label for="transporte">No transporte escolar</label>
+                        <input type="checkbox" name="transporte" id="transporte" value="NO_TRAJETO_ESCOLA" data-grupo="local_da_ocorrencia">
+                        <label for="transporte">No trajeto escolar</label>
+                    </div>
+                    
+                    <div class="inputs">
+                        <input type="checkbox" name="proximo" id="proximo" value="NAS_PROXIMIDADES_DA_ESCOLA" data-grupo="local_da_ocorrencia">
+                        <label for="proximo">Nas proximidades da escola</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="internet" id="internet">
+                        <input type="checkbox" name="internet" id="internet" value="NA_INTERNET" data-grupo="local_da_ocorrencia">
                         <label for="internet">Na internet ou redes sociais</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="outro_local" id="outro_local">
+                        <input type="checkbox" name="outro_local" id="outro_local" value="OUTRO" data-grupo="local_da_ocorrencia">
                         <label for="outro_local">Outro</label>
                     </div>
                 </div>
@@ -171,32 +177,32 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_quando" required>
+                        <input type="radio" name="pergunta_quando" required value="HOJE">
                         <label>Hoje</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_quando">
+                        <input type="radio" name="pergunta_quando" value="ULTIMOS_DIAS">
                         <label>Nos últimos dias</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_quando">
+                        <input type="radio" name="pergunta_quando" value="ULTIMAS_SEMANAS">
                         <label>Nas últimas semanas</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_quando">
+                        <input type="radio" name="pergunta_quando" value="HA_MAIS_TEMPO">
                         <label>Há mais tempo</label>
                     </div>
 
-                    <div class="inputs">
-                        <input type="radio" name="pergunta_quando">
+                    <!-- <div class="inputs">
+                        <input type="radio" name="pergunta_quando" value="HOJE">
                         <label>Não sei informar</label>
-                    </div>
+                    </div> -->
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_quando">
+                        <input type="radio" name="pergunta_quando" value="PREFIRO_NAO_DIZER">
                         <label>Prefiro não responder</label>
                     </div>
                 </div>
@@ -207,32 +213,32 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_frequencia" class="nao_aparecer" required>
+                        <input type="radio" name="pergunta_frequencia" class="nao_aparecer" required value="UMA_VEZ">
                         <label>Foi uma única vez</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_frequencia" class="aparecer">
+                        <input type="radio" name="pergunta_frequencia" class="aparecer" value="ALGUMAS_VEZES">
                         <label>Aconteceu algumas vezes</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_frequencia" class="aparecer">
+                        <input type="radio" name="pergunta_frequencia" class="aparecer" value="FREQUENTEMENTE">
                         <label>Acontece frequentemente</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_frequencia" class="nao_aparecer">
+                        <input type="radio" name="pergunta_frequencia" class="nao_aparecer" value="TODOS_OS_DIAS">
                         <label>Acontece todos os dias/quase todos os dias</label>
                     </div>
 
-                    <div class="inputs">
+                    <!-- <div class="inputs">
                         <input type="radio" name="pergunta_frequencia" class="aparecer">
                         <label>Não sei informar</label>
-                    </div>
+                    </div> -->
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_frequencia" class="aparecer">
+                        <input type="radio" name="pergunta_frequencia" class="aparecer" value="PREFIRO_NAO_DIZER">
                         <label>Prefiro não responder</label>
                     </div>
                 </div>
@@ -243,22 +249,22 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_continua" required>
+                        <input type="radio" name="pergunta_continua" value="true">
                         <label>Sim</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_continua">
+                        <input type="radio" name="pergunta_continua" value="">
                         <label>Não</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_continua">
+                        <input type="radio" name="pergunta_continua"  value="">
                         <label>Não sei</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_continua">
+                        <input type="radio" name="pergunta_continua"  value="">
                         <label>Prefiro não responder</label>
                     </div>
                 </div>
@@ -270,32 +276,32 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="checkbox" name="aluno" id="aluno">
+                        <input type="checkbox" name="aluno" id="aluno" value="UM_ALUNO" data-grupo="quem_praticou">
                         <label for="aluno">Um aluno</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="alunos" id="alunos">
+                        <input type="checkbox" name="alunos" id="alunos" value="MAIS_DE_UM_ALUNO" data-grupo="quem_praticou">
                         <label for="alunos">Mais de um aluno</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="professor" id="professor">
+                        <input type="checkbox" name="professor" id="professor" value="PROFESSOR" data-grupo="quem_praticou">
                         <label for="professor">Professor(a)</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="funcionario" id="funcionario">
+                        <input type="checkbox" name="funcionario" id="funcionario" value="FUNCIONARIO_ESCOLA" data-grupo="quem_praticou">
                         <label for="funcionario">Funcionário(a) da escola</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="fora_escola_praticou" id="fora_escola_praticou">
+                        <input type="checkbox" name="fora_escola_praticou" id="fora_escola_praticou" value="ALGUEM_FORA_DA_ESCOLA" data-grupo="quem_praticou">
                         <label for="fora_escola_praticou">Alguém de fora da escola</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="outro_praticou" id="outro_praticou">
+                        <input type="checkbox" name="outro_praticou" id="outro_praticou" value="OUTRO" data-grupo="quem_praticou">
                         <label for="outro_praticou">Outro</label>
                     </div>
                 </div>
@@ -307,7 +313,7 @@
 
                 <div class="campo_texto campo_texto_area">
                     <i class="bi bi-person-lines-fill"></i>
-                    <textarea placeholder="Pode informar turma, apelido, função, aparência, etc. Não é necessário informar o nome completo da pessoa."></textarea>
+                    <textarea placeholder="Pode informar turma, apelido, função, aparência, etc. Não é necessário informar o nome completo da pessoa." id="pessoa_praticou"></textarea>
                 </div>
             </div>
 
@@ -316,22 +322,22 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_presenciou" required>
+                        <input type="radio" name="pergunta_presenciou" required value="SIM">
                         <label>Sim</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_presenciou">
+                        <input type="radio" name="pergunta_presenciou" value="NAO">
                         <label>Não</label>
                     </div>
 
-                    <div class="inputs">
+                    <!-- <div class="inputs">
                         <input type="radio" name="pergunta_presenciou">
                         <label>Não sei</label>
-                    </div>
+                    </div> -->
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_presenciou">
+                        <input type="radio" name="pergunta_presenciou" value="PREFIRO_NAO_INFORMAR">
                         <label>Prefiro não responder</label>
                     </div>
                 </div>
@@ -343,7 +349,7 @@
 
                 <div class="campo_texto campo_texto_area">
                     <i class="bi bi-people-fill"></i>
-                    <textarea placeholder="Pode informar nome, apelido, turma ou outra informação que ajude a identificar a pessoa."></textarea>
+                    <textarea placeholder="Pode informar nome, apelido, turma ou outra informação que ajude a identificar a pessoa." id="detalhes_testemunha"></textarea>
                 </div>
             </div>
 
@@ -352,32 +358,32 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_relatada" required class="nao_contou">
+                        <input type="radio" name="pergunta_relatada" required class="nao_contou" value="NAO_MEDO">
                         <label>Não, pois estava com medo de contar.</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_relatada" class="nao_contou">
+                        <input type="radio" name="pergunta_relatada" class="nao_contou" value="NAO_PRIMEIRA_VEZ_CONTANDO">
                         <label>Não, essa é a primeira vez que estou contando.</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_relatada" class="contou">
+                        <input type="radio" name="pergunta_relatada" class="contou" value="SIM_FAMILIAR">
                         <label>Sim, para um familiar.</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_relatada" class="contou">
+                        <input type="radio" name="pergunta_relatada" class="contou" value="SIM_EQUIPE_ESCOLA">
                         <label>Sim, para a equipe da escola.</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_relatada" class="nao_contou">
+                        <input type="radio" name="pergunta_relatada" class="nao_contou" value="TENTEI_CONTAR">
                         <label>Tentei contar, mas não fui ouvido ou levado a sério.</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_relatada" class="nao_contou">
+                        <input type="radio" name="pergunta_relatada" class="nao_contou" value="PREFIRO_NAO_INFORMAR">
                         <label>Prefiro não responder</label>
                     </div>
                 </div>
@@ -388,34 +394,34 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_depois" required>
+                        <input type="radio" name="pergunta_depois" value="ESCOLA_TENTOU_AJUDAR">
                         <label>A escola tentou ajudar.</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_depois">
+                        <input type="radio" name="pergunta_depois" value="MEDIDA_TOMADA_MAS_NAO_RESOLVEU">
                         <label>Alguma medida foi tomada, mas a situação continuou.</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_depois">
+                        <input type="radio" name="pergunta_depois" value="NINGUEM_FEZ_NADA">
                         <label>Ninguém fez nada.</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_depois">
+                        <input type="radio" name="pergunta_depois" value="DISSERAM_QUE_NAO_PODIAM_FAZER_NADA">
                         <label>Disseram que não podiam fazer nada.</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_depois">
+                        <input type="radio" name="pergunta_depois" value="SITUACAO_PIOROU">
                         <label>A situação piorou.</label>
                     </div>
 
-                    <div class="inputs">
+                    <!-- <div class="inputs">
                         <input type="radio" name="pergunta_depois">
                         <label>Prefiro não responder.</label>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -424,16 +430,16 @@
 
                 <div class="respostas">
                     <div class="inputs">
-                        <input type="radio" name="pergunta_seguro" required>
+                        <input type="radio" name="pergunta_seguro" required value="true">
                         <label>Sim</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="radio" name="pergunta_seguro">
+                        <input type="radio" name="pergunta_seguro" value="">
                         <label>Não</label>
                     </div>
 
-                    <div class="inputs">
+                    <!-- <div class="inputs">
                         <input type="radio" name="pergunta_seguro">
                         <label>Não sei</label>
                     </div>
@@ -441,7 +447,7 @@
                     <div class="inputs">
                         <input type="radio" name="pergunta_seguro">
                         <label>Prefiro não responder.</label>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -450,47 +456,48 @@
                 <p>*Você pode selecionar mais de um</p>
 
                 <div class="respostas">
-                    <!-- <div class="inputs">
-                        <input type="checkbox" name="nenhum" id="nenhum">
-                        <label for="nenhum">Não afetou dessa maneira</label>
-                    </div> -->
                     <div class="inputs">
-                        <input type="checkbox" name="medo" id="medo">
+                        <input type="checkbox" name="medo" id="medo" value="MEDO_OU_INSEGURANCA" data-grupo="como_isso_te_afetou">
                         <label for="medo">Medo ou insegurança</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="tristeza" id="tristeza">
+                        <input type="checkbox" name="tristeza" id="tristeza" value="TRISTEZA_OU_SOFRIMENTO" data-grupo="como_isso_te_afetou">
                         <label for="tristeza">Tristeza ou sofrimento</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="estudos" id="estudos">
+                        <input type="checkbox" name="estudos" id="estudos" value="DIFICULDADE_PARA_ESTUDAR" data-grupo="como_isso_te_afetou">
                         <label for="estudos">Dificuldade para estudar</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="escola" id="escola">
-                        <label for="escola">Vontade de não ir à escola</label>
+                        <input type="checkbox" name="vontade_nao_ir_escola" id="vontade_nao_ir_escola" value="VONTADE_DE_NAO_IR_A_ESCOLA" data-grupo="como_isso_te_afetou">
+                        <label for="vontade_nao_ir_escola">Vontade de não ir à escola</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="sono" id="sono">
+                        <input type="checkbox" name="sono" id="sono" value="PROBLEMAS_PARA_DORMIR" data-grupo="como_isso_te_afetou">
                         <label for="sono">Problemas para dormir</label>
                     </div>
 
                     <div class="inputs">
-                        <input type="checkbox" name="ferimentos" id="ferimentos">
+                        <input type="checkbox" name="ferimentos" id="ferimentos" value="FERIMENTOS_OU_DOR_FISICA" data-grupo="como_isso_te_afetou">
                         <label for="ferimentos">Ferimentos ou dor física</label>
                     </div>
 
-                    <div class="inputs">
-                        <input type="checkbox" name="outro_impacto" id="outro_impacto">
+                    <!-- <div class="inputs">
+                        <input type="checkbox" name="nenhum" id="nenhum" value="NENHUM" data-grupo="como_isso_te_afetou">
+                        <label for="nenhum">Não tenho certeza</label>
+                    </div> -->
+
+                    <!-- <div class="inputs">
+                        <input type="checkbox" name="outro_impacto" id="outro_impacto" value="OUTRO" data-grupo="como_isso_te_afetou">
                         <label for="outro_impacto">Outro</label>
-                    </div>
+                    </div> -->
 
                     <div class="inputs">
-                        <input type="checkbox" name="prefiro" id="prefiro">
+                        <input type="checkbox" name="prefiro" id="prefiro" value="PREFIRO_NAO_DIZER" data-grupo="como_isso_te_afetou">
                         <label for="prefiro">Prefiro não responder</label>
                     </div>
                 </div>
@@ -502,7 +509,7 @@
 
                 <div class="campo_texto campo_texto_area">
                     <i class="bi bi-info-circle"></i>
-                    <textarea placeholder="Escreva aqui algo que julgar importante e que não foi mencionado nas perguntas anteriores."></textarea>
+                    <textarea placeholder="Escreva aqui algo que julgar importante e que não foi mencionado nas perguntas anteriores." id="mais_infos"></textarea>
                 </div>
             </div>
 
@@ -517,7 +524,7 @@
                 </div>
             </div>
 
-            <button type="submit" class="botao_enviar">
+            <button type="submit" class="botao_enviar" id="botao_denunciar">
                 <i class="bi bi-box-arrow-in-left"></i>
                 Enviar denúncia
             </button>
