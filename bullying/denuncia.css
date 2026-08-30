@@ -337,6 +337,20 @@ body {
     color: #006d6d;
 }
 
+.status_erro {
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 13.5px;
+    color: #ffe1e1;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 214, 214, 0.4);
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin-top: -6px;
+}
+
 .status_ajuda {
     margin-top: 24px;
     text-align: center;
