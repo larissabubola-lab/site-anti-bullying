@@ -462,7 +462,7 @@ section {
 .acoes_inicio {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
     margin-top: 50px;
 }
 
@@ -479,6 +479,7 @@ section {
     font-family: "comfortaa";
     font-size: 14px;
     cursor: pointer;
+    white-space:nowrap;
     box-shadow: 0 5px 12px rgba(0, 128, 128, 0.25);
     transition: 300ms ease;
 }
@@ -528,6 +529,7 @@ section {
     font-family: patrick;
     font-size: 15px;
     color: #6799ba;
+    white-space:nowrap;
 }
 
 .inicio_frase i {
@@ -536,6 +538,7 @@ section {
 
 .inicio_frase b {
     color: #008080;
+    text-decoration:underline;
 }
 
 .inicio_visual {
