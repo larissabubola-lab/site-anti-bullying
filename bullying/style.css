@@ -109,8 +109,8 @@ header{
         display:block;
         color:#e9e9e9;
         font-family:roboto;
-        font-size:10px;
-        width:200px;
+        font-size:12px;
+        width:190px;
         /* text-align:center; */
 
     }
@@ -118,8 +118,18 @@ header{
     #botoes_auxiliar{
         display:none;
     }
-    
-    
+
+     #menu_hamburguer{
+        display:block;
+         color:white;
+         border:2px solid;
+         padding:10px;
+         padding-bottom:8px !important;
+         font-size:20px;
+         border-radius:15px;
+         margin-left:30px;
+    }
+      
 }
 
 @media(orientation:landscape){
@@ -278,6 +288,10 @@ header{
         width:84.19vw;
         /* width: min(calc(42.09vw + 90.84vh), 90%); */
         margin: auto;
+    }
+
+    #menu_hamburguer{
+        display:none;
     }
     
     #inicio {
