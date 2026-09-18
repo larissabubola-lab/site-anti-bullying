@@ -17,7 +17,8 @@ function esconder_erro_status(){
 }
 
 async function acessar_denuncia(){
-    const caminho = "https://sida-server-test.loca.lt/acesso/denuncia/acessar"; 
+    // const caminho = "https://sida-server-test.loca.lt/acesso/denuncia/acessar"; 
+    const caminho = "https://servidor-denuncias-bullying.onrender.com/acesso/denuncia/acessar";
     const botao = document.getElementById("botao");
     const texto_original_botao = botao.textContent;
 
