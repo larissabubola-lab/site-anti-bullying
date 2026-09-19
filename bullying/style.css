@@ -901,7 +901,6 @@ footer {
         margin-top:calc(13.89vw + 6.76vh);
     }
     
-    
     .container {
         /* width:calc(42.09vw + 90.84vh);
         width:calc(42.1vw + 90.84vh); */
@@ -921,10 +920,14 @@ footer {
 
     }
 
+    .inicio_texto{
+        width:300px;
+    
+    }
+
     .inicio_conteudo h2{
-        width:345px;
-        /* width:calc(47.92vw + 23.31vh); */
-        width:95.83vw;
+        /* width:340px; */
+        width:90vw;
     }
 
      .inicio_frase {
