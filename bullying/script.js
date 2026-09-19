@@ -3,7 +3,7 @@ const pagina_sobre_nos = document.getElementById("sobre_nos");
 const pagina_como_denunciar = document.getElementById("como_denunciar");
 const pagina_contatos = document.getElementById("contatos");
 const menu_celular = document.getElementById("menu_lateral");
-let clicou_celular = false;
+// let clicou_celular = false;
 
 function abrir_inicio(){
     pagina_inicio.style.display = "block";
@@ -11,6 +11,7 @@ function abrir_inicio(){
     pagina_como_denunciar.style.display = "none";
     pagina_contatos.style.display = "none";
     window.scrollTo(0,0);
+    menu_celular.style.display = "none";
 }
 
 function abrir_sobre_nos(){
@@ -19,6 +20,7 @@ function abrir_sobre_nos(){
     pagina_como_denunciar.style.display = "none";
     pagina_contatos.style.display = "none";
     window.scrollTo(0,0);
+    menu_celular.style.display = "none";
 }
 
 function abrir_como_denunciar(){
@@ -27,6 +29,7 @@ function abrir_como_denunciar(){
     pagina_como_denunciar.style.display = "flex";
     pagina_contatos.style.display = "none";
     window.scrollTo(0,0);
+    menu_celular.style.display = "none";
 }
 
 function abrir_contatos(){
@@ -35,16 +38,18 @@ function abrir_contatos(){
     pagina_como_denunciar.style.display = "none";
     pagina_contatos.style.display = "flex";
     window.scrollTo(0,0);
+    menu_celular.style.display = "none";
 }
 
 function abrir_menu(){
-    clicou_celular = !clicou_celular;
-    if(clicou_celular){
-        menu_celular.style.display = "flex";
-    }
-    else{
-        menu_celular.style.display = "none";
-    }
+    menu_celular.style.display = "flex";
+    // clicou_celular = !clicou_celular;
+    // if(clicou_celular){
+    //     menu_celular.style.display = "flex";
+    // }
+    // else{
+    //     menu_celular.style.display = "none";
+    // }
 }
 
 let slideAtual = 0;

@@ -875,16 +875,20 @@ footer {
 
     #menu_lateral{
         /* display:none; */
-        width:21%;
+        /* width:21%; */
+        width:80vw;
         display:flex;
         /* width:200px; */
         height:100vh;
         /* left:60px; */
-        left:calc(8.33vw + 4.05vh);
+        /* left:calc(8.33vw + 4.05vh); */
+        /* left:65px; */
+        left:calc(9.03vw + 4.29vh);
+        top:0;
         
         position:fixed;
         background:#008080;
-        z-index:1;
+        z-index:10;
         flex-direction:column;
         align-items:center;
         justify-content:center;
