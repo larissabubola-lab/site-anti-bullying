@@ -2,6 +2,8 @@ const pagina_inicio = document.getElementById("main");
 const pagina_sobre_nos = document.getElementById("sobre_nos");
 const pagina_como_denunciar = document.getElementById("como_denunciar");
 const pagina_contatos = document.getElementById("contatos");
+const menu_celular = document.getElementById("menu_lateral");
+let clicou_celular = false;
 
 function abrir_inicio(){
     pagina_inicio.style.display = "block";
@@ -33,6 +35,16 @@ function abrir_contatos(){
     pagina_como_denunciar.style.display = "none";
     pagina_contatos.style.display = "flex";
     window.scrollTo(0,0);
+}
+
+function abrir_menu(){
+    clicou_celular = !clicou_celular;
+    if(clicou_celular){
+        menu_celular.style.display = "flex";
+    }
+    else{
+        menu_celular.style.display = "none";
+    }
 }
 
 let slideAtual = 0;
