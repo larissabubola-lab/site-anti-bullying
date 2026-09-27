@@ -1703,6 +1703,176 @@ footer {
     transform: translateY(calc(-0.11vw - 0.24vh));
 }
 
+#contatos {
+    margin-top: calc(1.83vw + 3.95vh) !important;
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    position: relative;
+    background: #ffffff;
+}
+
+#contatos_topo {
+    width: 100%;
+    height:auto;
+    padding: calc(5.12vw + 11.06vh) 0 calc(2.93vw + 6.32vh);
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(155deg, #102b2b 0%, #123434 45%, #0c2323 100%);
+}
+
+#contatos_topo::before{
+    content:"";
+    position:absolute;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.035) calc(0.04vw + 0.08vh), transparent calc(0.04vw + 0.08vh)), linear-gradient(90deg, rgba(255, 255, 255, 0.035) calc(0.04vw + 0.08vh), transparent calc(0.04vw + 0.08vh)) !important;
+    background-size: calc(1.68vw + 3.63vh) calc(1.68vw + 3.63vh);
+    inset:0;
+}
+
+.contatos_fundo_numero {
+    position: absolute;
+    right: 6%;
+    top: calc(1.46vw + 3.16vh);
+    font-size: calc(9.52vw + 20.54vh);
+    color: rgba(234, 246, 246, 0.035);
+    user-select: none;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.contatos_topo_conteudo {
+    position: relative;
+    z-index: 2;
+    max-width: calc(28.55vw + 61.61vh);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contatos_tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(0.51vw + 1.11vh);
+    margin-bottom: calc(0.95vw + 2.05vh);
+    font-family: "comfortaa";
+    font-size: calc(0.4vw + 0.87vh);
+    letter-spacing: calc(0.11vw + 0.24vh);
+    color: #7fd9d9;
+}
+
+.contatos_tag span {
+    width: calc(1.24vw + 2.69vh);
+    height: calc(0.04vw + 0.08vh);
+    background: rgba(127, 217, 217, 0.5);
+}
+
+.contatos_titulo {
+    font-family: "comfortaa";
+    font-weight: 700;
+    font-size: calc(1.54vw + 3.32vh);
+    line-height: 1.35;
+    color: #eaf6f6;
+    margin-bottom: calc(0.81vw + 1.74vh);
+}
+
+.contatos_titulo em {
+    font-style: normal;
+    color: #7fd9d9;
+}
+
+.contatos_subtitulo {
+    font-family: "nunito";
+    font-size: calc(0.62vw + 1.34vh);
+    line-height: 1.8;
+    color: rgba(234, 246, 246, 0.75);
+}
+
+#contatos_numeros {
+    width: 100%;
+    padding: calc(2.93vw + 6.32vh) 0 calc(3.29vw + 7.11vh);
+    position: relative;
+}
+
+.contatos_numeros_cabecalho {
+    margin-bottom: calc(1.65vw + 3.55vh);
+}
+
+.contatos_numeros_cabecalho small {
+    font-family: "patrick";
+    font-size: calc(0.59vw + 1.26vh);
+    letter-spacing: calc(0.02vw + 0.04vh);
+    color: #6799ba;
+    font-weight:bold;
+    display:none;
+    /* text-shadow: calc(0.04vw + 0.08vh) calc(0.04vw + 0.08vh) calc(0.04vw + 0.08vh) #5786a5; */
+}
+
+.contatos_numeros_cabecalho h3 {
+    margin-top: calc(0.22vw + 0.47vh);
+    font-family: "comfortaa";
+    font-size: calc(1.1vw + 2.37vh);
+    color: #008080;
+    text-decoration:underline;
+    text-shadow: calc(0.07vw + 0.16vh) calc(0.07vw + 0.16vh) calc(0.04vw + 0.08vh) #074f4f;
+}
+
+.contatos_numeros_cabecalho p {
+    max-width: calc(20.5vw + 44.23vh);
+    margin-top: calc(0.59vw + 1.26vh);
+    font-family: "nunito";
+    font-size: calc(0.55vw + 1.18vh);
+    line-height: 1.7;
+    color: #555;
+}
+
+#contatos_lista {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato_numero {
+    padding: calc(0.95vw + 2.05vh) 0;
+    border-bottom: calc(0.04vw + 0.08vh) solid #c7dddd;
+    display: grid;
+    grid-template-columns: calc(2.71vw + 5.85vh) 1fr;
+    gap: calc(0.95vw + 2.05vh);
+    align-items: center;
+}
+
+.contato_numero:last-child {
+    border-bottom: none;
+}
+
+.contato_numero_digito {
+    width: calc(2.42vw + 5.21vh);
+    height: calc(2.42vw + 5.21vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #008080 0%, #006d6d 100%);
+    color: white;
+    font-family: "ruslan";
+    font-size: calc(0.62vw + 1.34vh);
+    box-shadow: 0 calc(0.26vw + 0.55vh) calc(0.55vw + 1.18vh) rgba(0, 128, 128, 0.15);
+}
+
+.contato_numero h4 {
+    font-family: "patrick";
+    font-size: calc(0.88vw + 1.9vh);
+    color: #008080;
+    margin-bottom: calc(0.22vw + 0.47vh);
+}
+
+.contato_numero p {
+    font-family: "nunito";
+    font-size: calc(0.55vw + 1.18vh);
+    line-height: 1.7;
+    color: #505050;
+}
+
 @media(orientation:portrait){
     header{
         height:80px;
@@ -1939,6 +2109,10 @@ footer {
 
     .denuncia_final_texto p{
         margin-top:20px;
+    }
+
+    .contatos_linha_lateral{
+        display:none;
     }
 }
 
@@ -2576,21 +2750,8 @@ footer {
         font-family: "patrick";
         font-size: calc(0.44vw + 0.95vh);
         letter-spacing: calc(0.02vw + 0.04vh);
-    }
-    
-    
-    
-    
-    #contatos {
-        margin-top: calc(1.83vw + 3.95vh) !important;
-        width: 100%;
-        height: auto;
-        display: none;
-        flex-direction: column;
-        position: relative;
-        background: #ffffff;
-    }
-    
+    } 
+
     .contatos_linha_lateral {
         position: absolute;
         left: calc(0.73vw + 1.58vh);
@@ -2621,167 +2782,6 @@ footer {
         margin: calc(0.44vw + 0.95vh) 0;
         background: rgba(234, 246, 246, 0.18);
     }
-    
-    #contatos_topo {
-        width: 100%;
-        padding: calc(5.12vw + 11.06vh) 0 calc(2.93vw + 6.32vh);
-        position: relative;
-        overflow: hidden;
-        background: linear-gradient(155deg, #102b2b 0%, #123434 45%, #0c2323 100%);
-    }
-    
-    #contatos_topo::before{
-        content:"";
-        position:absolute;
-        background-image:linear-gradient(rgba(255, 255, 255, 0.035) calc(0.04vw + 0.08vh), transparent calc(0.04vw + 0.08vh)), linear-gradient(90deg, rgba(255, 255, 255, 0.035) calc(0.04vw + 0.08vh), transparent calc(0.04vw + 0.08vh)) !important;
-        background-size: calc(1.68vw + 3.63vh) calc(1.68vw + 3.63vh);
-        inset:0;
-    }
-    
-    .contatos_fundo_numero {
-        position: absolute;
-        right: 6%;
-        top: calc(1.46vw + 3.16vh);
-        font-size: calc(9.52vw + 20.54vh);
-        color: rgba(234, 246, 246, 0.035);
-        user-select: none;
-        z-index: 0;
-        pointer-events: none;
-    }
-    
-    .contatos_topo_conteudo {
-        position: relative;
-        z-index: 2;
-        max-width: calc(28.55vw + 61.61vh);
-        margin: 0 auto;
-        text-align: center;
-    }
-    
-    .contatos_tag {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: calc(0.51vw + 1.11vh);
-        margin-bottom: calc(0.95vw + 2.05vh);
-        font-family: "comfortaa";
-        font-size: calc(0.4vw + 0.87vh);
-        letter-spacing: calc(0.11vw + 0.24vh);
-        color: #7fd9d9;
-    }
-    
-    .contatos_tag span {
-        width: calc(1.24vw + 2.69vh);
-        height: calc(0.04vw + 0.08vh);
-        background: rgba(127, 217, 217, 0.5);
-    }
-    
-    .contatos_titulo {
-        font-family: "comfortaa";
-        font-weight: 700;
-        font-size: calc(1.54vw + 3.32vh);
-        line-height: 1.35;
-        color: #eaf6f6;
-        margin-bottom: calc(0.81vw + 1.74vh);
-    }
-    
-    .contatos_titulo em {
-        font-style: normal;
-        color: #7fd9d9;
-    }
-    
-    .contatos_subtitulo {
-        font-family: "nunito";
-        font-size: calc(0.62vw + 1.34vh);
-        line-height: 1.8;
-        color: rgba(234, 246, 246, 0.75);
-    }
-    
-    #contatos_numeros {
-        width: 100%;
-        padding: calc(2.93vw + 6.32vh) 0 calc(3.29vw + 7.11vh);
-        position: relative;
-    }
-    
-    .contatos_numeros_cabecalho {
-        margin-bottom: calc(1.65vw + 3.55vh);
-    }
-    
-    .contatos_numeros_cabecalho small {
-        font-family: "patrick";
-        font-size: calc(0.59vw + 1.26vh);
-        letter-spacing: calc(0.02vw + 0.04vh);
-        color: #6799ba;
-        font-weight:bold;
-        display:none;
-        /* text-shadow: calc(0.04vw + 0.08vh) calc(0.04vw + 0.08vh) calc(0.04vw + 0.08vh) #5786a5; */
-    }
-    
-    .contatos_numeros_cabecalho h3 {
-        margin-top: calc(0.22vw + 0.47vh);
-        font-family: "comfortaa";
-        font-size: calc(1.1vw + 2.37vh);
-        color: #008080;
-        text-decoration:underline;
-        text-shadow: calc(0.07vw + 0.16vh) calc(0.07vw + 0.16vh) calc(0.04vw + 0.08vh) #074f4f;
-    }
-    
-    .contatos_numeros_cabecalho p {
-        max-width: calc(20.5vw + 44.23vh);
-        margin-top: calc(0.59vw + 1.26vh);
-        font-family: "nunito";
-        font-size: calc(0.55vw + 1.18vh);
-        line-height: 1.7;
-        color: #555;
-    }
-    
-    #contatos_lista {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .contato_numero {
-        padding: calc(0.95vw + 2.05vh) 0;
-        border-bottom: calc(0.04vw + 0.08vh) solid #c7dddd;
-        display: grid;
-        grid-template-columns: calc(2.71vw + 5.85vh) 1fr;
-        gap: calc(0.95vw + 2.05vh);
-        align-items: center;
-    }
-    
-    .contato_numero:last-child {
-        border-bottom: none;
-    }
-    
-    .contato_numero_digito {
-        width: calc(2.42vw + 5.21vh);
-        height: calc(2.42vw + 5.21vh);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        background: linear-gradient(135deg, #008080 0%, #006d6d 100%);
-        color: white;
-        font-family: "ruslan";
-        font-size: calc(0.62vw + 1.34vh);
-        box-shadow: 0 calc(0.26vw + 0.55vh) calc(0.55vw + 1.18vh) rgba(0, 128, 128, 0.15);
-    }
-    
-    .contato_numero h4 {
-        font-family: "patrick";
-        font-size: calc(0.88vw + 1.9vh);
-        color: #008080;
-        margin-bottom: calc(0.22vw + 0.47vh);
-    }
-    
-    .contato_numero p {
-        font-family: "nunito";
-        font-size: calc(0.55vw + 1.18vh);
-        line-height: 1.7;
-        color: #505050;
-    }
-
-
 }
 
 
