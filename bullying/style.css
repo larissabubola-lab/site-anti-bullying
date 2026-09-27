@@ -1348,7 +1348,360 @@ footer {
     background: #006d6d;
     transform: translateY(calc(-0.11vw - 0.24vh));
 }
+
+#como_denunciar {
+    margin-top: calc(3.66vw + 7.9vh) !important;
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    position: relative;
+}
+
+.denuncia_fundo_numero {
+    position: absolute;
+    right: 4%;
+    top: calc(1.46vw + 3.16vh);
+    font-family: "ruslan";
+    font-size: calc(9.52vw + 20.54vh);
+    color: rgba(0, 128, 128, 0.04);
+    user-select: none;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#denuncia_intro {
+    width: 100%;
+    padding: calc(2.93vw + 6.32vh) 0 calc(2.2vw + 4.74vh);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: radial-gradient(circle at 85% 15%, rgba(0, 128, 128, 0.07), transparent 30%), linear-gradient(135deg, #f1f1f1 0%, #f8ffff 55%, #e7f5f5 100%);
+}
+
+#denuncia_intro::before {
+    content: "";
+    position: absolute;
+    width: calc(15.37vw + 33.18vh);
+    height: calc(15.37vw + 33.18vh);
+    left: calc(-8.78vw - 18.96vh);
+    top: calc(-8.05vw - 17.38vh);
+    border-radius: 50%;
+    border: calc(0.07vw + 0.16vh) dashed rgba(0, 128, 128, 0.12);
+}
+
+.denuncia_intro_conteudo {
+    position: relative;
+    z-index: 2;
+    max-width: calc(28.55vw + 61.61vh);
+}
+
+.denuncia_tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(0.51vw + 1.11vh);
+    margin-bottom: calc(0.81vw + 1.74vh);
+    font-family: "comfortaa";
+    font-size: calc(0.4vw + 0.87vh);
+    letter-spacing: calc(0.11vw + 0.24vh);
+    color: #6799ba;
+}
+
+.denuncia_tag span {
+    width: calc(1.24vw + 2.69vh);
+    height: calc(0.04vw + 0.08vh);
+    background: rgba(103, 153, 186, 0.5);
+}
+
+.denuncia_titulo {
+    font-family: "comfortaa";
+    font-weight: 700;
+    font-size: calc(1.54vw + 3.32vh);
+    line-height: 1.35;
+    letter-spacing: calc(0.02vw + 0.04vh);
+    color: #1c3b3b;
+    margin-bottom: calc(0.73vw + 1.58vh);
+}
+
+.denuncia_titulo em {
+    font-style: normal;
+    color: #008080;
+    position: relative;
+    padding: 0 calc(0.15vw + 0.32vh);
+}
+
+.denuncia_titulo em::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(0.11vw + 0.24vh);
+    height: calc(0.33vw + 0.71vh);
+    background: rgba(0, 128, 128, 0.15);
+    border-radius: calc(0.15vw + 0.32vh);
+    z-index: -1;
+}
+
+.denuncia_subtitulo {
+    font-family: "nunito";
+    font-size: calc(0.62vw + 1.34vh);
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: calc(1.1vw + 2.37vh);
+}
+
+.denuncia_privacidade {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: calc(0.73vw + 1.58vh);
+    display: flex;
+    align-items: center;
+    gap: calc(0.44vw + 0.95vh);
+    text-align: left;
+    border-top: calc(0.04vw + 0.08vh) dashed rgba(0, 128, 128, 0.35);
+}
+
+.denuncia_privacidade i {
+    flex-shrink: 0;
+    font-size: calc(0.81vw + 1.74vh);
+    color: #008080;
+}
+
+.denuncia_privacidade span {
+    font-family: "nunito";
+    font-size: calc(0.51vw + 1.11vh);
+    line-height: 1.6;
+    color: #555;
+}
+
+.denuncia_privacidade strong {
+    font-family: "comfortaa";
+    color: #008080;
+}
+
+#denuncia_etapas {
+    width: 100%;
+    padding: calc(3.29vw + 7.11vh) 0;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.denuncia_etapa:last-child {
+    border-bottom: none;
+}
+
+.denuncia_etapa_imagem {
+    position: relative;
+    height: calc(8.42vw + 18.17vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: calc(0.59vw + 1.26vh);
+    border-radius: calc(0.66vw + 1.42vh);
+    border: calc(0.07vw + 0.16vh) dashed #a9d4d4;
+    background: radial-gradient(circle at 30% 20%, rgba(0, 128, 128, 0.07), transparent 55%), linear-gradient(135deg, #f4fbfb 0%, #e7f5f5 100%);
+    box-shadow: 0 calc(0.44vw + 0.95vh) calc(0.92vw + 1.97vh) rgba(0, 128, 128, 0.08);
+    overflow: hidden;
+}
+
+.denuncia_etapa_foto {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.denuncia_etapa_icone_grande {
+    width: calc(2.86vw + 6.16vh);
+    height: calc(2.86vw + 6.16vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #008080 0%, #006d6d 100%);
+    color: white;
+    font-size: calc(1.17vw + 2.53vh);
+    box-shadow: 0 calc(0.29vw + 0.63vh) calc(0.66vw + 1.42vh) rgba(0, 128, 128, 0.20);
+}
+
+.denuncia_etapa_legenda {
+    font-family: "nunito";
+    font-size: calc(1.1vw + 2.37vh);
+    letter-spacing: calc(0.02vw + 0.04vh);
+    color: #6799ba;
+    text-align: center;
+    padding: 0 calc(0.73vw + 1.58vh);
+}
+
+.denuncia_etapa_numero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(1.61vw + 3.48vh);
+    height: calc(1.61vw + 3.48vh);
+    margin-bottom: calc(0.51vw + 1.11vh);
+    border-radius: 50%;
+    background: white;
+    border: calc(0.07vw + 0.16vh) solid #008080;
+    color: #008080;
+    font-family: "comfortaa";
+    font-size: calc(0.51vw + 1.11vh);
+}
+
+.denuncia_etapa_texto h3 {
+    font-family: "patrick";
+    font-size: calc(1.02vw + 2.21vh);
+    color: #008080;
+    margin-bottom: calc(0.37vw + 0.79vh);
+}
+
+.denuncia_etapa_texto p {
+    font-family: "nunito";
+    font-size: calc(0.59vw + 1.26vh);
+    line-height: 1.75;
+    color: #505050;
+    max-width: calc(17.57vw + 37.91vh);
+}
+
+#denuncia_dicas {
+    width: 100%;
+    padding: calc(3.11vw + 6.71vh) 0;
+    position: relative;
+    overflow: hidden;
+    background: #eef7f7;
+    border-top: calc(0.04vw + 0.08vh) solid #d8e7e7;
+    border-bottom: calc(0.04vw + 0.08vh) solid #d8e7e7;
+}
+
+.denuncia_dicas_titulo {
+    text-align: center;
+    max-width: calc(23.43vw + 50.55vh);
+    margin: 0 auto calc(1.65vw + 3.55vh);
+}
+
+.denuncia_dicas_titulo h2 {
+    font-family: "comfortaa";
+    font-size: calc(1.17vw + 2.53vh);
+    color: #008080;
+    text-shadow: calc(0.11vw + 0.24vh) calc(0.11vw + 0.24vh) calc(0.04vw + 0.08vh) #b8d3e3;
+    margin-bottom: calc(0.51vw + 1.11vh);
+}
+
+.denuncia_dicas_titulo p {
+    font-family: "nunito";
+    font-size: calc(0.55vw + 1.18vh);
+    line-height: 1.7;
+    color: #555;
+}
+
+.denuncia_dicas_grade {
+    display: flex;
+    background:#008080;
+    padding-top:calc(0.37vw + 0.79vh) !important;
+    padding-bottom:calc(0.37vw + 0.79vh) !important;
+    border-radius:calc(0.37vw + 0.79vh);
     
+}
+
+.denuncia_dica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(0.59vw + 1.26vh);
+    text-align: center;
+    padding: calc(0.37vw + 0.79vh) calc(1.02vw + 2.21vh);
+    position: relative;
+    transition: 300ms ease;
+   
+}
+
+.denuncia_dica:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: calc(0.29vw + 0.63vh);
+    bottom: calc(0.29vw + 0.63vh);
+    width: calc(0.04vw + 0.08vh);
+    background: #cbe0e0;
+}
+
+.denuncia_dica i {
+    font-size: calc(0.95vw + 2.05vh);
+    /* color: #008080; */
+    color:white;
+    transition: 300ms ease;
+}
+
+.denuncia_dica:hover i {
+    transform: translateY(calc(-0.15vw - 0.32vh));
+}
+
+.denuncia_dica span {
+    font-family: "nunito";
+    font-size: calc(0.51vw + 1.11vh);
+    line-height: 1.6;
+    color:white;
+}
+
+#denuncia_final {
+    width: 100%;
+    padding: calc(2.56vw + 5.53vh) 0 calc(3.29vw + 7.11vh);
+    background: radial-gradient(circle at 85% 25%, rgba(0, 128, 128, 0.06), transparent 28%), linear-gradient(135deg, #e4f4f4 0%, #f1f1f1 65%, #e7f5f5 100%);
+}
+
+.denuncia_final_conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: calc(1.28vw + 2.76vh);
+    border-top: calc(0.07vw + 0.16vh) solid #c7dddd;
+    gap: calc(1.1vw + 2.37vh);
+}
+
+.denuncia_final_texto h2 {
+    font-family: "comfortaa";
+    color: #008080;
+    font-size: calc(1.02vw + 2.21vh);
+    margin-bottom: calc(0.29vw + 0.63vh);
+    text-shadow: calc(0.11vw + 0.24vh) calc(0.11vw + 0.24vh) calc(0.04vw + 0.08vh) #008080;
+    text-decoration: underline;
+}
+
+.denuncia_final_texto p {
+    font-family: "nunito";
+    font-size: calc(0.55vw + 1.18vh);
+    color: #555;
+}
+
+
+.denuncia_botao {
+    flex-shrink: 0;
+    height: calc(1.79vw + 3.87vh);
+    padding: 0 calc(0.81vw + 1.74vh);
+    display: flex;
+    align-items: center;
+    gap: calc(0.44vw + 0.95vh);
+    border: none;
+    border-radius: calc(0.44vw + 0.95vh);
+    background: #008080;
+    color: white;
+    font-family: "comfortaa";
+    font-size: calc(0.51vw + 1.11vh);
+    cursor: pointer;
+    box-shadow: 0 calc(0.18vw + 0.39vh) calc(0.44vw + 0.95vh) rgba(0, 128, 128, 0.25);
+    transition: 300ms ease;
+}
+
+.denuncia_botao:hover {
+    background: #006d6d;
+    transform: translateY(calc(-0.11vw - 0.24vh));
+}
 
 @media(orientation:portrait){
     header{
@@ -1546,6 +1899,46 @@ footer {
 
     .sobre_final_texto h2{
         text-align:center;
+    }
+
+    .denuncia_linha_lateral{
+        display:none;
+    }
+
+    .denuncia_privacidade span{
+        text-align:center;
+    }
+
+    .denuncia_etapa {
+        display:flex;
+        flex-direction:column-reverse;
+        padding: calc(1.65vw + 3.55vh) 0;
+        border-bottom: calc(0.04vw + 0.08vh) dashed #c7dddd;
+        gap:20px;
+    }
+
+    .denuncia_etapa_tag {
+        display:none;
+    }
+
+    .denuncia_dicas_grade{
+        flex-direction:column;
+    }
+
+    .denuncia_dica span{
+        width:200px;
+    }
+
+    .denuncia_dica:not(:last-child){
+         border-bottom: 1px solid #cbe0e0;
+    }
+
+    .denuncia_final_conteudo {
+        flex-direction:column;
+    }
+
+    .denuncia_final_texto p{
+        margin-top:20px;
     }
 }
 
@@ -2122,14 +2515,6 @@ footer {
     }  
     
     
-    #como_denunciar {
-        margin-top: calc(3.66vw + 7.9vh) !important;
-        width: 100%;
-        height: auto;
-        display: none;
-        flex-direction: column;
-        position: relative;
-    }
     
     .denuncia_linha_lateral {
         position: absolute;
@@ -2163,137 +2548,6 @@ footer {
         background: #c7dddd;
     }
     
-    .denuncia_fundo_numero {
-        position: absolute;
-        right: 4%;
-        top: calc(1.46vw + 3.16vh);
-        font-family: "ruslan";
-        font-size: calc(9.52vw + 20.54vh);
-        color: rgba(0, 128, 128, 0.04);
-        user-select: none;
-        z-index: 0;
-        pointer-events: none;
-    }
-    
-    #denuncia_intro {
-        width: 100%;
-        padding: calc(2.93vw + 6.32vh) 0 calc(2.2vw + 4.74vh);
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        background: radial-gradient(circle at 85% 15%, rgba(0, 128, 128, 0.07), transparent 30%), linear-gradient(135deg, #f1f1f1 0%, #f8ffff 55%, #e7f5f5 100%);
-    }
-    
-    #denuncia_intro::before {
-        content: "";
-        position: absolute;
-        width: calc(15.37vw + 33.18vh);
-        height: calc(15.37vw + 33.18vh);
-        left: calc(-8.78vw - 18.96vh);
-        top: calc(-8.05vw - 17.38vh);
-        border-radius: 50%;
-        border: calc(0.07vw + 0.16vh) dashed rgba(0, 128, 128, 0.12);
-    }
-    
-    .denuncia_intro_conteudo {
-        position: relative;
-        z-index: 2;
-        max-width: calc(28.55vw + 61.61vh);
-    }
-    
-    .denuncia_tag {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: calc(0.51vw + 1.11vh);
-        margin-bottom: calc(0.81vw + 1.74vh);
-        font-family: "comfortaa";
-        font-size: calc(0.4vw + 0.87vh);
-        letter-spacing: calc(0.11vw + 0.24vh);
-        color: #6799ba;
-    }
-    
-    .denuncia_tag span {
-        width: calc(1.24vw + 2.69vh);
-        height: calc(0.04vw + 0.08vh);
-        background: rgba(103, 153, 186, 0.5);
-    }
-    
-    .denuncia_titulo {
-        font-family: "comfortaa";
-        font-weight: 700;
-        font-size: calc(1.54vw + 3.32vh);
-        line-height: 1.35;
-        letter-spacing: calc(0.02vw + 0.04vh);
-        color: #1c3b3b;
-        margin-bottom: calc(0.73vw + 1.58vh);
-    }
-    
-    .denuncia_titulo em {
-        font-style: normal;
-        color: #008080;
-        position: relative;
-        padding: 0 calc(0.15vw + 0.32vh);
-    }
-    
-    .denuncia_titulo em::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: calc(0.11vw + 0.24vh);
-        height: calc(0.33vw + 0.71vh);
-        background: rgba(0, 128, 128, 0.15);
-        border-radius: calc(0.15vw + 0.32vh);
-        z-index: -1;
-    }
-    
-    .denuncia_subtitulo {
-        font-family: "nunito";
-        font-size: calc(0.62vw + 1.34vh);
-        line-height: 1.8;
-        color: #555;
-        margin-bottom: calc(1.1vw + 2.37vh);
-    }
-    
-    .denuncia_privacidade {
-        width: fit-content;
-        max-width: 100%;
-        margin: 0 auto;
-        padding-top: calc(0.73vw + 1.58vh);
-        display: flex;
-        align-items: center;
-        gap: calc(0.44vw + 0.95vh);
-        text-align: left;
-        border-top: calc(0.04vw + 0.08vh) dashed rgba(0, 128, 128, 0.35);
-    }
-    
-    .denuncia_privacidade i {
-        flex-shrink: 0;
-        font-size: calc(0.81vw + 1.74vh);
-        color: #008080;
-    }
-    
-    .denuncia_privacidade span {
-        font-family: "nunito";
-        font-size: calc(0.51vw + 1.11vh);
-        line-height: 1.6;
-        color: #555;
-    }
-    
-    .denuncia_privacidade strong {
-        font-family: "comfortaa";
-        color: #008080;
-    }
-    
-    #denuncia_etapas {
-        width: 100%;
-        padding: calc(3.29vw + 7.11vh) 0;
-        position: relative;
-        overflow: hidden;
-        background: #ffffff;
-    }
-    
     .denuncia_etapa {
         display: grid;
         grid-template-columns: 0.85fr 1.15fr;
@@ -2302,11 +2556,7 @@ footer {
         padding: calc(1.65vw + 3.55vh) 0;
         border-bottom: calc(0.04vw + 0.08vh) dashed #c7dddd;
     }
-    
-    .denuncia_etapa:last-child {
-        border-bottom: none;
-    }
-    
+
     .denuncia_etapa.inverter .denuncia_etapa_imagem {
         order: 2;
     }
@@ -2314,21 +2564,7 @@ footer {
     .denuncia_etapa.inverter .denuncia_etapa_texto {
         order: 1;
     }
-    
-    .denuncia_etapa_imagem {
-        position: relative;
-        height: calc(8.42vw + 18.17vh);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: calc(0.59vw + 1.26vh);
-        border-radius: calc(0.66vw + 1.42vh);
-        border: calc(0.07vw + 0.16vh) dashed #a9d4d4;
-        background: radial-gradient(circle at 30% 20%, rgba(0, 128, 128, 0.07), transparent 55%), linear-gradient(135deg, #f4fbfb 0%, #e7f5f5 100%);
-        box-shadow: 0 calc(0.44vw + 0.95vh) calc(0.92vw + 1.97vh) rgba(0, 128, 128, 0.08);
-    }
-    
+
     .denuncia_etapa_tag {
         position: absolute;
         top: calc(0.51vw + 1.11vh);
@@ -2342,192 +2578,7 @@ footer {
         letter-spacing: calc(0.02vw + 0.04vh);
     }
     
-    .denuncia_etapa_icone_grande {
-        width: calc(2.86vw + 6.16vh);
-        height: calc(2.86vw + 6.16vh);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        background: linear-gradient(135deg, #008080 0%, #006d6d 100%);
-        color: white;
-        font-size: calc(1.17vw + 2.53vh);
-        box-shadow: 0 calc(0.29vw + 0.63vh) calc(0.66vw + 1.42vh) rgba(0, 128, 128, 0.20);
-    }
     
-    .denuncia_etapa_legenda {
-        font-family: "nunito";
-        font-size: calc(1.1vw + 2.37vh);
-        letter-spacing: calc(0.02vw + 0.04vh);
-        color: #6799ba;
-        text-align: center;
-        padding: 0 calc(0.73vw + 1.58vh);
-    }
-    
-    .denuncia_etapa_numero {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: calc(1.61vw + 3.48vh);
-        height: calc(1.61vw + 3.48vh);
-        margin-bottom: calc(0.51vw + 1.11vh);
-        border-radius: 50%;
-        background: white;
-        border: calc(0.07vw + 0.16vh) solid #008080;
-        color: #008080;
-        font-family: "comfortaa";
-        font-size: calc(0.51vw + 1.11vh);
-    }
-    
-    .denuncia_etapa_texto h3 {
-        font-family: "patrick";
-        font-size: calc(1.02vw + 2.21vh);
-        color: #008080;
-        margin-bottom: calc(0.37vw + 0.79vh);
-    }
-    
-    .denuncia_etapa_texto p {
-        font-family: "nunito";
-        font-size: calc(0.59vw + 1.26vh);
-        line-height: 1.75;
-        color: #505050;
-        max-width: calc(17.57vw + 37.91vh);
-    }
-    
-    #denuncia_dicas {
-        width: 100%;
-        padding: calc(3.11vw + 6.71vh) 0;
-        position: relative;
-        overflow: hidden;
-        background: #eef7f7;
-        border-top: calc(0.04vw + 0.08vh) solid #d8e7e7;
-        border-bottom: calc(0.04vw + 0.08vh) solid #d8e7e7;
-    }
-    
-    .denuncia_dicas_titulo {
-        text-align: center;
-        max-width: calc(23.43vw + 50.55vh);
-        margin: 0 auto calc(1.65vw + 3.55vh);
-    }
-    
-    .denuncia_dicas_titulo h2 {
-        font-family: "comfortaa";
-        font-size: calc(1.17vw + 2.53vh);
-        color: #008080;
-        text-shadow: calc(0.11vw + 0.24vh) calc(0.11vw + 0.24vh) calc(0.04vw + 0.08vh) #b8d3e3;
-        margin-bottom: calc(0.51vw + 1.11vh);
-    }
-    
-    .denuncia_dicas_titulo p {
-        font-family: "nunito";
-        font-size: calc(0.55vw + 1.18vh);
-        line-height: 1.7;
-        color: #555;
-    }
-    
-    .denuncia_dicas_grade {
-        display: flex;
-        /* grid-template-columns: repeat(4, 1fr); */
-        /* gap: 0; */
-        background:#008080;
-        padding-top:calc(0.37vw + 0.79vh) !important;
-        padding-bottom:calc(0.37vw + 0.79vh) !important;
-        border-radius:calc(0.37vw + 0.79vh);
-        
-    }
-    
-    .denuncia_dica {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: calc(0.59vw + 1.26vh);
-        text-align: center;
-        padding: calc(0.37vw + 0.79vh) calc(1.02vw + 2.21vh);
-        position: relative;
-        transition: 300ms ease;
-    }
-    
-    .denuncia_dica:not(:last-child)::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: calc(0.29vw + 0.63vh);
-        bottom: calc(0.29vw + 0.63vh);
-        width: calc(0.04vw + 0.08vh);
-        background: #cbe0e0;
-    }
-    
-    .denuncia_dica i {
-        font-size: calc(0.95vw + 2.05vh);
-        /* color: #008080; */
-        color:white;
-        transition: 300ms ease;
-    }
-    
-    .denuncia_dica:hover i {
-        transform: translateY(calc(-0.15vw - 0.32vh));
-    }
-    
-    .denuncia_dica span {
-        font-family: "nunito";
-        font-size: calc(0.51vw + 1.11vh);
-        line-height: 1.6;
-        /* color: #444; */
-        color:white;
-    }
-    
-    #denuncia_final {
-        width: 100%;
-        padding: calc(2.56vw + 5.53vh) 0 calc(3.29vw + 7.11vh);
-        background: radial-gradient(circle at 85% 25%, rgba(0, 128, 128, 0.06), transparent 28%), linear-gradient(135deg, #e4f4f4 0%, #f1f1f1 65%, #e7f5f5 100%);
-    }
-    
-    .denuncia_final_conteudo {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: calc(1.1vw + 2.37vh);
-        padding-top: calc(1.28vw + 2.76vh);
-        border-top: calc(0.07vw + 0.16vh) solid #c7dddd;
-    }
-    
-    .denuncia_final_texto h2 {
-        font-family: "comfortaa";
-        color: #008080;
-        font-size: calc(1.02vw + 2.21vh);
-        margin-bottom: calc(0.29vw + 0.63vh);
-        text-shadow: calc(0.11vw + 0.24vh) calc(0.11vw + 0.24vh) calc(0.04vw + 0.08vh) #008080;
-        text-decoration: underline;
-    }
-    
-    .denuncia_final_texto p {
-        font-family: "nunito";
-        font-size: calc(0.55vw + 1.18vh);
-        color: #555;
-    }
-    
-    .denuncia_botao {
-        flex-shrink: 0;
-        height: calc(1.79vw + 3.87vh);
-        padding: 0 calc(0.81vw + 1.74vh);
-        display: flex;
-        align-items: center;
-        gap: calc(0.44vw + 0.95vh);
-        border: none;
-        border-radius: calc(0.44vw + 0.95vh);
-        background: #008080;
-        color: white;
-        font-family: "comfortaa";
-        font-size: calc(0.51vw + 1.11vh);
-        cursor: pointer;
-        box-shadow: 0 calc(0.18vw + 0.39vh) calc(0.44vw + 0.95vh) rgba(0, 128, 128, 0.25);
-        transition: 300ms ease;
-    }
-    
-    .denuncia_botao:hover {
-        background: #006d6d;
-        transform: translateY(calc(-0.11vw - 0.24vh));
-    }
     
     
     #contatos {
