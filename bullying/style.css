@@ -256,7 +256,7 @@ section {
 }
     
 .aviso_anonimato strong {
-    font-family: "comfortaa";
+    font-family: comfortaa;
     /* font-size: calc(0.44vw + 0.95vh); */
     font-size:calc(0.44vw + 0.95vh);
     color: #008080;
@@ -264,7 +264,7 @@ section {
 }
     
 .aviso_anonimato span {
-    font-family: "nunito";
+    font-family: nunito;
     /* font-size: calc(0.44vw + 0.95vh); */
     font-size:calc(0.44vw + 0.95vh);
     color: #666;
@@ -292,7 +292,7 @@ section {
     border-radius: calc(0.44vw + 0.95vh);
     background: #008080;
     color: white;
-    font-family: "comfortaa";
+    font-family: comfortaa;
     /* font-size: calc(0.51vw + 1.11vh); */
     font-size:calc(0.5vw + 1.11vh);
     cursor: pointer;
@@ -379,7 +379,7 @@ section {
     
     
 #o_que_e h2 {
-    font-family: "comfortaa";
+    font-family: comfortaa;
     background: linear-gradient(135deg, #008080 0%, #006d6d 100%);
     /* padding: calc(0.73vw + 1.58vh); */
     padding:calc(0.73vw + 1.58vh);
@@ -417,7 +417,7 @@ section {
 }
     
 .sida_nome h3 {
-    font-family: "ruslan";
+    font-family: ruslan;
     /* font-size: calc(2.38vw + 5.13vh); */
     font-size:calc(2.38vw + 5.14vh);
     color: #008080;
@@ -425,7 +425,7 @@ section {
 }
     
 .sida_nome span {
-    font-family: "patrick";
+    font-family: patrick;
     /* font-size: calc(0.77vw + 1.66vh); */
     font-size:calc(0.77vw + 1.66vh);
     color: #555;
@@ -549,7 +549,7 @@ section {
 }
 
 .assunto h3 {
-    font-family: "patrick";
+    font-family: patrick;
     /* font-size: calc(1.1vw + 2.37vh); */
     font-size:calc(1.1vw + 2.37vh);
     color: #008080;
@@ -559,7 +559,7 @@ section {
 }
     
 .assunto p {
-    font-family: "nunito";
+    font-family: nunito;
     /* font-size: calc(0.62vw + 1.34vh); */
     font-size:calc(0.62vw + 1.34vh);
     line-height: 1.7;
@@ -607,7 +607,7 @@ section {
 }
 
 #sua_voz h2 {
-    font-family: "comfortaa";
+    font-family: comfortaa;
     /* font-size: calc(1.46vw + 3.16vh); */
     font-size:calc(1.46vw + 3.16vh);
     /* margin-bottom: calc(0.73vw + 1.58vh); */
@@ -619,7 +619,7 @@ section {
     width:calc(29.28vw + 63.19vh); */
     width:58.57vw;
     margin: auto;
-    font-family: "nunito";
+    font-family: nunito;
     /* font-size: calc(0.7vw + 1.5vh); */
     font-size:calc(0.7vw + 1.5vh);
     line-height: 1.8;
@@ -628,7 +628,7 @@ section {
 .frase_destaque {
     /* margin-top: calc(1.02vw + 2.21vh); */
     margin-top:calc(1.02vw + 2.21vh);
-    font-family: "patrick";
+    font-family: patrick;
     /* font-size: calc(0.99vw + 2.13vh); */
     font-size:calc(0.99vw + 2.13vh);
     color: #d9fafa;
@@ -670,7 +670,7 @@ section {
 }
 
 #final_inicio h2 {
-    font-family: "comfortaa";
+    font-family: comfortaa;
     color: #008080;
     /* font-size: calc(1.28vw + 2.76vh); */
     font-size:calc(1.28vw + 2.77vh);
@@ -766,7 +766,7 @@ footer {
 }
     
 .footer_logo h3 {
-    font-family: "ruslan";
+    font-family: ruslan;
     /* font-size: calc(1.1vw + 2.37vh); */
     font-size:calc(1.1vw + 2.37vh);
 }
@@ -776,7 +776,7 @@ footer {
 }
     
 .footer_info p {
-    font-family: "nunito";
+    font-family: nunito;
     /* font-size: calc(0.51vw + 1.11vh); */
     font-size:calc(0.51vw + 1.11vh);
     line-height: 1.7;
@@ -795,7 +795,7 @@ footer {
     
 .copyright {
     text-align: center;
-    font-family: "nunito";
+    font-family: nunito;
     /* font-size: calc(0.48vw + 1.03vh); */
     font-size:calc(0.48vw + 1.03vh);
     color: #c7e7e7;
@@ -884,7 +884,7 @@ footer {
     gap:calc(0.51vw + 1.11vh);
     /* margin-bottom: calc(0.95vw + 2.05vh); */
     margin-bottom:calc(0.95vw + 2.05vh);
-    font-family: "comfortaa";
+    font-family: comfortaa;
     /* font-size: calc(0.4vw + 0.87vh); */
     font-size:calc(0.4vw + 0.87vh);
     letter-spacing: calc(0.11vw + 0.24vh);
@@ -900,7 +900,7 @@ footer {
 }
     
 .sobre_manifesto_titulo {
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-weight: 700;
     /* font-size: calc(1.68vw + 3.63vh); */
     font-size:calc(1.68vw + 3.64vh);
@@ -920,7 +920,7 @@ footer {
 }
     
 .sobre_assinatura {
-    font-family: "handlee";
+    font-family: handlee;
     font-size: calc(0.81vw + 1.74vh);
     font-size:calc(0.8vw + 1.74vh);
     color:white;
@@ -958,7 +958,7 @@ footer {
     display: flex;
     align-items: center;
     gap: calc(0.33vw + 0.71vh);
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-size: calc(0.48vw + 1.03vh);
     letter-spacing: calc(0.02vw + 0.04vh);
     color: #008080;
@@ -1004,7 +1004,7 @@ footer {
 }
     
 #sobre_motivo h2 {
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-size: calc(1.32vw + 2.84vh);
     margin-bottom: calc(0.81vw + 1.74vh);
     text-shadow:calc(0.11vw + 0.24vh) calc(0.11vw + 0.24vh) calc(0.04vw + 0.08vh) white;
@@ -1014,7 +1014,7 @@ footer {
 #sobre_motivo p {
     width: min(calc(28.55vw + 61.61vh), 90%);
     margin: 0 auto calc(0.59vw + 1.26vh);
-    font-family: "nunito";
+    font-family: nunito;
     font-size: calc(0.62vw + 1.34vh);
     line-height: 1.8;
 }
@@ -1023,7 +1023,7 @@ footer {
     width: min(calc(27.82vw + 60.03vh), 90%);
     margin: calc(1.1vw + 2.37vh) auto 0;
     padding: calc(0.73vw + 1.58vh) calc(0.95vw + 2.05vh);
-    font-family: "patrick";
+    font-family: patrick;
     font-size: calc(0.81vw + 1.74vh);
     line-height: 1.5;
     color: #d9fafa;
@@ -1053,7 +1053,7 @@ footer {
 }
     
 .sobre_titulo small {
-    font-family: "patrick";
+    font-family: patrick;
     font-size: calc(0.55vw + 1.18vh);
     letter-spacing: calc(0.04vw + 0.08vh);
     color: #6799ba;
@@ -1062,7 +1062,7 @@ footer {
     
 .sobre_titulo h2 {
     margin-top: calc(0.22vw + 0.47vh);
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-size: calc(1.24vw + 2.69vh);
     color: #008080;
     text-decoration:underline;
@@ -1072,7 +1072,7 @@ footer {
 .sobre_titulo p {
     max-width: calc(22.69vw + 48.97vh);
     margin: calc(0.51vw + 1.11vh) auto 0;
-    font-family: "nunito";
+    font-family: nunito;
     font-size: calc(0.59vw + 1.26vh);
     line-height: 1.7;
     color: #555;
@@ -1112,7 +1112,7 @@ footer {
     background: white;
     border: calc(0.07vw + 0.16vh) solid #008080;
     color: #008080;
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-size: calc(0.55vw + 1.18vh);
     position: relative;
     z-index: 2;
@@ -1126,7 +1126,7 @@ footer {
 }
     
 .sobre_etapa h3 {
-    font-family: "patrick";
+    font-family: patrick;
     font-size: calc(0.81vw + 1.74vh);
     color: #008080;
     margin-bottom: calc(0.29vw + 0.63vh);
@@ -1157,7 +1157,7 @@ footer {
 }
 
 .sobre_valores_titulo span {
-    font-family: "patrick";
+    font-family: patrick;
     font-size: calc(0.73vw + 1.58vh);
     letter-spacing: calc(0.07vw + 0.16vh);
     color: #6799ba;
@@ -1213,7 +1213,7 @@ footer {
 }
 
 .sobre_final_texto h2 {
-    font-family: "comfortaa";
+    font-family: comfortaa;
     color: #008080;
     font-size: calc(0.95vw + 2.05vh);
     margin-bottom: calc(0.29vw + 0.63vh);
@@ -1223,7 +1223,7 @@ footer {
 }
 
 .sobre_final_texto p {
-    font-family: "nunito";
+    font-family: nunito;
     font-size: calc(0.66vw + 1.42vh);
     width:calc(29.28vw + 63.19vh);
     text-align:center;
@@ -1241,7 +1241,7 @@ footer {
     border-radius: calc(0.44vw + 0.95vh);
     background: #008080;
     color: white;
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-size: calc(0.51vw + 1.11vh);
     cursor: pointer;
     box-shadow: 0 calc(0.18vw + 0.39vh) calc(0.44vw + 0.95vh) rgba(0, 128, 128, 0.25);
@@ -1267,7 +1267,7 @@ footer {
     display: flex;
     align-items: center;
     gap: calc(0.37vw + 0.79vh);
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-size: calc(0.55vw + 1.18vh);
     color: #008080;
     white-space: nowrap;
@@ -1307,7 +1307,7 @@ footer {
 }
 
 .sobre_final_texto h2 {
-    font-family: "comfortaa";
+    font-family: comfortaa;
     color: #008080;
     
     font-size: calc(0.95vw + 2.05vh);
@@ -1318,7 +1318,7 @@ footer {
 }
 
 .sobre_final_texto p {
-    font-family: "nunito";
+    font-family: nunito;
     font-size: calc(0.66vw + 1.42vh);
     width:calc(29.28vw + 63.19vh);
     /* width:200px; */
@@ -1337,7 +1337,7 @@ footer {
     border-radius: calc(0.44vw + 0.95vh);
     background: #008080;
     color: white;
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-size: calc(0.51vw + 1.11vh);
     cursor: pointer;
     box-shadow: 0 calc(0.18vw + 0.39vh) calc(0.44vw + 0.95vh) rgba(0, 128, 128, 0.25);
@@ -1362,7 +1362,7 @@ footer {
     position: absolute;
     right: 4%;
     top: calc(1.46vw + 3.16vh);
-    font-family: "ruslan";
+    font-family: ruslan;
     font-size: calc(9.52vw + 20.54vh);
     color: rgba(0, 128, 128, 0.04);
     user-select: none;
@@ -1402,7 +1402,7 @@ footer {
     justify-content: center;
     gap: calc(0.51vw + 1.11vh);
     margin-bottom: calc(0.81vw + 1.74vh);
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-size: calc(0.4vw + 0.87vh);
     letter-spacing: calc(0.11vw + 0.24vh);
     color: #6799ba;
@@ -1415,7 +1415,7 @@ footer {
 }
 
 .denuncia_titulo {
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-weight: 700;
     font-size: calc(1.54vw + 3.32vh);
     line-height: 1.35;
@@ -1444,7 +1444,7 @@ footer {
 }
 
 .denuncia_subtitulo {
-    font-family: "nunito";
+    font-family: nunito;
     font-size: calc(0.62vw + 1.34vh);
     line-height: 1.8;
     color: #555;
@@ -1470,14 +1470,14 @@ footer {
 }
 
 .denuncia_privacidade span {
-    font-family: "nunito";
+    font-family: nunito;
     font-size: calc(0.51vw + 1.11vh);
     line-height: 1.6;
     color: #555;
 }
 
 .denuncia_privacidade strong {
-    font-family: "comfortaa";
+    font-family: comfortaa;
     color: #008080;
 }
 
@@ -1531,7 +1531,7 @@ footer {
 }
 
 .denuncia_etapa_legenda {
-    font-family: "nunito";
+    font-family: nunito;
     font-size: calc(1.1vw + 2.37vh);
     letter-spacing: calc(0.02vw + 0.04vh);
     color: #6799ba;
@@ -1550,19 +1550,19 @@ footer {
     background: white;
     border: calc(0.07vw + 0.16vh) solid #008080;
     color: #008080;
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-size: calc(0.51vw + 1.11vh);
 }
 
 .denuncia_etapa_texto h3 {
-    font-family: "patrick";
+    font-family: patrick;
     font-size: calc(1.02vw + 2.21vh);
     color: #008080;
     margin-bottom: calc(0.37vw + 0.79vh);
 }
 
 .denuncia_etapa_texto p {
-    font-family: "nunito";
+    font-family: nunito;
     font-size: calc(0.59vw + 1.26vh);
     line-height: 1.75;
     color: #505050;
@@ -1586,7 +1586,7 @@ footer {
 }
 
 .denuncia_dicas_titulo h2 {
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-size: calc(1.17vw + 2.53vh);
     color: #008080;
     text-shadow: calc(0.11vw + 0.24vh) calc(0.11vw + 0.24vh) calc(0.04vw + 0.08vh) #b8d3e3;
@@ -1594,7 +1594,7 @@ footer {
 }
 
 .denuncia_dicas_titulo p {
-    font-family: "nunito";
+    font-family: nunito;
     font-size: calc(0.55vw + 1.18vh);
     line-height: 1.7;
     color: #555;
@@ -1643,7 +1643,7 @@ footer {
 }
 
 .denuncia_dica span {
-    font-family: "nunito";
+    font-family: nunito;
     font-size: calc(0.51vw + 1.11vh);
     line-height: 1.6;
     color:white;
@@ -1665,7 +1665,7 @@ footer {
 }
 
 .denuncia_final_texto h2 {
-    font-family: "comfortaa";
+    font-family: comfortaa;
     color: #008080;
     font-size: calc(1.02vw + 2.21vh);
     margin-bottom: calc(0.29vw + 0.63vh);
@@ -1674,7 +1674,7 @@ footer {
 }
 
 .denuncia_final_texto p {
-    font-family: "nunito";
+    font-family: nunito;
     font-size: calc(0.55vw + 1.18vh);
     color: #555;
 }
@@ -1691,7 +1691,7 @@ footer {
     border-radius: calc(0.44vw + 0.95vh);
     background: #008080;
     color: white;
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-size: calc(0.51vw + 1.11vh);
     cursor: pointer;
     box-shadow: 0 calc(0.18vw + 0.39vh) calc(0.44vw + 0.95vh) rgba(0, 128, 128, 0.25);
@@ -1755,7 +1755,7 @@ footer {
     justify-content: center;
     gap: calc(0.51vw + 1.11vh);
     margin-bottom: calc(0.95vw + 2.05vh);
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-size: calc(0.4vw + 0.87vh);
     letter-spacing: calc(0.11vw + 0.24vh);
     color: #7fd9d9;
@@ -1768,7 +1768,7 @@ footer {
 }
 
 .contatos_titulo {
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-weight: 700;
     font-size: calc(1.54vw + 3.32vh);
     line-height: 1.35;
@@ -1782,7 +1782,7 @@ footer {
 }
 
 .contatos_subtitulo {
-    font-family: "nunito";
+    font-family: nunito;
     font-size: calc(0.62vw + 1.34vh);
     line-height: 1.8;
     color: rgba(234, 246, 246, 0.75);
@@ -1799,7 +1799,7 @@ footer {
 }
 
 .contatos_numeros_cabecalho small {
-    font-family: "patrick";
+    font-family: patrick;
     font-size: calc(0.59vw + 1.26vh);
     letter-spacing: calc(0.02vw + 0.04vh);
     color: #6799ba;
@@ -1810,7 +1810,7 @@ footer {
 
 .contatos_numeros_cabecalho h3 {
     margin-top: calc(0.22vw + 0.47vh);
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-size: calc(1.1vw + 2.37vh);
     color: #008080;
     text-decoration:underline;
@@ -1820,7 +1820,7 @@ footer {
 .contatos_numeros_cabecalho p {
     max-width: calc(20.5vw + 44.23vh);
     margin-top: calc(0.59vw + 1.26vh);
-    font-family: "nunito";
+    font-family: nunito;
     font-size: calc(0.55vw + 1.18vh);
     line-height: 1.7;
     color: #555;
@@ -1854,20 +1854,20 @@ footer {
     border-radius: 50%;
     background: linear-gradient(135deg, #008080 0%, #006d6d 100%);
     color: white;
-    font-family: "ruslan";
+    font-family: ruslan;
     font-size: calc(0.62vw + 1.34vh);
     box-shadow: 0 calc(0.26vw + 0.55vh) calc(0.55vw + 1.18vh) rgba(0, 128, 128, 0.15);
 }
 
 .contato_numero h4 {
-    font-family: "patrick";
+    font-family: patrick;
     font-size: calc(0.88vw + 1.9vh);
     color: #008080;
     margin-bottom: calc(0.22vw + 0.47vh);
 }
 
 .contato_numero p {
-    font-family: "nunito";
+    font-family: nunito;
     font-size: calc(0.55vw + 1.18vh);
     line-height: 1.7;
     color: #505050;
@@ -2154,7 +2154,7 @@ footer {
     }
     
     #botoes_auxiliar h1 {
-        font-family: "ruslan";
+        font-family: ruslan;
         color: white;
         /* font-size: calc(1.83vw + 3.95vh); */
         font-size:calc(1.83vw + 3.95vh);
@@ -2516,7 +2516,7 @@ footer {
         border-radius: calc(0.26vw + 0.55vh);
         background: #008080;
         color: white;
-        font-family: "patrick";
+        font-family: patrick;
         /* font-size: calc(0.44vw + 0.95vh); */
         font-size:calc(0.44vw + 0.95vh);
         letter-spacing: calc(0.04vw + 0.08vh);
@@ -2524,7 +2524,7 @@ footer {
     
     .slide_conteudo h3 {
         /* max-width: calc(16.47vw + 35.55vh); */
-        font-family: "comfortaa";
+        font-family: comfortaa;
         /* font-size: calc(0.99vw + 2.13vh); */
         font-size:calc(0.99vw + 2.13vh);
         font-weight: normal;
@@ -2536,7 +2536,7 @@ footer {
     
     .slide_conteudo p {
         /* max-width: calc(16.11vw + 34.76vh); */
-        font-family: "nunito";
+        font-family: nunito;
         /* font-size: calc(0.48vw + 1.03vh); */
         font-size:calc(0.48vw + 1.03vh);
         line-height: 1.5;

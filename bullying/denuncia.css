@@ -97,7 +97,7 @@ body {
 }
 
 .incentivo_titulo {
-    font-family: "Comfortaa";
+    font-family: comfortaa;
     font-weight: 700;
     font-size: clamp(calc(1.0981vw + 2.3697vh), 5vw, calc(1.6105vw + 3.4755vh)); /* font-size: clamp(30px, 5vw, 44px); */
     line-height: 1.35;
@@ -115,7 +115,7 @@ body {
 
 .incentivo_assinatura {
     display: inline-block;
-    font-family: "Handlee", cursive;
+    font-family: handlee, cursive;
     font-size: calc(0.7321vw + 1.5798vh); /* font-size: 20px; */
     color: white;
     background: #008080;
@@ -130,7 +130,7 @@ body {
     width: calc(22.694vw + 48.9731vh); /* width: 620px; */
     max-width: 100%;
     margin: 0 auto calc(1.0981vw + 2.3697vh); /* margin: 0 auto 30px; */
-    font-family: "Nunito";
+    font-family: nunito;
     font-size: calc(0.5857vw + 1.2638vh); /* font-size: 16px; */
     line-height: 1.85;
     color: #555;
@@ -140,8 +140,10 @@ body {
     width: min(calc(21.9619vw + 47.3934vh), 100%); /* width: min(600px, 100%); */
     margin: 0 auto calc(1.4641vw + 3.1596vh); /* margin: 0 auto 40px; */
     padding: calc(0.6589vw + 1.4218vh) calc(0.366vw + 0.7899vh); /* padding: 18px 10px; */
-    font-family: "Patrick Hand", cursive;
-    font-size: calc(0.7321vw + 1.5798vh); /* font-size: 20px; */
+    font-family: patrick, cursive;
+    /* font-size: calc(0.7321vw + 1.5798vh); font-size: 20px; */
+    font-size:23px;
+    font-size:calc(0.84vw + 1.82vh);
     line-height: 1.55;
     color: #006d6d;
     border-top: calc(0.0366vw + 0.079vh) solid #d8e7e7; /* border-top: 1px solid #d8e7e7; */
@@ -162,7 +164,7 @@ body {
     border-radius: calc(0.4392vw + 0.9479vh); /* border-radius: 12px; */
     background: #008080;
     color: white;
-    font-family: "Comfortaa", sans-serif;
+    font-family: comfortaa, sans-serif;
     font-size: calc(0.5124vw + 1.1058vh); /* font-size: 14px; */
     cursor: pointer;
     box-shadow: 0 calc(0.183vw + 0.3949vh) calc(0.4392vw + 0.9479vh) rgba(0, 128, 128, 0.25); /* box-shadow: 0 5px 12px rgba(0, 128, 128, 0.25); */
@@ -190,7 +192,7 @@ body {
     display: flex;
     align-items: center;
     gap: calc(0.2928vw + 0.6319vh); /* gap: 8px; */
-    font-family: "Comfortaa", sans-serif;
+    font-family: comfortaa, sans-serif;
     font-size: calc(0.4758vw + 1.0269vh); /* font-size: 13px; */
     color: #008080;
 }
@@ -247,13 +249,13 @@ body {
 }
 
 .status_topo h2 {
-    font-family: "Comfortaa", sans-serif;
+    font-family: comfortaa, sans-serif;
     font-size: calc(1.1713vw + 2.5276vh); /* font-size: 32px; */
     margin-bottom: calc(0.5857vw + 1.2638vh); /* margin-bottom: 16px; */
 }
 
 .status_topo p {
-    font-family: "Nunito", sans-serif;
+    font-family: nunito, sans-serif;
     font-size: calc(0.5857vw + 1.2638vh); /* font-size: 16px; */
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.85);
@@ -314,7 +316,7 @@ body {
 .campo input {
     width: 100%;
     /* padding: 10px 4px; */
-    font-family: "Nunito";
+    font-family: nunito;
     font-size: calc(0.5857vw + 1.2638vh); /* font-size: 16px; */
     color: #555;
     background: transparent;
@@ -342,7 +344,7 @@ body {
     border-radius: calc(0.4392vw + 0.9479vh); /* border-radius: 12px; */
     background: transparent;
     color: white;
-    font-family: "Comfortaa", sans-serif;
+    font-family: comfortaa, sans-serif;
     font-size: calc(0.5124vw + 1.1058vh); /* font-size: 14px; */
     cursor: pointer;
     transition: all 300ms ease;
@@ -357,7 +359,7 @@ body {
     display: none;
     width: 100%;
     text-align: center;
-    font-family: "Nunito", sans-serif;
+    font-family: nunito, sans-serif;
     font-size: calc(0.4941vw + 1.0664vh); /* font-size: 13.5px; */
     color: #ffe1e1;
     background: rgba(255, 255, 255, 0.12);
@@ -370,8 +372,8 @@ body {
 .status_ajuda {
     margin-top: calc(0.8785vw + 1.8957vh); /* margin-top: 24px; */
     text-align: center;
-    font-family: "Patrick Hand", cursive;
-    font-size: calc(0.549vw + 1.1848vh); /* font-size: 15px; */
+    font-family: patrick;
+    font-size:calc(0.73vw + 1.58vh);
     color: rgba(255, 255, 255, 0.75);
 }
 
@@ -381,7 +383,7 @@ body {
     justify-content: center;
     gap: calc(0.5124vw + 1.1058vh); /* gap: 14px; */
     margin-bottom: calc(0.9517vw + 2.0537vh); /* margin-bottom: 26px; */
-    font-family: "comfortaa";
+    font-family: comfortaa;
     font-size: calc(0.7321vw + 1.5798vh); /* font-size: 20px; */
     letter-spacing: calc(0.1098vw + 0.237vh); /* letter-spacing: 3px; */
     color: #6799ba;
