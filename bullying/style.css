@@ -2012,19 +2012,6 @@ footer {
         gap:calc(4.17vw + 2.03vh);
     }
     
-    /* .assunto {
-        width: 90%;
-        height:fit-content;
-        display: flex;
-        flex-direction:column;
-        justify-content:center !important;
-        align-items:center !important;
-        text-align:center;
-        border:2px solid #008080;
-        border-radius:20px;
-        box-shadow:10px 10px 1px #008080;
-        
-    } */
 
     .assunto {
         padding: calc(1.02vw + 2.21vh) 0;
@@ -2051,16 +2038,28 @@ footer {
     }
 
     .sobre_titulo p{
-        margin-top:20px;
+        /* margin-top:20px; */
+        /* margin-top:calc(2.78vw + 1.35vh); */
+        margin-top:5.56vh;
     }
 
     .sobre_linha_tempo{
-           width:100%;
+        width:100%;
         height:fit-content;
         
         display:flex;
         flex-direction:row;
         justify-content:center;
+    }
+
+    .sobre_etapa h3{
+        width:80px;
+        width:calc(9.09vw + 4.18vh);
+        
+    }
+
+    .sobre_etapa p{
+        display:none;
     }
 
     .sobre_final_conteudo{
@@ -2084,7 +2083,8 @@ footer {
         flex-direction:column-reverse;
         padding: calc(1.65vw + 3.55vh) 0;
         border-bottom: calc(0.04vw + 0.08vh) dashed #c7dddd;
-        gap:20px;
+        /* gap:20px; */
+        gap:calc(2.78vw + 1.35vh);
     }
 
     .denuncia_etapa_tag {
@@ -2096,7 +2096,8 @@ footer {
     }
 
     .denuncia_dica span{
-        width:200px;
+        /* width:200px; */
+        width:55.56vw;
     }
 
     .denuncia_dica:not(:last-child){
@@ -2108,7 +2109,9 @@ footer {
     }
 
     .denuncia_final_texto p{
-        margin-top:20px;
+        /* margin-top:20px; */
+        margin-top:5.56vh;
+        
     }
 
     .contatos_linha_lateral{
