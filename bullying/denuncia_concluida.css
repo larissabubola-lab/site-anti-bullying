@@ -101,7 +101,7 @@ body::after {
     color: #008080;
     margin-bottom: 16px;
     text-decoration:underline;
-    text-shadow:2px 2px 1px #102b2b;
+    /* text-shadow:2px 2px 1px #102b2b; */
 }
 
 .denuncia_concluida_texto {
@@ -177,7 +177,7 @@ body::after {
     border-radius: 8px;
     padding: 8px 10px;
     width: 100%;
-    word-break: break-all;
+    white-space:nowrap;
     user-select: all;
     cursor: text;
 }
@@ -196,5 +196,5 @@ a:hover{
 }
 
 a:visited{
-    color:#afafaf;
+    color:white;
 }

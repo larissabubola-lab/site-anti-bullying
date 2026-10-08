@@ -140,7 +140,7 @@ async function criar_denuncias(evento){
     let informacoes_adicionais = document.getElementById("mais_infos").value;
 
     // const caminho = "https://sida-server-test.loca.lt/denuncias/criar";
-    const caminho = "https://servidor-denuncias-bullying.onrender.com/acesso/denuncias/criar";
+    const caminho = "https://servidor-denuncias-bullying.onrender.com/denuncias/criar";
 
 
     console.log(id_da_escola, quem_esta_sendo_afetado, o_que_aconteceu, esta_em_perigo, frequencia_que_acontece, quando_aconteceu, continua_acontecendo, detalhes_do_agressor, possui_testemunha, detalhes_da_testemunha, relatado_para_responsavel, resultado_do_relato, sente_seguro_na_escola, informacoes_adicionais, onde_aconteceu, como_isso_te_afetou, quem_praticou, situacoes_denunciadas);

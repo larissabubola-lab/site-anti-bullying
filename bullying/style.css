@@ -679,7 +679,7 @@ section {
 }
 
 #final_inicio p {
-    font-family: "nunito";
+    font-family: nunito;
     /* font-size: calc(0.66vw + 1.42vh); */
     font-size:calc(0.66vw + 1.42vh);
     color: #555;
